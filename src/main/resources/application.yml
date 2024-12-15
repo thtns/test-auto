@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: test-auto
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: wz_select_2021
+    password: #LrX9y$P1GtF2c*@
+    url: jdbc:mysql://rm-bp1h9766py8bq2468co.mysql.rds.aliyuncs.com:3306/wz_wz?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2B8&allowMultiQueries=true&nullCatalogMeansCurrent=true
+server:
+  port: 10010
+
+
+
+
+
+#--------------??????????-------------
+# mybatis-plus ??
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/*Mapper.xml # mapper????
+  global-config:
+    banner: false # ???? mybatis-plus banner
+    db-config:
+      id-type: auto  # ????
+      where-strategy: not_empty # where ????
+      insert-strategy: not_empty # ????
+      update-strategy: not_null  # ????
+  type-handlers-package: com.pig4cloud.pig.common.mybatis.handler # ??????
+  configuration:
+    jdbc-type-for-null: 'null' # ???????null
+    call-setters-on-nulls: true # ????set?????null?
+    shrink-whitespaces-in-sql: true # ??sql??????
