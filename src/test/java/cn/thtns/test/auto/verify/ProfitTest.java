@@ -10,9 +10,14 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
 import org.springframework.web.client.RestClient;
 import org.testng.annotations.Test;
+import org.testng.collections.Lists;
 
 import java.math.BigDecimal;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.time.temporal.WeekFields;
 import java.util.List;
+import java.util.Locale;
 
 /**
  * @author liuyj
@@ -51,6 +56,39 @@ public class ProfitTest extends AbstractTestNGSpringContextTests {
 		}));
 	}
 
+
+	public static LocalDate getMondayOfWeek(int year, int week) {
+		// 获取该年第一天
+		LocalDate firstDayOfYear = LocalDate.of(year, 1, 1);
+
+		// 使用 WeekFields 获取该年特定周的第一天 (周一)
+		WeekFields weekFields = WeekFields.ISO; // 默认区域
+
+		return firstDayOfYear.with(weekFields.weekOfYear(), week).with(weekFields.dayOfWeek(), 1);
+	}
+
+	private List<OldProfitRes.DataDTO.CacheProfitDTO.Profit.TimeAndProfit> convertSeason(List<OldProfitRes.DataDTO.CacheProfitDTO.Profit.TimeAndProfit> oldData) {
+
+		List<OldProfitRes.DataDTO.CacheProfitDTO.Profit.TimeAndProfit> objects = Lists.newArrayList();
+
+		oldData.forEach(o -> {
+			if (StrUtil.isNotBlank(o.getTime())) {
+				String[] split = o.getTime().split("/");
+				// 周一日期
+				LocalDate mondayOfWeek = getMondayOfWeek(Integer.parseInt(split[0]), Integer.parseInt(split[1]));
+				// 周日日期
+				LocalDate localDate = mondayOfWeek.plusDays(6);
+
+				OldProfitRes.DataDTO.CacheProfitDTO.Profit.TimeAndProfit timeAndProfit = new OldProfitRes.DataDTO.CacheProfitDTO.Profit.TimeAndProfit();
+				DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy/MM/dd");
+				timeAndProfit.setTime(mondayOfWeek.format(formatter) +"-"+ localDate.format(formatter));
+				timeAndProfit.setProfit(o.getProfit());
+				objects.add(timeAndProfit);
+			}
+		});
+		return objects;
+	}
+
 	@Test
 	@Description("对比数据")
 	public void profitComparison() throws JsonProcessingException {
@@ -58,14 +96,51 @@ public class ProfitTest extends AbstractTestNGSpringContextTests {
 		NewProfitRes newProfitRes = objectMapper.readValue(getApiResponse(NEW_PROFIT_API), NewProfitRes.class);
 
 		System.out.println("开始对比天统计数据：~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-		compareProfitData("微信", oldProfitRes.getData().getCacheProfit().getDay().getWxpay(), newProfitRes.getData().getProfitList().getDay().getWxPay());
-		compareProfitData("支付宝", oldProfitRes.getData().getCacheProfit().getDay().getAlipay(), newProfitRes.getData().getProfitList().getDay().getAliPay());
+		compareProfitData("wxPay", oldProfitRes.getData().getCacheProfit().getDay().getWxpay(), newProfitRes.getData().getProfitList().getDay().getWxPay());
+		compareProfitData("aliPay", oldProfitRes.getData().getCacheProfit().getDay().getAlipay(), newProfitRes.getData().getProfitList().getDay().getAliPay());
+		compareProfitData("bill", oldProfitRes.getData().getCacheProfit().getDay().getBill(), newProfitRes.getData().getProfitList().getDay().getBill());
+		compareProfitData("card", oldProfitRes.getData().getCacheProfit().getDay().getCard(), newProfitRes.getData().getProfitList().getDay().getCard());
+		compareProfitData("purse", oldProfitRes.getData().getCacheProfit().getDay().getPurse(), newProfitRes.getData().getProfitList().getDay().getPurse());
+		compareProfitData("safeguard", oldProfitRes.getData().getCacheProfit().getDay().getSafeguard(), newProfitRes.getData().getProfitList().getDay().getSafeguard());
 		System.out.println("结束对比天统计数据：~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 
+
+		System.out.println("开始对比周统计数据：~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+		compareProfitData("wxPay", convertSeason(oldProfitRes.getData().getCacheProfit().getWeek().getWxpay()), newProfitRes.getData().getProfitList().getDay().getWxPay());
+		compareProfitData("aliPay", convertSeason(oldProfitRes.getData().getCacheProfit().getWeek().getAlipay()), newProfitRes.getData().getProfitList().getDay().getAliPay());
+		compareProfitData("bill", convertSeason(oldProfitRes.getData().getCacheProfit().getWeek().getBill()), newProfitRes.getData().getProfitList().getDay().getBill());
+		compareProfitData("card", convertSeason(oldProfitRes.getData().getCacheProfit().getWeek().getCard()), newProfitRes.getData().getProfitList().getDay().getCard());
+		compareProfitData("purse", convertSeason(oldProfitRes.getData().getCacheProfit().getWeek().getPurse()), newProfitRes.getData().getProfitList().getDay().getPurse());
+		compareProfitData("safeguard", convertSeason(oldProfitRes.getData().getCacheProfit().getWeek().getSafeguard()), newProfitRes.getData().getProfitList().getDay().getSafeguard());
+		System.out.println("结束对比周统计数据：~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+
+
 		System.out.println("开始对比月统计数据：~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-		compareProfitData("微信", oldProfitRes.getData().getCacheProfit().getMonth().getWxpay(), newProfitRes.getData().getProfitList().getMonth().getWxPay());
-		compareProfitData("支付宝", oldProfitRes.getData().getCacheProfit().getMonth().getAlipay(), newProfitRes.getData().getProfitList().getMonth().getAliPay());
+		compareProfitData("wxPay", oldProfitRes.getData().getCacheProfit().getMonth().getWxpay(), newProfitRes.getData().getProfitList().getMonth().getWxPay());
+		compareProfitData("aliPay", oldProfitRes.getData().getCacheProfit().getMonth().getAlipay(), newProfitRes.getData().getProfitList().getMonth().getAliPay());
+		compareProfitData("bill", oldProfitRes.getData().getCacheProfit().getMonth().getBill(), newProfitRes.getData().getProfitList().getMonth().getBill());
+		compareProfitData("card", oldProfitRes.getData().getCacheProfit().getMonth().getCard(), newProfitRes.getData().getProfitList().getMonth().getCard());
+		compareProfitData("purse", oldProfitRes.getData().getCacheProfit().getMonth().getPurse(), newProfitRes.getData().getProfitList().getMonth().getPurse());
+		compareProfitData("safeguard", oldProfitRes.getData().getCacheProfit().getMonth().getSafeguard(), newProfitRes.getData().getProfitList().getMonth().getSafeguard());
 		System.out.println("结束对比月统计数据：~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+
+		System.out.println("开始对比季度统计数据：~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+		compareProfitData("wxPay", oldProfitRes.getData().getCacheProfit().getSeason().getWxpay(), newProfitRes.getData().getProfitList().getSeason().getWxPay());
+		compareProfitData("aliPay", oldProfitRes.getData().getCacheProfit().getSeason().getAlipay(), newProfitRes.getData().getProfitList().getSeason().getAliPay());
+		compareProfitData("bill", oldProfitRes.getData().getCacheProfit().getSeason().getBill(), newProfitRes.getData().getProfitList().getSeason().getBill());
+		compareProfitData("card", oldProfitRes.getData().getCacheProfit().getSeason().getCard(), newProfitRes.getData().getProfitList().getSeason().getCard());
+		compareProfitData("purse", oldProfitRes.getData().getCacheProfit().getSeason().getPurse(), newProfitRes.getData().getProfitList().getSeason().getPurse());
+		compareProfitData("safeguard", oldProfitRes.getData().getCacheProfit().getSeason().getSafeguard(), newProfitRes.getData().getProfitList().getSeason().getSafeguard());
+		System.out.println("结束对比季度统计数据：~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+
+		System.out.println("开始对比年度统计数据：~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+		compareProfitData("wxPay", oldProfitRes.getData().getCacheProfit().getYear().getWxpay(), newProfitRes.getData().getProfitList().getYear().getWxPay());
+		compareProfitData("aliPay", oldProfitRes.getData().getCacheProfit().getYear().getAlipay(), newProfitRes.getData().getProfitList().getYear().getAliPay());
+		compareProfitData("bill", oldProfitRes.getData().getCacheProfit().getYear().getBill(), newProfitRes.getData().getProfitList().getYear().getBill());
+		compareProfitData("card", oldProfitRes.getData().getCacheProfit().getYear().getCard(), newProfitRes.getData().getProfitList().getYear().getCard());
+		compareProfitData("purse", oldProfitRes.getData().getCacheProfit().getYear().getPurse(), newProfitRes.getData().getProfitList().getYear().getPurse());
+		compareProfitData("safeguard", oldProfitRes.getData().getCacheProfit().getYear().getSafeguard(), newProfitRes.getData().getProfitList().getYear().getSafeguard());
+		System.out.println("结束对比年度统计数据：~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 	}
 
 	private String getApiResponse(String apiUrl) {
