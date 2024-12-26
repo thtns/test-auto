@@ -1,15 +1,15 @@
-package cn.thtns.test.auto.verify;
+package cn.thtns.test.auto.verify_lombok.verify;
 
 import cn.hutool.core.util.NumberUtil;
 import cn.hutool.core.util.StrUtil;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.qameta.allure.Description;
+import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
 import org.springframework.web.client.RestClient;
-import org.testng.annotations.Test;
 import org.testng.collections.Lists;
 
 import java.math.BigDecimal;
@@ -23,7 +23,7 @@ import java.util.List;
  * Node 收益比对
  */
 @SpringBootTest
-public class ProfitTest extends AbstractTestNGSpringContextTests {
+public class ProfitTest  {
 
 	private static final String AUTHORIZATION_HEADER = "authorization";
 	private static final String OLD_PROFIT_API = "https://agentv2.wanzhuangkj.com/api/profit/get/all?profit_type=dealer";
@@ -88,8 +88,8 @@ public class ProfitTest extends AbstractTestNGSpringContextTests {
 		return objects;
 	}
 
-	@Test
 	@Description("对比数据")
+	@Test
 	public void profitComparison() throws JsonProcessingException {
 		OldProfitRes oldProfitRes = objectMapper.readValue(getApiResponse(OLD_PROFIT_API), OldProfitRes.class);
 		NewProfitRes newProfitRes = objectMapper.readValue(getApiResponse(NEW_PROFIT_API), NewProfitRes.class);
