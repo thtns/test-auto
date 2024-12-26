@@ -1,6 +1,5 @@
 package cn.thtns.test.auto.verify;
 
-import cn.hutool.core.bean.BeanUtil;
 import cn.hutool.core.util.NumberUtil;
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.json.JSONUtil;
@@ -11,12 +10,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.http.HttpEntity;
-import org.springframework.http.HttpMethod;
-import org.springframework.http.ResponseEntity;
-import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
 import org.springframework.web.client.RestClient;
-import org.springframework.web.client.RestTemplate;
 import org.testng.collections.Lists;
 import org.testng.collections.Maps;
 
@@ -26,7 +20,6 @@ import java.time.format.DateTimeFormatter;
 import java.time.temporal.WeekFields;
 import java.util.List;
 import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
 import java.util.stream.Collectors;
 
 /**
@@ -35,7 +28,7 @@ import java.util.stream.Collectors;
  */
 @SpringBootTest
 @Slf4j
-public class ProfitTest {
+public class DeviceProfitTest {
 
     private static final String AUTHORIZATION_HEADER = "authorization";
     private static final String OLD_PROFIT_API = "https://agentv2.wanzhuangkj.com/api/profit/get/all?profit_type=dealer";
@@ -53,14 +46,14 @@ public class ProfitTest {
     private TokenManager tokenManager;
 
 
-	private final Map<String, String> phoneMap = Maps.newHashMap();
+    private final Map<String, String> phoneMap = Maps.newHashMap();
 
 
-	 {
+    {
 
-		 phoneMap.put("19034658903", "");
+        phoneMap.put("19034658903", "wz123456.");
 
-	}
+    }
 
 
 
@@ -117,25 +110,25 @@ public class ProfitTest {
         return objects;
     }
 
-	public List<OldProfitRes.DataDTO.CacheProfitDTO.Profit.TimeAndProfit> add(List<OldProfitRes.DataDTO.CacheProfitDTO.Profit.TimeAndProfit> oldTimeAndProfits) {
+    public List<OldProfitRes.DataDTO.CacheProfitDTO.Profit.TimeAndProfit> add(List<OldProfitRes.DataDTO.CacheProfitDTO.Profit.TimeAndProfit> oldTimeAndProfits) {
 
-		Map<String, Integer> result = oldTimeAndProfits.stream()
-				.collect(Collectors.groupingBy(
-						OldProfitRes.DataDTO.CacheProfitDTO.Profit.TimeAndProfit::getTime,
-						Collectors.summingInt(OldProfitRes.DataDTO.CacheProfitDTO.Profit.TimeAndProfit::getProfit)
-				));
+        Map<String, Integer> result = oldTimeAndProfits.stream()
+                .collect(Collectors.groupingBy(
+                        OldProfitRes.DataDTO.CacheProfitDTO.Profit.TimeAndProfit::getTime,
+                        Collectors.summingInt(OldProfitRes.DataDTO.CacheProfitDTO.Profit.TimeAndProfit::getProfit)
+                ));
 
-		List<OldProfitRes.DataDTO.CacheProfitDTO.Profit.TimeAndProfit> objects = Lists.newArrayList();
+        List<OldProfitRes.DataDTO.CacheProfitDTO.Profit.TimeAndProfit> objects = Lists.newArrayList();
 
-		result.forEach((time, totalProfit) -> {
-			OldProfitRes.DataDTO.CacheProfitDTO.Profit.TimeAndProfit timeAndProfit = new OldProfitRes.DataDTO.CacheProfitDTO.Profit.TimeAndProfit();
-			timeAndProfit.setTime(time);
-			timeAndProfit.setProfit(totalProfit);
-			objects.add(timeAndProfit);
-		});
+        result.forEach((time, totalProfit) -> {
+            OldProfitRes.DataDTO.CacheProfitDTO.Profit.TimeAndProfit timeAndProfit = new OldProfitRes.DataDTO.CacheProfitDTO.Profit.TimeAndProfit();
+            timeAndProfit.setTime(time);
+            timeAndProfit.setProfit(totalProfit);
+            objects.add(timeAndProfit);
+        });
 
-		return objects;
-	}
+        return objects;
+    }
 
 
 
@@ -150,7 +143,7 @@ public class ProfitTest {
             String v = entry.getValue();
             String bearerToken = tokenManager.getToken(k, v);
 
-			log.info("账号：{} 正在对比数据", k);
+            log.info("账号：{} 正在对比数据", k);
 
             OldProfitRes oldProfitRes = objectMapper.readValue(getApiResponse(OLD_PROFIT_API, bearerToken), OldProfitRes.class);
             NewProfitRes newProfitRes = objectMapper.readValue(getApiResponse(NEW_PROFIT_API, bearerToken), NewProfitRes.class);
@@ -288,23 +281,20 @@ public class ProfitTest {
             log.info("结束对比年度统计数据");
 
 
-			log.info("账号：{} 对比数据结束 ", k);
+            log.info("账号：{} 对比数据结束 ", k);
 
         }
 
 
     }
 
-	private String getApiResponse(String apiUrl, String BEARER_TOKEN) {
-		return restClient.get()
-				.uri(apiUrl)
-				.header(AUTHORIZATION_HEADER, BEARER_TOKEN)
-				.retrieve()
-				.body(String.class);
-	}
-
-
-
+    private String getApiResponse(String apiUrl, String BEARER_TOKEN) {
+        return restClient.get()
+                .uri(apiUrl)
+                .header(AUTHORIZATION_HEADER, BEARER_TOKEN)
+                .retrieve()
+                .body(String.class);
+    }
 
 
 }

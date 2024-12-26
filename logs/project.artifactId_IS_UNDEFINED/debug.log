@@ -16,3 +16,136 @@
 2024-12-25 17:45:51.217  INFO 6460 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : Starting ProfitTest using Java 17.0.12 with PID 6460 (/Users/liuyujun/ideaProjects/personal/test-auto/target/test-classes started by liuyujun in /Users/liuyujun/ideaProjects/personal/test-auto)
 2024-12-25 17:45:51.219  INFO 6460 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : No active profile set, falling back to 1 default profile: "default"
 2024-12-25 17:45:53.569  INFO 6460 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : Started ProfitTest in 3.038 seconds (process running for 5.195)
+2024-12-26 20:07:03.958  INFO 23464 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : Starting ProfitTest using Java 17.0.7 with PID 23464 (started by Administrator in C:\Users\Administrator\IdeaProjects\test-auto)
+2024-12-26 20:07:03.960  INFO 23464 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : No active profile set, falling back to 1 default profile: "default"
+2024-12-26 20:07:06.092  INFO 23464 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : Started ProfitTest in 2.549 seconds (process running for 3.328)
+2024-12-26 20:34:44.452  INFO 12792 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : Starting ProfitTest using Java 17.0.7 with PID 12792 (started by Administrator in C:\Users\Administrator\IdeaProjects\test-auto)
+2024-12-26 20:34:44.454  INFO 12792 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : No active profile set, falling back to 1 default profile: "default"
+2024-12-26 20:34:46.597  INFO 12792 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : Started ProfitTest in 2.562 seconds (process running for 3.309)
+2024-12-26 20:38:22.541  INFO 15716 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : Starting ProfitTest using Java 17.0.7 with PID 15716 (started by Administrator in C:\Users\Administrator\IdeaProjects\test-auto)
+2024-12-26 20:38:22.544  INFO 15716 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : No active profile set, falling back to 1 default profile: "default"
+2024-12-26 20:38:24.654  INFO 15716 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : Started ProfitTest in 2.515 seconds (process running for 3.276)
+2024-12-26 20:40:23.134  INFO 26112 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : Starting ProfitTest using Java 17.0.7 with PID 26112 (started by Administrator in C:\Users\Administrator\IdeaProjects\test-auto)
+2024-12-26 20:40:23.137  INFO 26112 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : No active profile set, falling back to 1 default profile: "default"
+2024-12-26 20:40:25.473  INFO 26112 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : Started ProfitTest in 2.734 seconds (process running for 3.501)
+2024-12-26 20:40:28.842  INFO 26112 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比天统计数据：~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2024-12-26 20:40:28.853  INFO 26112 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比天统计数据：~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2024-12-26 20:40:28.854  INFO 26112 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比周统计数据：~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2024-12-26 20:40:28.859  INFO 26112 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比周统计数据：~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2024-12-26 20:40:28.859  INFO 26112 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比月统计数据：~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2024-12-26 20:40:28.862  INFO 26112 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比月统计数据：~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2024-12-26 20:40:28.862  INFO 26112 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比季度统计数据：~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2024-12-26 20:40:28.869  INFO 26112 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : bill支付，日期：2023_03 数据不一致，旧接口数据：100，新接口数据：0
+2024-12-26 20:40:28.869  INFO 26112 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : card支付，日期：2023_04 数据不一致，旧接口数据：800，新接口数据：0
+2024-12-26 20:40:28.869  INFO 26112 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : card支付，日期：2023_03 数据不一致，旧接口数据：500，新接口数据：0
+2024-12-26 20:40:28.869  INFO 26112 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : card支付，日期：2023_02 数据不一致，旧接口数据：700，新接口数据：0
+2024-12-26 20:40:28.870  INFO 26112 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比季度统计数据：~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2024-12-26 20:40:28.870  INFO 26112 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比年度统计数据：~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2024-12-26 20:40:28.871  INFO 26112 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : bill支付，日期：2023 数据不一致，旧接口数据：200，新接口数据：0
+2024-12-26 20:40:28.871  INFO 26112 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : bill支付，日期：2022 数据不一致，旧接口数据：4200，新接口数据：0
+2024-12-26 20:40:28.871  INFO 26112 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : card支付，日期：2023 数据不一致，旧接口数据：2500，新接口数据：0
+2024-12-26 20:40:28.871  INFO 26112 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : card支付，日期：2022 数据不一致，旧接口数据：5550，新接口数据：0
+2024-12-26 20:40:28.872  INFO 26112 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : icc支付，日期：2022 数据不一致，旧接口数据：2352，新接口数据：21.02
+2024-12-26 20:40:28.872  INFO 26112 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比年度统计数据：~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2024-12-26 21:06:14.297  INFO 18288 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : Starting ProfitTest using Java 17.0.7 with PID 18288 (started by Administrator in C:\Users\Administrator\IdeaProjects\test-auto)
+2024-12-26 21:06:14.299  INFO 18288 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : No active profile set, falling back to 1 default profile: "default"
+2024-12-26 21:06:16.661  INFO 18288 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : Started ProfitTest in 2.78 seconds (process running for 3.922)
+2024-12-26 21:07:12.905  INFO 19416 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : Starting ProfitTest using Java 17.0.7 with PID 19416 (started by Administrator in C:\Users\Administrator\IdeaProjects\test-auto)
+2024-12-26 21:07:12.907  INFO 19416 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : No active profile set, falling back to 1 default profile: "default"
+2024-12-26 21:07:15.075  INFO 19416 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : Started ProfitTest in 2.588 seconds (process running for 3.41)
+2024-12-26 21:07:51.489  INFO 27812 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : Starting ProfitTest using Java 17.0.7 with PID 27812 (started by Administrator in C:\Users\Administrator\IdeaProjects\test-auto)
+2024-12-26 21:07:51.491  INFO 27812 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : No active profile set, falling back to 1 default profile: "default"
+2024-12-26 21:07:53.710  INFO 27812 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : Started ProfitTest in 2.646 seconds (process running for 3.485)
+2024-12-26 21:08:21.630  INFO 27812 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比天统计数据：~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2024-12-26 21:08:21.659  INFO 27812 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比天统计数据：~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2024-12-26 21:08:21.660  INFO 27812 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比周统计数据：~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2024-12-26 21:08:21.681  INFO 27812 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比周统计数据：~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2024-12-26 21:08:21.682  INFO 27812 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比月统计数据：~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2024-12-26 21:08:21.700  INFO 27812 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比月统计数据：~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2024-12-26 21:08:21.701  INFO 27812 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比季度统计数据：~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2024-12-26 21:08:21.708  INFO 27812 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : bill支付，日期：2023_03 数据不一致，旧接口数据：100，新接口数据：0
+2024-12-26 21:08:21.710  INFO 27812 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : card支付，日期：2023_04 数据不一致，旧接口数据：800，新接口数据：0
+2024-12-26 21:08:21.711  INFO 27812 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : card支付，日期：2023_03 数据不一致，旧接口数据：500，新接口数据：0
+2024-12-26 21:08:21.712  INFO 27812 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : card支付，日期：2023_02 数据不一致，旧接口数据：700，新接口数据：0
+2024-12-26 21:08:21.722  INFO 27812 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比季度统计数据：~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2024-12-26 21:08:21.723  INFO 27812 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比年度统计数据：~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2024-12-26 21:08:21.726  INFO 27812 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : bill支付，日期：2023 数据不一致，旧接口数据：200，新接口数据：0
+2024-12-26 21:08:21.727  INFO 27812 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : bill支付，日期：2022 数据不一致，旧接口数据：4200，新接口数据：0
+2024-12-26 21:08:21.728  INFO 27812 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : card支付，日期：2023 数据不一致，旧接口数据：2500，新接口数据：0
+2024-12-26 21:08:21.729  INFO 27812 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : card支付，日期：2022 数据不一致，旧接口数据：5550，新接口数据：0
+2024-12-26 21:08:21.735  INFO 27812 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : icc支付，日期：2022 数据不一致，旧接口数据：2352，新接口数据：21.02
+2024-12-26 21:08:21.736  INFO 27812 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比年度统计数据：~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2024-12-26 21:10:44.235  INFO 15288 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : Starting ProfitTest using Java 17.0.7 with PID 15288 (started by Administrator in C:\Users\Administrator\IdeaProjects\test-auto)
+2024-12-26 21:10:44.237  INFO 15288 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : No active profile set, falling back to 1 default profile: "default"
+2024-12-26 21:10:46.516  INFO 15288 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : Started ProfitTest in 2.675 seconds (process running for 3.443)
+2024-12-26 21:10:47.405  INFO 15288 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 账号：19034658903 正在对比数据
+2024-12-26 21:10:49.867  INFO 15288 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比天统计数据
+2024-12-26 21:10:49.873  INFO 15288 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比天统计数据
+2024-12-26 21:10:49.873  INFO 15288 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比周统计数据
+2024-12-26 21:10:49.877  INFO 15288 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比周统计数据
+2024-12-26 21:10:49.877  INFO 15288 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比月统计数据
+2024-12-26 21:10:49.880  INFO 15288 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比月统计数据
+2024-12-26 21:10:49.880  INFO 15288 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比季度统计数据
+2024-12-26 21:10:49.881  INFO 15288 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : bill支付，日期：2023_03 数据不一致，旧接口数据：100，新接口数据：0
+2024-12-26 21:10:49.881  INFO 15288 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : card支付，日期：2023_04 数据不一致，旧接口数据：800，新接口数据：0
+2024-12-26 21:10:49.882  INFO 15288 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : card支付，日期：2023_03 数据不一致，旧接口数据：500，新接口数据：0
+2024-12-26 21:10:49.882  INFO 15288 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : card支付，日期：2023_02 数据不一致，旧接口数据：700，新接口数据：0
+2024-12-26 21:10:49.883  INFO 15288 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比季度统计数据
+2024-12-26 21:10:49.883  INFO 15288 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比年度统计数据
+2024-12-26 21:10:49.884  INFO 15288 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : bill支付，日期：2023 数据不一致，旧接口数据：200，新接口数据：0
+2024-12-26 21:10:49.884  INFO 15288 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : bill支付，日期：2022 数据不一致，旧接口数据：4200，新接口数据：0
+2024-12-26 21:10:49.884  INFO 15288 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : card支付，日期：2023 数据不一致，旧接口数据：2500，新接口数据：0
+2024-12-26 21:10:49.884  INFO 15288 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : card支付，日期：2022 数据不一致，旧接口数据：5550，新接口数据：0
+2024-12-26 21:10:49.885  INFO 15288 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : icc支付，日期：2022 数据不一致，旧接口数据：2352，新接口数据：21.02
+2024-12-26 21:10:49.885  INFO 15288 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比年度统计数据
+2024-12-26 21:10:49.885  INFO 15288 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 账号：19034658903 对比数据结束 
+2024-12-26 21:11:51.370  INFO 19328 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : Starting ProfitTest using Java 17.0.7 with PID 19328 (started by Administrator in C:\Users\Administrator\IdeaProjects\test-auto)
+2024-12-26 21:11:51.372  INFO 19328 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : No active profile set, falling back to 1 default profile: "default"
+2024-12-26 21:11:53.516  INFO 19328 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : Started ProfitTest in 2.548 seconds (process running for 3.313)
+2024-12-26 21:11:54.396  INFO 19328 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 账号：19034658903 正在对比数据
+2024-12-26 21:11:56.933  INFO 19328 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比天统计数据
+2024-12-26 21:11:56.939  INFO 19328 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比天统计数据
+2024-12-26 21:11:56.939  INFO 19328 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比周统计数据
+2024-12-26 21:11:56.944  INFO 19328 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比周统计数据
+2024-12-26 21:11:56.944  INFO 19328 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比月统计数据
+2024-12-26 21:11:56.947  INFO 19328 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比月统计数据
+2024-12-26 21:11:56.947  INFO 19328 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比季度统计数据
+2024-12-26 21:11:56.948  INFO 19328 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : bill支付，日期：2023_03 数据不一致，旧接口数据：100，新接口数据：0
+2024-12-26 21:11:56.948  INFO 19328 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : card支付，日期：2023_04 数据不一致，旧接口数据：800，新接口数据：0
+2024-12-26 21:11:56.948  INFO 19328 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : card支付，日期：2023_03 数据不一致，旧接口数据：500，新接口数据：0
+2024-12-26 21:11:56.948  INFO 19328 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : card支付，日期：2023_02 数据不一致，旧接口数据：700，新接口数据：0
+2024-12-26 21:11:56.949  INFO 19328 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比季度统计数据
+2024-12-26 21:11:56.950  INFO 19328 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比年度统计数据
+2024-12-26 21:11:56.950  INFO 19328 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : bill支付，日期：2023 数据不一致，旧接口数据：200，新接口数据：0
+2024-12-26 21:11:56.950  INFO 19328 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : bill支付，日期：2022 数据不一致，旧接口数据：4200，新接口数据：0
+2024-12-26 21:11:56.950  INFO 19328 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : card支付，日期：2023 数据不一致，旧接口数据：2500，新接口数据：0
+2024-12-26 21:11:56.950  INFO 19328 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : card支付，日期：2022 数据不一致，旧接口数据：5550，新接口数据：0
+2024-12-26 21:11:56.951  INFO 19328 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : icc支付，日期：2022 数据不一致，旧接口数据：2352，新接口数据：21.02
+2024-12-26 21:11:56.951  INFO 19328 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比年度统计数据
+2024-12-26 21:11:56.951  INFO 19328 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 账号：19034658903 对比数据结束 
+2024-12-26 21:34:31.718  INFO 2988 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : Starting ProfitTest using Java 17.0.7 with PID 2988 (started by Administrator in C:\Users\Administrator\IdeaProjects\test-auto)
+2024-12-26 21:34:31.719  INFO 2988 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : No active profile set, falling back to 1 default profile: "default"
+2024-12-26 21:34:34.034  INFO 2988 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : Started ProfitTest in 2.698 seconds (process running for 3.482)
+2024-12-26 21:34:34.703  INFO 2988 --- [           main] cn.thtns.test.auto.verify.TokenManager   : Token 未找到，为账号 19034658903 生成新 Token...
+2024-12-26 21:34:35.001  INFO 2988 --- [           main] cn.thtns.test.auto.verify.TokenManager   : 成功获取 BEARER_TOKEN for 19034658903: bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzUyMjAwNzUsIm5iZiI6MTczNTIyMDA3NCwiZXhwIjoxNzM1ODI0ODc1LCJ1X2lkIjo0NzI2OSwidV90eXBlIjoyLCJjb21wYW55X2lkIjoyLCJpc3MiOiJkaWRpX3d6IiwiaXNfc3VwZXIiOjEsImlzX2FkbWluIjowLCJtaW5pX3NvdXJjZSI6Ind6IiwiaXNfc2hvd19zZXR0bGVhY2NvdW50X3JlY29yZCI6MH0.VfQIwpkd6z8HEumdxDKFd8DuKBrlCu8bem2ShCopzNA
+2024-12-26 21:34:35.001  INFO 2988 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 账号：19034658903 正在对比数据
+2024-12-26 21:34:37.486  INFO 2988 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比天统计数据
+2024-12-26 21:34:37.492  INFO 2988 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比天统计数据
+2024-12-26 21:34:37.492  INFO 2988 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比周统计数据
+2024-12-26 21:34:37.496  INFO 2988 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比周统计数据
+2024-12-26 21:34:37.496  INFO 2988 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比月统计数据
+2024-12-26 21:34:37.499  INFO 2988 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比月统计数据
+2024-12-26 21:34:37.499  INFO 2988 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比季度统计数据
+2024-12-26 21:34:37.500  INFO 2988 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : bill支付，日期：2023_03 数据不一致，旧接口数据：100，新接口数据：0
+2024-12-26 21:34:37.500  INFO 2988 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : card支付，日期：2023_04 数据不一致，旧接口数据：800，新接口数据：0
+2024-12-26 21:34:37.500  INFO 2988 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : card支付，日期：2023_03 数据不一致，旧接口数据：500，新接口数据：0
+2024-12-26 21:34:37.501  INFO 2988 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : card支付，日期：2023_02 数据不一致，旧接口数据：700，新接口数据：0
+2024-12-26 21:34:37.502  INFO 2988 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比季度统计数据
+2024-12-26 21:34:37.502  INFO 2988 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比年度统计数据
+2024-12-26 21:34:37.502  INFO 2988 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : bill支付，日期：2023 数据不一致，旧接口数据：200，新接口数据：0
+2024-12-26 21:34:37.502  INFO 2988 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : bill支付，日期：2022 数据不一致，旧接口数据：4200，新接口数据：0
+2024-12-26 21:34:37.502  INFO 2988 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : card支付，日期：2023 数据不一致，旧接口数据：2500，新接口数据：0
+2024-12-26 21:34:37.503  INFO 2988 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : card支付，日期：2022 数据不一致，旧接口数据：5550，新接口数据：0
+2024-12-26 21:34:37.503  INFO 2988 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : icc支付，日期：2022 数据不一致，旧接口数据：2352，新接口数据：21.02
+2024-12-26 21:34:37.503  INFO 2988 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比年度统计数据
+2024-12-26 21:34:37.503  INFO 2988 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 账号：19034658903 对比数据结束 
