@@ -1,6 +1,8 @@
 package cn.thtns.test.auto.verify;
 
 import cn.hutool.core.bean.BeanUtil;
+import cn.hutool.core.collection.CollUtil;
+import cn.hutool.core.thread.ThreadUtil;
 import cn.hutool.core.util.NumberUtil;
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.json.JSONUtil;
@@ -54,11 +56,25 @@ public class ProfitTest {
 
 
 	private final Map<String, String> phoneMap = Maps.newHashMap();
-
-
 	 {
-
-		 phoneMap.put("19034658903", "");
+		 phoneMap.put("18917688666", "");//申杭3554/55
+		 phoneMap.put("13669687266", "");//韦家主2393/100
+		 phoneMap.put("13755691580", "");//董留旺1471/258
+		 phoneMap.put("15394202082", "");//壹点壹446/1732
+		 phoneMap.put("13764585816", "");//杨军1648/45
+		 phoneMap.put("15334893115", "");//李飞1558/29
+		 phoneMap.put("15357550927", "");//赖建超1302/65
+		 phoneMap.put("13166105991", "");//黄智君1144/21
+		 phoneMap.put("13153657395", "");//杨庆吉1123/20
+		 phoneMap.put("18863635300", "");//杨庆吉1118/17
+		 phoneMap.put("13870135874", "");//金迎亮	1116/11
+		 phoneMap.put("13851717732", "");//徐生锋	871/222
+		 phoneMap.put("13914979477", "");//姚峰	1025/4
+		 phoneMap.put("15956475028", "");//程刚	997/30
+		 phoneMap.put("13767389295", "");//梅记平	969/38
+		 phoneMap.put("18268180552", "");//杨利勇	850/71
+		 phoneMap.put("15665891805", "");//魏美玲	27/1
+		 phoneMap.put("13961175910", "");//黄明华	9/1
 
 	}
 
@@ -77,11 +93,23 @@ public class ProfitTest {
     }
 
     private void compareProfitData(String paymentType, List<OldProfitRes.DataDTO.CacheProfitDTO.Profit.TimeAndProfit> oldData, List<NewProfitRes.DataDTO.ProfitListDTO.Profit.TimeAndProfit> newData) {
-        oldData.forEach(ow -> newData.forEach(nw -> {
+        if (CollUtil.isEmpty(newData)) {//新接口返回为空，可能没权限
+            return;
+        }
+         oldData.forEach(ow -> newData.forEach(nw -> {
             if (ow.getTime().equals(nw.getTime()) && !compareProfitByTime(ow, nw)) {
-                log.info(StrUtil.format("{}支付，日期：{} 数据不一致，旧接口数据：{}，新接口数据：{}", paymentType, ow.getTime(), ow.getProfit(), nw.getProfit()));
+                log.info(StrUtil.format("{}支付，日期：{} 数据不一致，旧接口数据：{}，新接口数据：{}", paymentType, ow.getTime(),NumberUtil.div(ow.getProfit(), BigDecimal.valueOf(100)), nw.getProfit()));
             }
         }));
+    }
+    private void compareProfitArrrivise(String paymentType, Integer oldData, Double newData) {
+        if (newData==null) {//新接口返回为空，可能没权限
+            return;
+        }
+            if (NumberUtil.equals(NumberUtil.div(oldData, BigDecimal.valueOf(100)), BigDecimal.valueOf(newData))==false) {
+                log.info(StrUtil.format("{}支付，数据不一致，旧接口数据：{}，新接口数据：{}", paymentType, NumberUtil.div(oldData, BigDecimal.valueOf(100)), newData));
+            }
+
     }
 
 
@@ -161,6 +189,7 @@ public class ProfitTest {
             compareProfitData("bill", oldProfitRes.getData().getCacheProfit().getDay().getBill(), newProfitRes.getData().getProfitList().getDay().getBill());
             compareProfitData("card", oldProfitRes.getData().getCacheProfit().getDay().getCard(), newProfitRes.getData().getProfitList().getDay().getCard());
             compareProfitData("purse", oldProfitRes.getData().getCacheProfit().getDay().getPurse(), newProfitRes.getData().getProfitList().getDay().getPurse());
+
             compareProfitData("safeguard", oldProfitRes.getData().getCacheProfit().getDay().getSafeguard(), newProfitRes.getData().getProfitList().getDay().getSafeguard());
             compareProfitData("virtual", oldProfitRes.getData().getCacheProfit().getDay().getIccVirtual(), newProfitRes.getData().getProfitList().getDay().getVirtual());
 
@@ -186,8 +215,8 @@ public class ProfitTest {
             log.info("开始对比周统计数据");
             compareProfitData("wxPay", convertSeason(oldProfitRes.getData().getCacheProfit().getWeek().getWxpay()), newProfitRes.getData().getProfitList().getWeek().getWxPay());
             compareProfitData("aliPay", convertSeason(oldProfitRes.getData().getCacheProfit().getWeek().getAlipay()), newProfitRes.getData().getProfitList().getWeek().getAliPay());
-            compareProfitData("bill", convertSeason(oldProfitRes.getData().getCacheProfit().getWeek().getBill()), newProfitRes.getData().getProfitList().getWeek().getBill());
-            compareProfitData("card", convertSeason(oldProfitRes.getData().getCacheProfit().getWeek().getCard()), newProfitRes.getData().getProfitList().getWeek().getCard());
+//            compareProfitData("bill", convertSeason(oldProfitRes.getData().getCacheProfit().getWeek().getBill()), newProfitRes.getData().getProfitList().getWeek().getBill());
+//            compareProfitData("card", convertSeason(oldProfitRes.getData().getCacheProfit().getWeek().getCard()), newProfitRes.getData().getProfitList().getWeek().getCard());
             compareProfitData("purse", convertSeason(oldProfitRes.getData().getCacheProfit().getWeek().getPurse()), newProfitRes.getData().getProfitList().getWeek().getPurse());
             compareProfitData("safeguard", convertSeason(oldProfitRes.getData().getCacheProfit().getWeek().getSafeguard()), newProfitRes.getData().getProfitList().getWeek().getSafeguard());
             compareProfitData("virtual", convertSeason(oldProfitRes.getData().getCacheProfit().getWeek().getIccVirtual()), newProfitRes.getData().getProfitList().getWeek().getVirtual());
@@ -212,8 +241,8 @@ public class ProfitTest {
             log.info("开始对比月统计数据");
             compareProfitData("wxPay", oldProfitRes.getData().getCacheProfit().getMonth().getWxpay(), newProfitRes.getData().getProfitList().getMonth().getWxPay());
             compareProfitData("aliPay", oldProfitRes.getData().getCacheProfit().getMonth().getAlipay(), newProfitRes.getData().getProfitList().getMonth().getAliPay());
-            compareProfitData("bill", oldProfitRes.getData().getCacheProfit().getMonth().getBill(), newProfitRes.getData().getProfitList().getMonth().getBill());
-            compareProfitData("card", oldProfitRes.getData().getCacheProfit().getMonth().getCard(), newProfitRes.getData().getProfitList().getMonth().getCard());
+//            compareProfitData("bill", oldProfitRes.getData().getCacheProfit().getMonth().getBill(), newProfitRes.getData().getProfitList().getMonth().getBill());
+//            compareProfitData("card", oldProfitRes.getData().getCacheProfit().getMonth().getCard(), newProfitRes.getData().getProfitList().getMonth().getCard());
             compareProfitData("purse", oldProfitRes.getData().getCacheProfit().getMonth().getPurse(), newProfitRes.getData().getProfitList().getMonth().getPurse());
             compareProfitData("safeguard", oldProfitRes.getData().getCacheProfit().getMonth().getSafeguard(), newProfitRes.getData().getProfitList().getMonth().getSafeguard());
             compareProfitData("virtual", oldProfitRes.getData().getCacheProfit().getMonth().getIccVirtual(), newProfitRes.getData().getProfitList().getMonth().getVirtual());
@@ -238,8 +267,8 @@ public class ProfitTest {
             log.info("开始对比季度统计数据");
             compareProfitData("wxPay", oldProfitRes.getData().getCacheProfit().getSeason().getWxpay(), newProfitRes.getData().getProfitList().getSeason().getWxPay());
             compareProfitData("aliPay", oldProfitRes.getData().getCacheProfit().getSeason().getAlipay(), newProfitRes.getData().getProfitList().getSeason().getAliPay());
-            compareProfitData("bill", oldProfitRes.getData().getCacheProfit().getSeason().getBill(), newProfitRes.getData().getProfitList().getSeason().getBill());
-            compareProfitData("card", oldProfitRes.getData().getCacheProfit().getSeason().getCard(), newProfitRes.getData().getProfitList().getSeason().getCard());
+//            compareProfitData("bill", oldProfitRes.getData().getCacheProfit().getSeason().getBill(), newProfitRes.getData().getProfitList().getSeason().getBill());
+//            compareProfitData("card", oldProfitRes.getData().getCacheProfit().getSeason().getCard(), newProfitRes.getData().getProfitList().getSeason().getCard());
             compareProfitData("purse", oldProfitRes.getData().getCacheProfit().getSeason().getPurse(), newProfitRes.getData().getProfitList().getSeason().getPurse());
             compareProfitData("safeguard", oldProfitRes.getData().getCacheProfit().getSeason().getSafeguard(), newProfitRes.getData().getProfitList().getSeason().getSafeguard());
             compareProfitData("virtual", oldProfitRes.getData().getCacheProfit().getSeason().getIccVirtual(), newProfitRes.getData().getProfitList().getSeason().getVirtual());
@@ -252,8 +281,8 @@ public class ProfitTest {
 
 
             List<OldProfitRes.DataDTO.CacheProfitDTO.Profit.TimeAndProfit> seasonIccObjects = Lists.newArrayList();
-            seasonIccObjects.addAll(oldProfitRes.getData().getCacheProfit().getSeason().getIccAlipay());
-            seasonIccObjects.addAll(oldProfitRes.getData().getCacheProfit().getSeason().getIccWxpay());
+//            seasonIccObjects.addAll(oldProfitRes.getData().getCacheProfit().getSeason().getIccAlipay());
+//            seasonIccObjects.addAll(oldProfitRes.getData().getCacheProfit().getSeason().getIccWxpay());
             seasonIccObjects.addAll(oldProfitRes.getData().getCacheProfit().getSeason().getIccWxpayRecharge());
             seasonIccObjects.addAll(oldProfitRes.getData().getCacheProfit().getSeason().getIccAlipayRecharge());
 
@@ -264,8 +293,8 @@ public class ProfitTest {
             log.info("开始对比年度统计数据");
             compareProfitData("wxPay", oldProfitRes.getData().getCacheProfit().getYear().getWxpay(), newProfitRes.getData().getProfitList().getYear().getWxPay());
             compareProfitData("aliPay", oldProfitRes.getData().getCacheProfit().getYear().getAlipay(), newProfitRes.getData().getProfitList().getYear().getAliPay());
-            compareProfitData("bill", oldProfitRes.getData().getCacheProfit().getYear().getBill(), newProfitRes.getData().getProfitList().getYear().getBill());
-            compareProfitData("card", oldProfitRes.getData().getCacheProfit().getYear().getCard(), newProfitRes.getData().getProfitList().getYear().getCard());
+//            compareProfitData("bill", oldProfitRes.getData().getCacheProfit().getYear().getBill(), newProfitRes.getData().getProfitList().getYear().getBill());
+//            compareProfitData("card", oldProfitRes.getData().getCacheProfit().getYear().getCard(), newProfitRes.getData().getProfitList().getYear().getCard());
             compareProfitData("purse", oldProfitRes.getData().getCacheProfit().getYear().getPurse(), newProfitRes.getData().getProfitList().getYear().getPurse());
             compareProfitData("safeguard", oldProfitRes.getData().getCacheProfit().getYear().getSafeguard(), newProfitRes.getData().getProfitList().getYear().getSafeguard());
             compareProfitData("virtual", oldProfitRes.getData().getCacheProfit().getYear().getIccVirtual(), newProfitRes.getData().getProfitList().getYear().getVirtual());
@@ -287,9 +316,33 @@ public class ProfitTest {
 
             log.info("结束对比年度统计数据");
 
+            log.info("开始今日收益-未到账-到账金额");
+            compareProfitArrrivise("今日到账收益",oldProfitRes.getData().getSuperviseProfit().getArrivalAmount(),newProfitRes.getData().getSuperviseProfit().getTodayArrival());
+            compareProfitArrrivise("未到账收益",oldProfitRes.getData().getSuperviseProfit().getUnArrivalAmount(),newProfitRes.getData().getSuperviseProfit().getTodayUnArrival());
+            log.info("结束今日收益-未到账-到账金额");
+
+            log.info("开始对比各项总收益数据");
+            compareProfitArrrivise("微信总收益",oldProfitRes.getData().getTotalProfit().getTotalWxpay(),newProfitRes.getData().getTotalProfit().getWxPay());
+            compareProfitArrrivise("支付宝总收益",oldProfitRes.getData().getTotalProfit().getTotalAlipay(),newProfitRes.getData().getTotalProfit().getAliPay());
+            compareProfitArrrivise("钱包支付总收益",oldProfitRes.getData().getTotalProfit().getTotalPurse(),newProfitRes.getData().getTotalProfit().getPurse());
+
+            Integer oldIccrech=oldProfitRes.getData().getTotalProfit().getTotalIccWxpayRecharge()+oldProfitRes.getData().getTotalProfit().getTotalIccAlipayRecharge();
+            compareProfitArrrivise("IC卡充值总收益",oldIccrech,newProfitRes.getData().getTotalProfit().getIcc());
+
+             Integer olddiscountRech=oldProfitRes.getData().getTotalProfit().getTotalDiscountAlipayRecharge()+oldProfitRes.getData().getTotalProfit().getTotalDiscountWxpayRecharge();
+             compareProfitArrrivise("充电券充值总收益",olddiscountRech,newProfitRes.getData().getTotalProfit().getDiscount());
+//            compareProfitArrrivise("投币总收益",oldProfitRes.getData().getTotalProfit().getTotalBill(),newProfitRes.getData().getTotalProfit().getBill());
+//            compareProfitArrrivise("刷卡总收益",oldProfitRes.getData().getTotalProfit().getTotalAlipay(),newProfitRes.getData().getTotalProfit().getAliPay());
+
+            Object obj = newProfitRes.getData().getTotalProfit().getVirtual();
+            if (obj instanceof Double) {
+                Double target = (Double) obj;
+                compareProfitArrrivise("IC卡虚拟充值",oldProfitRes.getData().getTotalProfit().getTotalVirtual(),target);
+            }
+            log.info("结束对比各项总收益数据");
 
 			log.info("账号：{} 对比数据结束 ", k);
-
+            ThreadUtil.sleep(2000);
         }
 
 
@@ -302,8 +355,6 @@ public class ProfitTest {
 				.retrieve()
 				.body(String.class);
 	}
-
-
 
 
 

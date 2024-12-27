@@ -84,9 +84,9 @@ public class NewProfitRes {
 		@NoArgsConstructor
 		public static class SuperviseProfitDTO {
 			@JsonProperty("todayArrival")
-			private Integer todayArrival;
+			private Double todayArrival;
 			@JsonProperty("todayUnArrival")
-			private Integer todayUnArrival;
+			private Double todayUnArrival;
 
 
 		}
