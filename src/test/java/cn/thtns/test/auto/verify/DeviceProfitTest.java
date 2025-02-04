@@ -3,6 +3,8 @@ package cn.thtns.test.auto.verify;
 import cn.hutool.core.util.NumberUtil;
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.json.JSONUtil;
+import cn.thtns.test.auto.entity.SysUser;
+import cn.thtns.test.auto.mapper.SysUserMapper;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.qameta.allure.Description;
@@ -72,6 +74,9 @@ public class DeviceProfitTest {
 
     @Autowired
     private TokenManager tokenManager;
+
+    @Autowired
+    private SysUserMapper sysUserMapper;
 
 
     private final Map<String, String> phoneMap = Maps.newHashMap();
@@ -188,6 +193,11 @@ public class DeviceProfitTest {
     @Description("对比数据")
     @Test
     public void profitComparison() throws JsonProcessingException {
+
+        List<SysUser> userVoByUsername = sysUserMapper.listAll();
+
+//        log.info("user:{}",userVoByUsername);
+
 
         for (Map.Entry<String, String> entry : phoneMap.entrySet()) {
 

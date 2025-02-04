@@ -73,6 +73,11 @@
             <version>3.5.9</version>
         </dependency>
         <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>dynamic-datasource-spring-boot3-starter</artifactId>
+            <version>4.3.1</version>
+        </dependency>
+        <dependency>
             <groupId>cn.hutool</groupId>
             <artifactId>hutool-all</artifactId>
             <version>5.8.16</version>

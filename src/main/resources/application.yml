@@ -2,12 +2,32 @@ spring:
   application:
     name: test-auto
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    username: wz_select_2021
-    password: #LrX9y$P1GtF2c*@
-    url: jdbc:mysql://rm-bp1h9766py8bq2468co.mysql.rds.aliyuncs.com:3306/wz_wz?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2B8&allowMultiQueries=true&nullCatalogMeansCurrent=true
+    dynamic:
+      primary: order #设置默认的数据源或者数据源组,默认值即为master
+      strict: false #严格匹配数据源,默认false. true未匹配到指定数据源时抛异常,false使用默认数据源
+      datasource:
+        order:
+          url: jdbc:mysql://rr-bp1g8x8p43j5v2a5wao.mysql.rds.aliyuncs.com:3306/test?useSSL=false&serverTimezone=Asia/Shanghai
+          username: root
+          password: 123456
+          type: com.zaxxer.hikari.HikariDataSource
+  #        split:
+  #          url: jdbc:mysql://rm-bp1yo55w42q8j7244bo.mysql.rds.aliyuncs.com:3306/dynamic
+  #          username: root
+  #          password: 123456
+  #        profit:
+  #          url: jdbc:mysql://rm-bp1zyxv99pant6o96no.mysql.rds.aliyuncs.com:3306/dynamic # 内置加密,使用请查看详细文档
+  #          username: ENC(xxxxx)
+  #          password: ENC(xxxxx)
+
+
+
 server:
   port: 10010
+
+# rr-bp1g8x8p43j5v2a5wao.mysql.rds.aliyuncs.com  订单
+# rm-bp1yo55w42q8j7244bo.mysql.rds.aliyuncs.com  拆分copy
+# rm-bp1zyxv99pant6o96no.mysql.rds.aliyuncs.com  分成
 
 
 

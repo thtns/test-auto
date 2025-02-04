@@ -20,6 +20,7 @@
 package cn.thtns.test.auto.mapper;
 
 import cn.thtns.test.auto.entity.SysUser;
+import com.baomidou.dynamic.datasource.annotation.DS;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
@@ -40,12 +41,12 @@ import java.util.List;
 @Mapper
 public interface SysUserMapper extends BaseMapper<SysUser> {
 
-	/**
-	 * 通过用户名查询用户信息（含有角色信息）
-	 * @param username 用户名
-	 * @return userVo
-	 */
-	SysUser getUserVoByUsername(String username);
+
+	@DS("order")
+	List<SysUser> listAll();
+
+	@DS("spilt")
+	List<SysUser> listAl1l();
 
 
 
