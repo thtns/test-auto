@@ -26,6 +26,7 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.WeekFields;
+import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
@@ -75,6 +76,27 @@ public class ProfitTest {
 		 phoneMap.put("18268180552", "");//杨利勇	850/71
 		 phoneMap.put("15665891805", "");//魏美玲	27/1
 		 phoneMap.put("13961175910", "");//黄明华	9/1
+		 phoneMap.put("18010839135", "");//刘雪梅	5/1
+		 phoneMap.put("18879191518", "");//南昌涅生环保科技有限公司	504/316
+		 phoneMap.put("13333703000", "");//赵亚中	698/64
+		 phoneMap.put("13093705353", "");//陈伟	683/48
+		 phoneMap.put("13761260055", "");//伍志军	659/34
+		 phoneMap.put("18951280000", "");//江苏力能	612/77
+		 phoneMap.put("18805114320", "");//郑晟	647/24
+
+//		 phoneMap.put("19918644486", "");//合伙人
+//		 phoneMap.put("18679504216", "");//合伙人
+//		 phoneMap.put("18067955556 ", "");//合伙人
+//		 phoneMap.put("18933321888", "");//合伙人
+//		 phoneMap.put("18687776323", "");//合伙人
+//		 phoneMap.put("13632801186", "");//合伙人
+//		 phoneMap.put("15212485580", "");//合伙人
+//		 phoneMap.put("13849059026", "");//合伙人
+//		 phoneMap.put("18986422555", "");//合伙人
+//		 phoneMap.put("13623792522", "");//合伙人
+//		 phoneMap.put("13653892382", "");//合伙人
+//		 phoneMap.put("15806183354", "");//合伙人
+//		 phoneMap.put("13588374318", "");//合伙人
 
 	}
 
@@ -182,7 +204,9 @@ public class ProfitTest {
 
             OldProfitRes oldProfitRes = objectMapper.readValue(getApiResponse(OLD_PROFIT_API, bearerToken), OldProfitRes.class);
             NewProfitRes newProfitRes = objectMapper.readValue(getApiResponse(NEW_PROFIT_API, bearerToken), NewProfitRes.class);
-
+            if (newProfitRes.getData()==null) {
+                continue;
+            }
             log.info("开始对比天统计数据");
             compareProfitData("wxPay", oldProfitRes.getData().getCacheProfit().getDay().getWxpay(), newProfitRes.getData().getProfitList().getDay().getWxPay());
             compareProfitData("aliPay", oldProfitRes.getData().getCacheProfit().getDay().getAlipay(), newProfitRes.getData().getProfitList().getDay().getAliPay());

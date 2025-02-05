@@ -1,151 +1,599 @@
-2024-12-25 17:37:13.629  INFO 6353 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : Starting ProfitTest using Java 17.0.12 with PID 6353 (/Users/liuyujun/ideaProjects/personal/test-auto/target/test-classes started by liuyujun in /Users/liuyujun/ideaProjects/personal/test-auto)
-2024-12-25 17:37:13.633  INFO 6353 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : No active profile set, falling back to 1 default profile: "default"
-2024-12-25 17:37:15.721  INFO 6353 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : Started ProfitTest in 2.632 seconds (process running for 4.51)
-2024-12-25 17:39:13.456  INFO 6375 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : Starting ProfitTest using Java 17.0.12 with PID 6375 (/Users/liuyujun/ideaProjects/personal/test-auto/target/test-classes started by liuyujun in /Users/liuyujun/ideaProjects/personal/test-auto)
-2024-12-25 17:39:13.458  INFO 6375 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : No active profile set, falling back to 1 default profile: "default"
-2024-12-25 17:39:15.912  INFO 6375 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : Started ProfitTest in 2.838 seconds (process running for 4.173)
-2024-12-25 17:40:05.412  INFO 6395 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : Starting ProfitTest using Java 17.0.12 with PID 6395 (/Users/liuyujun/ideaProjects/personal/test-auto/target/test-classes started by liuyujun in /Users/liuyujun/ideaProjects/personal/test-auto)
-2024-12-25 17:40:05.415  INFO 6395 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : No active profile set, falling back to 1 default profile: "default"
-2024-12-25 17:40:07.516  INFO 6395 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : Started ProfitTest in 2.549 seconds (process running for 4.462)
-2024-12-25 17:41:16.272  INFO 6405 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : Starting ProfitTest using Java 17.0.12 with PID 6405 (/Users/liuyujun/ideaProjects/personal/test-auto/target/test-classes started by liuyujun in /Users/liuyujun/ideaProjects/personal/test-auto)
-2024-12-25 17:41:16.275  INFO 6405 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : No active profile set, falling back to 1 default profile: "default"
-2024-12-25 17:41:18.422  INFO 6405 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : Started ProfitTest in 2.681 seconds (process running for 5.03)
-2024-12-25 17:45:07.251  INFO 6446 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : Starting ProfitTest using Java 17.0.12 with PID 6446 (/Users/liuyujun/ideaProjects/personal/test-auto/target/test-classes started by liuyujun in /Users/liuyujun/ideaProjects/personal/test-auto)
-2024-12-25 17:45:07.253  INFO 6446 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : No active profile set, falling back to 1 default profile: "default"
-2024-12-25 17:45:09.439  INFO 6446 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : Started ProfitTest in 2.728 seconds (process running for 4.626)
-2024-12-25 17:45:51.217  INFO 6460 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : Starting ProfitTest using Java 17.0.12 with PID 6460 (/Users/liuyujun/ideaProjects/personal/test-auto/target/test-classes started by liuyujun in /Users/liuyujun/ideaProjects/personal/test-auto)
-2024-12-25 17:45:51.219  INFO 6460 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : No active profile set, falling back to 1 default profile: "default"
-2024-12-25 17:45:53.569  INFO 6460 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : Started ProfitTest in 3.038 seconds (process running for 5.195)
-2024-12-26 20:07:03.958  INFO 23464 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : Starting ProfitTest using Java 17.0.7 with PID 23464 (started by Administrator in C:\Users\Administrator\IdeaProjects\test-auto)
-2024-12-26 20:07:03.960  INFO 23464 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : No active profile set, falling back to 1 default profile: "default"
-2024-12-26 20:07:06.092  INFO 23464 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : Started ProfitTest in 2.549 seconds (process running for 3.328)
-2024-12-26 20:34:44.452  INFO 12792 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : Starting ProfitTest using Java 17.0.7 with PID 12792 (started by Administrator in C:\Users\Administrator\IdeaProjects\test-auto)
-2024-12-26 20:34:44.454  INFO 12792 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : No active profile set, falling back to 1 default profile: "default"
-2024-12-26 20:34:46.597  INFO 12792 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : Started ProfitTest in 2.562 seconds (process running for 3.309)
-2024-12-26 20:38:22.541  INFO 15716 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : Starting ProfitTest using Java 17.0.7 with PID 15716 (started by Administrator in C:\Users\Administrator\IdeaProjects\test-auto)
-2024-12-26 20:38:22.544  INFO 15716 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : No active profile set, falling back to 1 default profile: "default"
-2024-12-26 20:38:24.654  INFO 15716 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : Started ProfitTest in 2.515 seconds (process running for 3.276)
-2024-12-26 20:40:23.134  INFO 26112 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : Starting ProfitTest using Java 17.0.7 with PID 26112 (started by Administrator in C:\Users\Administrator\IdeaProjects\test-auto)
-2024-12-26 20:40:23.137  INFO 26112 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : No active profile set, falling back to 1 default profile: "default"
-2024-12-26 20:40:25.473  INFO 26112 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : Started ProfitTest in 2.734 seconds (process running for 3.501)
-2024-12-26 20:40:28.842  INFO 26112 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比天统计数据：~~~~~~~~~~~~~~~~~~~~~~~~~~~
-2024-12-26 20:40:28.853  INFO 26112 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比天统计数据：~~~~~~~~~~~~~~~~~~~~~~~~~~~
-2024-12-26 20:40:28.854  INFO 26112 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比周统计数据：~~~~~~~~~~~~~~~~~~~~~~~~~~~
-2024-12-26 20:40:28.859  INFO 26112 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比周统计数据：~~~~~~~~~~~~~~~~~~~~~~~~~~~
-2024-12-26 20:40:28.859  INFO 26112 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比月统计数据：~~~~~~~~~~~~~~~~~~~~~~~~~~~
-2024-12-26 20:40:28.862  INFO 26112 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比月统计数据：~~~~~~~~~~~~~~~~~~~~~~~~~~~
-2024-12-26 20:40:28.862  INFO 26112 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比季度统计数据：~~~~~~~~~~~~~~~~~~~~~~~~~~~
-2024-12-26 20:40:28.869  INFO 26112 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : bill支付，日期：2023_03 数据不一致，旧接口数据：100，新接口数据：0
-2024-12-26 20:40:28.869  INFO 26112 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : card支付，日期：2023_04 数据不一致，旧接口数据：800，新接口数据：0
-2024-12-26 20:40:28.869  INFO 26112 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : card支付，日期：2023_03 数据不一致，旧接口数据：500，新接口数据：0
-2024-12-26 20:40:28.869  INFO 26112 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : card支付，日期：2023_02 数据不一致，旧接口数据：700，新接口数据：0
-2024-12-26 20:40:28.870  INFO 26112 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比季度统计数据：~~~~~~~~~~~~~~~~~~~~~~~~~~~
-2024-12-26 20:40:28.870  INFO 26112 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比年度统计数据：~~~~~~~~~~~~~~~~~~~~~~~~~~~
-2024-12-26 20:40:28.871  INFO 26112 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : bill支付，日期：2023 数据不一致，旧接口数据：200，新接口数据：0
-2024-12-26 20:40:28.871  INFO 26112 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : bill支付，日期：2022 数据不一致，旧接口数据：4200，新接口数据：0
-2024-12-26 20:40:28.871  INFO 26112 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : card支付，日期：2023 数据不一致，旧接口数据：2500，新接口数据：0
-2024-12-26 20:40:28.871  INFO 26112 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : card支付，日期：2022 数据不一致，旧接口数据：5550，新接口数据：0
-2024-12-26 20:40:28.872  INFO 26112 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : icc支付，日期：2022 数据不一致，旧接口数据：2352，新接口数据：21.02
-2024-12-26 20:40:28.872  INFO 26112 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比年度统计数据：~~~~~~~~~~~~~~~~~~~~~~~~~~~
-2024-12-26 21:06:14.297  INFO 18288 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : Starting ProfitTest using Java 17.0.7 with PID 18288 (started by Administrator in C:\Users\Administrator\IdeaProjects\test-auto)
-2024-12-26 21:06:14.299  INFO 18288 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : No active profile set, falling back to 1 default profile: "default"
-2024-12-26 21:06:16.661  INFO 18288 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : Started ProfitTest in 2.78 seconds (process running for 3.922)
-2024-12-26 21:07:12.905  INFO 19416 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : Starting ProfitTest using Java 17.0.7 with PID 19416 (started by Administrator in C:\Users\Administrator\IdeaProjects\test-auto)
-2024-12-26 21:07:12.907  INFO 19416 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : No active profile set, falling back to 1 default profile: "default"
-2024-12-26 21:07:15.075  INFO 19416 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : Started ProfitTest in 2.588 seconds (process running for 3.41)
-2024-12-26 21:07:51.489  INFO 27812 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : Starting ProfitTest using Java 17.0.7 with PID 27812 (started by Administrator in C:\Users\Administrator\IdeaProjects\test-auto)
-2024-12-26 21:07:51.491  INFO 27812 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : No active profile set, falling back to 1 default profile: "default"
-2024-12-26 21:07:53.710  INFO 27812 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : Started ProfitTest in 2.646 seconds (process running for 3.485)
-2024-12-26 21:08:21.630  INFO 27812 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比天统计数据：~~~~~~~~~~~~~~~~~~~~~~~~~~~
-2024-12-26 21:08:21.659  INFO 27812 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比天统计数据：~~~~~~~~~~~~~~~~~~~~~~~~~~~
-2024-12-26 21:08:21.660  INFO 27812 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比周统计数据：~~~~~~~~~~~~~~~~~~~~~~~~~~~
-2024-12-26 21:08:21.681  INFO 27812 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比周统计数据：~~~~~~~~~~~~~~~~~~~~~~~~~~~
-2024-12-26 21:08:21.682  INFO 27812 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比月统计数据：~~~~~~~~~~~~~~~~~~~~~~~~~~~
-2024-12-26 21:08:21.700  INFO 27812 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比月统计数据：~~~~~~~~~~~~~~~~~~~~~~~~~~~
-2024-12-26 21:08:21.701  INFO 27812 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比季度统计数据：~~~~~~~~~~~~~~~~~~~~~~~~~~~
-2024-12-26 21:08:21.708  INFO 27812 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : bill支付，日期：2023_03 数据不一致，旧接口数据：100，新接口数据：0
-2024-12-26 21:08:21.710  INFO 27812 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : card支付，日期：2023_04 数据不一致，旧接口数据：800，新接口数据：0
-2024-12-26 21:08:21.711  INFO 27812 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : card支付，日期：2023_03 数据不一致，旧接口数据：500，新接口数据：0
-2024-12-26 21:08:21.712  INFO 27812 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : card支付，日期：2023_02 数据不一致，旧接口数据：700，新接口数据：0
-2024-12-26 21:08:21.722  INFO 27812 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比季度统计数据：~~~~~~~~~~~~~~~~~~~~~~~~~~~
-2024-12-26 21:08:21.723  INFO 27812 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比年度统计数据：~~~~~~~~~~~~~~~~~~~~~~~~~~~
-2024-12-26 21:08:21.726  INFO 27812 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : bill支付，日期：2023 数据不一致，旧接口数据：200，新接口数据：0
-2024-12-26 21:08:21.727  INFO 27812 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : bill支付，日期：2022 数据不一致，旧接口数据：4200，新接口数据：0
-2024-12-26 21:08:21.728  INFO 27812 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : card支付，日期：2023 数据不一致，旧接口数据：2500，新接口数据：0
-2024-12-26 21:08:21.729  INFO 27812 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : card支付，日期：2022 数据不一致，旧接口数据：5550，新接口数据：0
-2024-12-26 21:08:21.735  INFO 27812 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : icc支付，日期：2022 数据不一致，旧接口数据：2352，新接口数据：21.02
-2024-12-26 21:08:21.736  INFO 27812 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比年度统计数据：~~~~~~~~~~~~~~~~~~~~~~~~~~~
-2024-12-26 21:10:44.235  INFO 15288 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : Starting ProfitTest using Java 17.0.7 with PID 15288 (started by Administrator in C:\Users\Administrator\IdeaProjects\test-auto)
-2024-12-26 21:10:44.237  INFO 15288 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : No active profile set, falling back to 1 default profile: "default"
-2024-12-26 21:10:46.516  INFO 15288 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : Started ProfitTest in 2.675 seconds (process running for 3.443)
-2024-12-26 21:10:47.405  INFO 15288 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 账号：19034658903 正在对比数据
-2024-12-26 21:10:49.867  INFO 15288 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比天统计数据
-2024-12-26 21:10:49.873  INFO 15288 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比天统计数据
-2024-12-26 21:10:49.873  INFO 15288 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比周统计数据
-2024-12-26 21:10:49.877  INFO 15288 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比周统计数据
-2024-12-26 21:10:49.877  INFO 15288 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比月统计数据
-2024-12-26 21:10:49.880  INFO 15288 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比月统计数据
-2024-12-26 21:10:49.880  INFO 15288 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比季度统计数据
-2024-12-26 21:10:49.881  INFO 15288 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : bill支付，日期：2023_03 数据不一致，旧接口数据：100，新接口数据：0
-2024-12-26 21:10:49.881  INFO 15288 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : card支付，日期：2023_04 数据不一致，旧接口数据：800，新接口数据：0
-2024-12-26 21:10:49.882  INFO 15288 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : card支付，日期：2023_03 数据不一致，旧接口数据：500，新接口数据：0
-2024-12-26 21:10:49.882  INFO 15288 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : card支付，日期：2023_02 数据不一致，旧接口数据：700，新接口数据：0
-2024-12-26 21:10:49.883  INFO 15288 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比季度统计数据
-2024-12-26 21:10:49.883  INFO 15288 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比年度统计数据
-2024-12-26 21:10:49.884  INFO 15288 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : bill支付，日期：2023 数据不一致，旧接口数据：200，新接口数据：0
-2024-12-26 21:10:49.884  INFO 15288 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : bill支付，日期：2022 数据不一致，旧接口数据：4200，新接口数据：0
-2024-12-26 21:10:49.884  INFO 15288 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : card支付，日期：2023 数据不一致，旧接口数据：2500，新接口数据：0
-2024-12-26 21:10:49.884  INFO 15288 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : card支付，日期：2022 数据不一致，旧接口数据：5550，新接口数据：0
-2024-12-26 21:10:49.885  INFO 15288 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : icc支付，日期：2022 数据不一致，旧接口数据：2352，新接口数据：21.02
-2024-12-26 21:10:49.885  INFO 15288 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比年度统计数据
-2024-12-26 21:10:49.885  INFO 15288 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 账号：19034658903 对比数据结束 
-2024-12-26 21:11:51.370  INFO 19328 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : Starting ProfitTest using Java 17.0.7 with PID 19328 (started by Administrator in C:\Users\Administrator\IdeaProjects\test-auto)
-2024-12-26 21:11:51.372  INFO 19328 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : No active profile set, falling back to 1 default profile: "default"
-2024-12-26 21:11:53.516  INFO 19328 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : Started ProfitTest in 2.548 seconds (process running for 3.313)
-2024-12-26 21:11:54.396  INFO 19328 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 账号：19034658903 正在对比数据
-2024-12-26 21:11:56.933  INFO 19328 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比天统计数据
-2024-12-26 21:11:56.939  INFO 19328 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比天统计数据
-2024-12-26 21:11:56.939  INFO 19328 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比周统计数据
-2024-12-26 21:11:56.944  INFO 19328 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比周统计数据
-2024-12-26 21:11:56.944  INFO 19328 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比月统计数据
-2024-12-26 21:11:56.947  INFO 19328 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比月统计数据
-2024-12-26 21:11:56.947  INFO 19328 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比季度统计数据
-2024-12-26 21:11:56.948  INFO 19328 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : bill支付，日期：2023_03 数据不一致，旧接口数据：100，新接口数据：0
-2024-12-26 21:11:56.948  INFO 19328 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : card支付，日期：2023_04 数据不一致，旧接口数据：800，新接口数据：0
-2024-12-26 21:11:56.948  INFO 19328 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : card支付，日期：2023_03 数据不一致，旧接口数据：500，新接口数据：0
-2024-12-26 21:11:56.948  INFO 19328 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : card支付，日期：2023_02 数据不一致，旧接口数据：700，新接口数据：0
-2024-12-26 21:11:56.949  INFO 19328 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比季度统计数据
-2024-12-26 21:11:56.950  INFO 19328 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比年度统计数据
-2024-12-26 21:11:56.950  INFO 19328 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : bill支付，日期：2023 数据不一致，旧接口数据：200，新接口数据：0
-2024-12-26 21:11:56.950  INFO 19328 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : bill支付，日期：2022 数据不一致，旧接口数据：4200，新接口数据：0
-2024-12-26 21:11:56.950  INFO 19328 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : card支付，日期：2023 数据不一致，旧接口数据：2500，新接口数据：0
-2024-12-26 21:11:56.950  INFO 19328 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : card支付，日期：2022 数据不一致，旧接口数据：5550，新接口数据：0
-2024-12-26 21:11:56.951  INFO 19328 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : icc支付，日期：2022 数据不一致，旧接口数据：2352，新接口数据：21.02
-2024-12-26 21:11:56.951  INFO 19328 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比年度统计数据
-2024-12-26 21:11:56.951  INFO 19328 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 账号：19034658903 对比数据结束 
-2024-12-26 21:34:31.718  INFO 2988 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : Starting ProfitTest using Java 17.0.7 with PID 2988 (started by Administrator in C:\Users\Administrator\IdeaProjects\test-auto)
-2024-12-26 21:34:31.719  INFO 2988 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : No active profile set, falling back to 1 default profile: "default"
-2024-12-26 21:34:34.034  INFO 2988 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : Started ProfitTest in 2.698 seconds (process running for 3.482)
-2024-12-26 21:34:34.703  INFO 2988 --- [           main] cn.thtns.test.auto.verify.TokenManager   : Token 未找到，为账号 19034658903 生成新 Token...
-2024-12-26 21:34:35.001  INFO 2988 --- [           main] cn.thtns.test.auto.verify.TokenManager   : 成功获取 BEARER_TOKEN for 19034658903: bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzUyMjAwNzUsIm5iZiI6MTczNTIyMDA3NCwiZXhwIjoxNzM1ODI0ODc1LCJ1X2lkIjo0NzI2OSwidV90eXBlIjoyLCJjb21wYW55X2lkIjoyLCJpc3MiOiJkaWRpX3d6IiwiaXNfc3VwZXIiOjEsImlzX2FkbWluIjowLCJtaW5pX3NvdXJjZSI6Ind6IiwiaXNfc2hvd19zZXR0bGVhY2NvdW50X3JlY29yZCI6MH0.VfQIwpkd6z8HEumdxDKFd8DuKBrlCu8bem2ShCopzNA
-2024-12-26 21:34:35.001  INFO 2988 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 账号：19034658903 正在对比数据
-2024-12-26 21:34:37.486  INFO 2988 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比天统计数据
-2024-12-26 21:34:37.492  INFO 2988 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比天统计数据
-2024-12-26 21:34:37.492  INFO 2988 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比周统计数据
-2024-12-26 21:34:37.496  INFO 2988 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比周统计数据
-2024-12-26 21:34:37.496  INFO 2988 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比月统计数据
-2024-12-26 21:34:37.499  INFO 2988 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比月统计数据
-2024-12-26 21:34:37.499  INFO 2988 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比季度统计数据
-2024-12-26 21:34:37.500  INFO 2988 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : bill支付，日期：2023_03 数据不一致，旧接口数据：100，新接口数据：0
-2024-12-26 21:34:37.500  INFO 2988 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : card支付，日期：2023_04 数据不一致，旧接口数据：800，新接口数据：0
-2024-12-26 21:34:37.500  INFO 2988 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : card支付，日期：2023_03 数据不一致，旧接口数据：500，新接口数据：0
-2024-12-26 21:34:37.501  INFO 2988 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : card支付，日期：2023_02 数据不一致，旧接口数据：700，新接口数据：0
-2024-12-26 21:34:37.502  INFO 2988 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比季度统计数据
-2024-12-26 21:34:37.502  INFO 2988 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比年度统计数据
-2024-12-26 21:34:37.502  INFO 2988 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : bill支付，日期：2023 数据不一致，旧接口数据：200，新接口数据：0
-2024-12-26 21:34:37.502  INFO 2988 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : bill支付，日期：2022 数据不一致，旧接口数据：4200，新接口数据：0
-2024-12-26 21:34:37.502  INFO 2988 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : card支付，日期：2023 数据不一致，旧接口数据：2500，新接口数据：0
-2024-12-26 21:34:37.503  INFO 2988 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : card支付，日期：2022 数据不一致，旧接口数据：5550，新接口数据：0
-2024-12-26 21:34:37.503  INFO 2988 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : icc支付，日期：2022 数据不一致，旧接口数据：2352，新接口数据：21.02
-2024-12-26 21:34:37.503  INFO 2988 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比年度统计数据
-2024-12-26 21:34:37.503  INFO 2988 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 账号：19034658903 对比数据结束 
+2025-01-26 11:18:07.198  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : Starting ProfitTest using Java 17.0.12 with PID 7980 (started by admin in E:\workspace\test-auto)
+2025-01-26 11:18:07.221  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : No active profile set, falling back to 1 default profile: "default"
+2025-01-26 11:18:11.919  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : Started ProfitTest in 5.339 seconds (process running for 7.339)
+2025-01-26 11:18:13.885  INFO 7980 --- [           main] cn.thtns.test.auto.verify.TokenManager   : Token 未找到，为账号 13764585816 生成新 Token...
+2025-01-26 11:18:14.250  INFO 7980 --- [           main] cn.thtns.test.auto.verify.TokenManager   : 成功获取 BEARER_TOKEN for 13764585816: bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3Mzc4NjE0ODksIm5iZiI6MTczNzg2MTQ4OCwiZXhwIjoxNzM4NDY2Mjg5LCJ1X2lkIjoyNiwidV90eXBlIjoyLCJjb21wYW55X2lkIjoyLCJpc3MiOiJkaWRpX3d6IiwiaXNfc3VwZXIiOjAsImlzX2FkbWluIjoxLCJtaW5pX3NvdXJjZSI6Ind6IiwiaXNfc2hvd19zZXR0bGVhY2NvdW50X3JlY29yZCI6MH0.T5XUu7yokWFsQR2sq430Hl1tDrByZi1Sk9tvKSu4jL8
+2025-01-26 11:18:14.251  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 账号：13764585816 正在对比数据
+2025-01-26 11:18:15.206  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比天统计数据
+2025-01-26 11:18:15.216  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比天统计数据
+2025-01-26 11:18:15.216  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比周统计数据
+2025-01-26 11:18:15.218  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : wxPay支付，日期：2025/01/20-2025/01/26 数据不一致，旧接口数据：24446.2900000000，新接口数据：23057.31
+2025-01-26 11:18:15.219  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : aliPay支付，日期：2025/01/20-2025/01/26 数据不一致，旧接口数据：4962.2900000000，新接口数据：4663.3
+2025-01-26 11:18:15.220  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : purse支付，日期：2025/01/20-2025/01/26 数据不一致，旧接口数据：911.8200000000，新接口数据：852.09
+2025-01-26 11:18:15.221  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比周统计数据
+2025-01-26 11:18:15.222  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比月统计数据
+2025-01-26 11:18:15.222  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : wxPay支付，日期：2024-10 数据不一致，旧接口数据：135152.9900000000，新接口数据：135155.79
+2025-01-26 11:18:15.223  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : aliPay支付，日期：2024-10 数据不一致，旧接口数据：21922.5400000000，新接口数据：21922.64
+2025-01-26 11:18:15.225  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比月统计数据
+2025-01-26 11:18:15.225  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比季度统计数据
+2025-01-26 11:18:15.225  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : wxPay支付，日期：2024_04 数据不一致，旧接口数据：426677.6900000000，新接口数据：426680.49
+2025-01-26 11:18:15.226  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : aliPay支付，日期：2024_04 数据不一致，旧接口数据：73459.0700000000，新接口数据：73459.17
+2025-01-26 11:18:15.227  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比季度统计数据
+2025-01-26 11:18:15.228  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比年度统计数据
+2025-01-26 11:18:15.228  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : wxPay支付，日期：2024 数据不一致，旧接口数据：1382284.5400000000，新接口数据：1382287.34
+2025-01-26 11:18:15.228  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : aliPay支付，日期：2024 数据不一致，旧接口数据：230188.4400000000，新接口数据：230188.54
+2025-01-26 11:18:15.229  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比年度统计数据
+2025-01-26 11:18:15.229  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始今日收益-未到账-到账金额
+2025-01-26 11:18:15.230  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束今日收益-未到账-到账金额
+2025-01-26 11:18:15.230  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比各项总收益数据
+2025-01-26 11:18:15.230  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 微信总收益支付，数据不一致，旧接口数据：3050723.8600000000，新接口数据：3050661.02
+2025-01-26 11:18:15.230  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 支付宝总收益支付，数据不一致，旧接口数据：562798.1600000000，新接口数据：562785.33
+2025-01-26 11:18:15.231  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 钱包支付总收益支付，数据不一致，旧接口数据：57921.4200000000，新接口数据：57919.26
+2025-01-26 11:18:15.231  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比各项总收益数据
+2025-01-26 11:18:15.231  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 账号：13764585816 对比数据结束 
+2025-01-26 11:18:17.244  INFO 7980 --- [           main] cn.thtns.test.auto.verify.TokenManager   : Token 未找到，为账号 13166105991 生成新 Token...
+2025-01-26 11:18:17.318  INFO 7980 --- [           main] cn.thtns.test.auto.verify.TokenManager   : 成功获取 BEARER_TOKEN for 13166105991: bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3Mzc4NjE0OTIsIm5iZiI6MTczNzg2MTQ5MSwiZXhwIjoxNzM4NDY2MjkyLCJ1X2lkIjoyNjQsInVfdHlwZSI6MiwiY29tcGFueV9pZCI6MiwiaXNzIjoiZGlkaV93eiIsImlzX3N1cGVyIjowLCJpc19hZG1pbiI6MSwibWluaV9zb3VyY2UiOiJ3eiIsImlzX3Nob3dfc2V0dGxlYWNjb3VudF9yZWNvcmQiOjB9.vfeNmqvsZN9vFpjtVwBRmYI-0yxSMeCGPCMg1VNjry8
+2025-01-26 11:18:17.319  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 账号：13166105991 正在对比数据
+2025-01-26 11:18:39.841  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比天统计数据
+2025-01-26 11:18:39.844  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比天统计数据
+2025-01-26 11:18:39.844  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比周统计数据
+2025-01-26 11:18:39.844  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : wxPay支付，日期：2025/01/20-2025/01/26 数据不一致，旧接口数据：7439.2100000000，新接口数据：6915.23
+2025-01-26 11:18:39.845  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : aliPay支付，日期：2025/01/20-2025/01/26 数据不一致，旧接口数据：952.8000000000，新接口数据：888.3
+2025-01-26 11:18:39.846  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比周统计数据
+2025-01-26 11:18:39.847  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比月统计数据
+2025-01-26 11:18:39.848  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比月统计数据
+2025-01-26 11:18:39.848  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比季度统计数据
+2025-01-26 11:18:39.850  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比季度统计数据
+2025-01-26 11:18:39.850  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比年度统计数据
+2025-01-26 11:18:39.851  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比年度统计数据
+2025-01-26 11:18:39.851  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始今日收益-未到账-到账金额
+2025-01-26 11:18:39.851  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束今日收益-未到账-到账金额
+2025-01-26 11:18:39.851  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比各项总收益数据
+2025-01-26 11:18:39.852  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 微信总收益支付，数据不一致，旧接口数据：746817.5300000000，新接口数据：746789.03
+2025-01-26 11:18:39.852  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 支付宝总收益支付，数据不一致，旧接口数据：99722.2400000000，新接口数据：99719.24
+2025-01-26 11:18:39.852  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比各项总收益数据
+2025-01-26 11:18:39.852  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 账号：13166105991 对比数据结束 
+2025-01-26 11:18:41.864  INFO 7980 --- [           main] cn.thtns.test.auto.verify.TokenManager   : Token 未找到，为账号 13153657395 生成新 Token...
+2025-01-26 11:18:41.946  INFO 7980 --- [           main] cn.thtns.test.auto.verify.TokenManager   : 成功获取 BEARER_TOKEN for 13153657395: bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3Mzc4NjE1MTcsIm5iZiI6MTczNzg2MTUxNiwiZXhwIjoxNzM4NDY2MzE3LCJ1X2lkIjoxMzYwOCwidV90eXBlIjoyLCJjb21wYW55X2lkIjoyLCJpc3MiOiJkaWRpX3d6IiwiaXNfc3VwZXIiOjAsImlzX2FkbWluIjoxLCJtaW5pX3NvdXJjZSI6Ind6IiwiaXNfc2hvd19zZXR0bGVhY2NvdW50X3JlY29yZCI6MH0.suNzOgVGDV6-inWlMynZ_4ULIU1j5tocHMYrWCDQnL0
+2025-01-26 11:18:41.946  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 账号：13153657395 正在对比数据
+2025-01-26 11:18:42.579  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比天统计数据
+2025-01-26 11:18:42.582  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比天统计数据
+2025-01-26 11:18:42.582  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比周统计数据
+2025-01-26 11:18:42.582  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : wxPay支付，日期：2025/01/20-2025/01/26 数据不一致，旧接口数据：22503.0500000000，新接口数据：21701.18
+2025-01-26 11:18:42.583  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : aliPay支付，日期：2025/01/20-2025/01/26 数据不一致，旧接口数据：2329.6900000000，新接口数据：2248.46
+2025-01-26 11:18:42.585  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : safeguard支付，日期：2025/01/20-2025/01/26 数据不一致，旧接口数据：351.2700000000，新接口数据：339.24
+2025-01-26 11:18:42.586  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比周统计数据
+2025-01-26 11:18:42.586  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比月统计数据
+2025-01-26 11:18:42.588  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比月统计数据
+2025-01-26 11:18:42.588  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比季度统计数据
+2025-01-26 11:18:42.588  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : wxPay支付，日期：2023_04 数据不一致，旧接口数据：298962.7300000000，新接口数据：298973.76
+2025-01-26 11:18:42.588  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : wxPay支付，日期：2023_03 数据不一致，旧接口数据：239041.3200000000，新接口数据：239068.8
+2025-01-26 11:18:42.590  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : aliPay支付，日期：2023_03 数据不一致，旧接口数据：23205.8700000000，新接口数据：23206.16
+2025-01-26 11:18:42.591  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比季度统计数据
+2025-01-26 11:18:42.591  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比年度统计数据
+2025-01-26 11:18:42.592  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : wxPay支付，日期：2023 数据不一致，旧接口数据：881725.3300000000，新接口数据：881763.84
+2025-01-26 11:18:42.592  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : aliPay支付，日期：2023 数据不一致，旧接口数据：85979.8000000000，新接口数据：85980.09
+2025-01-26 11:18:42.592  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比年度统计数据
+2025-01-26 11:18:42.592  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始今日收益-未到账-到账金额
+2025-01-26 11:18:42.592  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束今日收益-未到账-到账金额
+2025-01-26 11:18:42.593  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比各项总收益数据
+2025-01-26 11:18:42.593  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 微信总收益支付，数据不一致，旧接口数据：3333926.1300000000，新接口数据：3333894.55
+2025-01-26 11:18:42.593  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 支付宝总收益支付，数据不一致，旧接口数据：443518.1900000000，新接口数据：443513.36
+2025-01-26 11:18:42.593  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比各项总收益数据
+2025-01-26 11:18:42.593  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 账号：13153657395 对比数据结束 
+2025-01-26 11:18:44.594  INFO 7980 --- [           main] cn.thtns.test.auto.verify.TokenManager   : Token 未找到，为账号 13961175910 生成新 Token...
+2025-01-26 11:18:44.671  INFO 7980 --- [           main] cn.thtns.test.auto.verify.TokenManager   : 成功获取 BEARER_TOKEN for 13961175910: bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3Mzc4NjE1MTksIm5iZiI6MTczNzg2MTUxOCwiZXhwIjoxNzM4NDY2MzE5LCJ1X2lkIjo1NzcyNSwidV90eXBlIjoyLCJjb21wYW55X2lkIjoyLCJpc3MiOiJkaWRpX3d6IiwiaXNfc3VwZXIiOjAsImlzX2FkbWluIjoxLCJtaW5pX3NvdXJjZSI6Ind6IiwiaXNfc2hvd19zZXR0bGVhY2NvdW50X3JlY29yZCI6MH0.ixo7UNLE7OkGpojWigEiTCrk0WIfyq5tnmx6sXxCGUQ
+2025-01-26 11:18:44.671  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 账号：13961175910 正在对比数据
+2025-01-26 11:18:46.323  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比天统计数据
+2025-01-26 11:18:46.324  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比天统计数据
+2025-01-26 11:18:46.324  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比周统计数据
+2025-01-26 11:18:46.325  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比周统计数据
+2025-01-26 11:18:46.325  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比月统计数据
+2025-01-26 11:18:46.326  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比月统计数据
+2025-01-26 11:18:46.326  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比季度统计数据
+2025-01-26 11:18:46.326  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比季度统计数据
+2025-01-26 11:18:46.326  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比年度统计数据
+2025-01-26 11:18:46.326  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比年度统计数据
+2025-01-26 11:18:46.326  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始今日收益-未到账-到账金额
+2025-01-26 11:18:46.326  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束今日收益-未到账-到账金额
+2025-01-26 11:18:46.326  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比各项总收益数据
+2025-01-26 11:18:46.326  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比各项总收益数据
+2025-01-26 11:18:46.327  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 账号：13961175910 对比数据结束 
+2025-01-26 11:18:48.329  INFO 7980 --- [           main] cn.thtns.test.auto.verify.TokenManager   : Token 未找到，为账号 18805114320 生成新 Token...
+2025-01-26 11:18:48.402  INFO 7980 --- [           main] cn.thtns.test.auto.verify.TokenManager   : 成功获取 BEARER_TOKEN for 18805114320: bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3Mzc4NjE1MjMsIm5iZiI6MTczNzg2MTUyMiwiZXhwIjoxNzM4NDY2MzIzLCJ1X2lkIjoxNzM1OSwidV90eXBlIjoyLCJjb21wYW55X2lkIjoyLCJpc3MiOiJkaWRpX3d6IiwiaXNfc3VwZXIiOjAsImlzX2FkbWluIjoxLCJtaW5pX3NvdXJjZSI6Ind6IiwiaXNfc2hvd19zZXR0bGVhY2NvdW50X3JlY29yZCI6MH0.kCxEK6hYcb361hdi3IBoFilAYsknkNeVLUCjlybMyEU
+2025-01-26 11:18:48.402  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 账号：18805114320 正在对比数据
+2025-01-26 11:18:49.073  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比天统计数据
+2025-01-26 11:18:49.074  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比天统计数据
+2025-01-26 11:18:49.074  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比周统计数据
+2025-01-26 11:18:49.074  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : wxPay支付，日期：2025/01/20-2025/01/26 数据不一致，旧接口数据：5927.2400000000，新接口数据：5518.82
+2025-01-26 11:18:49.074  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : aliPay支付，日期：2025/01/20-2025/01/26 数据不一致，旧接口数据：376.2200000000，新接口数据：355.83
+2025-01-26 11:18:49.075  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : purse支付，日期：2025/01/20-2025/01/26 数据不一致，旧接口数据：413.6100000000，新接口数据：379.25
+2025-01-26 11:18:49.075  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比周统计数据
+2025-01-26 11:18:49.075  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比月统计数据
+2025-01-26 11:18:49.076  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比月统计数据
+2025-01-26 11:18:49.076  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比季度统计数据
+2025-01-26 11:18:49.077  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比季度统计数据
+2025-01-26 11:18:49.077  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比年度统计数据
+2025-01-26 11:18:49.077  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比年度统计数据
+2025-01-26 11:18:49.077  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始今日收益-未到账-到账金额
+2025-01-26 11:18:49.077  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束今日收益-未到账-到账金额
+2025-01-26 11:18:49.077  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比各项总收益数据
+2025-01-26 11:18:49.077  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 微信总收益支付，数据不一致，旧接口数据：734881.3800000000，新接口数据：734872.65
+2025-01-26 11:18:49.077  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 支付宝总收益支付，数据不一致，旧接口数据：52623.7900000000，新接口数据：52622.7
+2025-01-26 11:18:49.078  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比各项总收益数据
+2025-01-26 11:18:49.078  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 账号：18805114320 对比数据结束 
+2025-01-26 11:18:51.089  INFO 7980 --- [           main] cn.thtns.test.auto.verify.TokenManager   : Token 未找到，为账号 18879191518 生成新 Token...
+2025-01-26 11:18:51.164  INFO 7980 --- [           main] cn.thtns.test.auto.verify.TokenManager   : 成功获取 BEARER_TOKEN for 18879191518: bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3Mzc4NjE1MjYsIm5iZiI6MTczNzg2MTUyNSwiZXhwIjoxNzM4NDY2MzI2LCJ1X2lkIjoyNzg1MywidV90eXBlIjoyLCJjb21wYW55X2lkIjoyLCJpc3MiOiJkaWRpX3d6IiwiaXNfc3VwZXIiOjAsImlzX2FkbWluIjoxLCJtaW5pX3NvdXJjZSI6Ind6IiwiaXNfc2hvd19zZXR0bGVhY2NvdW50X3JlY29yZCI6MH0.TeVVnN9GE4L2PlF4dH2Em9O4QfFinus_ZZAUMzzfB2U
+2025-01-26 11:18:51.164  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 账号：18879191518 正在对比数据
+2025-01-26 11:18:52.129  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比天统计数据
+2025-01-26 11:18:52.130  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比天统计数据
+2025-01-26 11:18:52.130  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比周统计数据
+2025-01-26 11:18:52.130  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : wxPay支付，日期：2025/01/20-2025/01/26 数据不一致，旧接口数据：12983.2000000000，新接口数据：12519.52
+2025-01-26 11:18:52.130  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : aliPay支付，日期：2025/01/20-2025/01/26 数据不一致，旧接口数据：680.9900000000，新接口数据：650.67
+2025-01-26 11:18:52.130  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : purse支付，日期：2025/01/20-2025/01/26 数据不一致，旧接口数据：240.7200000000，新接口数据：230.02
+2025-01-26 11:18:52.131  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比周统计数据
+2025-01-26 11:18:52.131  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比月统计数据
+2025-01-26 11:18:52.131  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比月统计数据
+2025-01-26 11:18:52.131  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比季度统计数据
+2025-01-26 11:18:52.132  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比季度统计数据
+2025-01-26 11:18:52.132  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比年度统计数据
+2025-01-26 11:18:52.132  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比年度统计数据
+2025-01-26 11:18:52.132  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始今日收益-未到账-到账金额
+2025-01-26 11:18:52.132  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束今日收益-未到账-到账金额
+2025-01-26 11:18:52.132  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比各项总收益数据
+2025-01-26 11:18:52.132  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 微信总收益支付，数据不一致，旧接口数据：2073395.3200000000，新接口数据：2073358.91
+2025-01-26 11:18:52.132  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比各项总收益数据
+2025-01-26 11:18:52.132  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 账号：18879191518 对比数据结束 
+2025-01-26 11:18:54.137  INFO 7980 --- [           main] cn.thtns.test.auto.verify.TokenManager   : Token 未找到，为账号 13755691580 生成新 Token...
+2025-01-26 11:18:54.214  INFO 7980 --- [           main] cn.thtns.test.auto.verify.TokenManager   : 成功获取 BEARER_TOKEN for 13755691580: bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3Mzc4NjE1MjksIm5iZiI6MTczNzg2MTUyOCwiZXhwIjoxNzM4NDY2MzI5LCJ1X2lkIjo0MSwidV90eXBlIjoyLCJjb21wYW55X2lkIjoyLCJpc3MiOiJkaWRpX3d6IiwiaXNfc3VwZXIiOjAsImlzX2FkbWluIjoxLCJtaW5pX3NvdXJjZSI6Ind6IiwiaXNfc2hvd19zZXR0bGVhY2NvdW50X3JlY29yZCI6MH0.6m_MY0zBPymLv_Cmm5lIn0JEw8233_HBdzHAND4TAZ0
+2025-01-26 11:18:54.214  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 账号：13755691580 正在对比数据
+2025-01-26 11:18:54.905  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比天统计数据
+2025-01-26 11:18:54.906  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比天统计数据
+2025-01-26 11:18:54.906  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比周统计数据
+2025-01-26 11:18:54.907  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : wxPay支付，日期：2025/01/20-2025/01/26 数据不一致，旧接口数据：13634.3900000000，新接口数据：13062.41
+2025-01-26 11:18:54.907  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : aliPay支付，日期：2025/01/20-2025/01/26 数据不一致，旧接口数据：742.7400000000，新接口数据：710.24
+2025-01-26 11:18:54.907  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : purse支付，日期：2025/01/20-2025/01/26 数据不一致，旧接口数据：131.5100000000，新接口数据：125.5
+2025-01-26 11:18:54.907  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比周统计数据
+2025-01-26 11:18:54.907  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比月统计数据
+2025-01-26 11:18:54.908  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比月统计数据
+2025-01-26 11:18:54.908  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比季度统计数据
+2025-01-26 11:18:54.908  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比季度统计数据
+2025-01-26 11:18:54.908  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比年度统计数据
+2025-01-26 11:18:54.908  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比年度统计数据
+2025-01-26 11:18:54.908  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始今日收益-未到账-到账金额
+2025-01-26 11:18:54.909  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束今日收益-未到账-到账金额
+2025-01-26 11:18:54.909  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比各项总收益数据
+2025-01-26 11:18:54.909  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 微信总收益支付，数据不一致，旧接口数据：2545917.4600000000，新接口数据：2545878.84
+2025-01-26 11:18:54.909  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 支付宝总收益支付，数据不一致，旧接口数据：146729.1100000000，新接口数据：146727.47
+2025-01-26 11:18:54.909  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 钱包支付总收益支付，数据不一致，旧接口数据：11006.1600000000，新接口数据：11005.87
+2025-01-26 11:18:54.909  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比各项总收益数据
+2025-01-26 11:18:54.909  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 账号：13755691580 对比数据结束 
+2025-01-26 11:18:56.915  INFO 7980 --- [           main] cn.thtns.test.auto.verify.TokenManager   : Token 未找到，为账号 18010839135 生成新 Token...
+2025-01-26 11:18:56.991  INFO 7980 --- [           main] cn.thtns.test.auto.verify.TokenManager   : 成功获取 BEARER_TOKEN for 18010839135: bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3Mzc4NjE1MzIsIm5iZiI6MTczNzg2MTUzMSwiZXhwIjoxNzM4NDY2MzMyLCJ1X2lkIjoxMjYzNzIyOTksInVfdHlwZSI6MiwiY29tcGFueV9pZCI6MiwiaXNzIjoiZGlkaV93eiIsImlzX3N1cGVyIjowLCJpc19hZG1pbiI6MSwibWluaV9zb3VyY2UiOiJ3eiIsImlzX3Nob3dfc2V0dGxlYWNjb3VudF9yZWNvcmQiOjB9.uUv3xEwB2Yslp3VZ0QsKmXwFZnZWGcATI2XmvQ02Lxg
+2025-01-26 11:18:56.991  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 账号：18010839135 正在对比数据
+2025-01-26 11:18:57.668  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比天统计数据
+2025-01-26 11:18:57.669  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比天统计数据
+2025-01-26 11:18:57.669  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比周统计数据
+2025-01-26 11:18:57.669  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比周统计数据
+2025-01-26 11:18:57.669  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比月统计数据
+2025-01-26 11:18:57.670  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比月统计数据
+2025-01-26 11:18:57.670  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比季度统计数据
+2025-01-26 11:18:57.670  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比季度统计数据
+2025-01-26 11:18:57.670  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比年度统计数据
+2025-01-26 11:18:57.670  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比年度统计数据
+2025-01-26 11:18:57.670  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始今日收益-未到账-到账金额
+2025-01-26 11:18:57.670  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束今日收益-未到账-到账金额
+2025-01-26 11:18:57.670  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比各项总收益数据
+2025-01-26 11:18:57.670  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比各项总收益数据
+2025-01-26 11:18:57.670  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 账号：18010839135 对比数据结束 
+2025-01-26 11:18:59.681  INFO 7980 --- [           main] cn.thtns.test.auto.verify.TokenManager   : Token 未找到，为账号 18951280000 生成新 Token...
+2025-01-26 11:18:59.772  INFO 7980 --- [           main] cn.thtns.test.auto.verify.TokenManager   : 成功获取 BEARER_TOKEN for 18951280000: bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3Mzc4NjE1MzUsIm5iZiI6MTczNzg2MTUzNCwiZXhwIjoxNzM4NDY2MzM1LCJ1X2lkIjo1NDc1LCJ1X3R5cGUiOjIsImNvbXBhbnlfaWQiOjIsImlzcyI6ImRpZGlfd3oiLCJpc19zdXBlciI6MCwiaXNfYWRtaW4iOjEsIm1pbmlfc291cmNlIjoid3oiLCJpc19zaG93X3NldHRsZWFjY291bnRfcmVjb3JkIjowfQ.TdLkO4jZSP6H3WA-nezfrrtR1zowjVdi6gbQH8AJuZk
+2025-01-26 11:18:59.772  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 账号：18951280000 正在对比数据
+2025-01-26 11:19:00.408  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比天统计数据
+2025-01-26 11:19:00.410  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比天统计数据
+2025-01-26 11:19:00.410  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比周统计数据
+2025-01-26 11:19:00.410  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : wxPay支付，日期：2025/01/20-2025/01/26 数据不一致，旧接口数据：7387.8000000000，新接口数据：6886.83
+2025-01-26 11:19:00.411  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : aliPay支付，日期：2025/01/20-2025/01/26 数据不一致，旧接口数据：1081.0100000000，新接口数据：1000.48
+2025-01-26 11:19:00.411  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : purse支付，日期：2025/01/20-2025/01/26 数据不一致，旧接口数据：190.6800000000，新接口数据：172.95
+2025-01-26 11:19:00.411  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比周统计数据
+2025-01-26 11:19:00.412  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比月统计数据
+2025-01-26 11:19:00.412  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比月统计数据
+2025-01-26 11:19:00.412  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比季度统计数据
+2025-01-26 11:19:00.412  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比季度统计数据
+2025-01-26 11:19:00.412  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比年度统计数据
+2025-01-26 11:19:00.412  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比年度统计数据
+2025-01-26 11:19:00.412  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始今日收益-未到账-到账金额
+2025-01-26 11:19:00.413  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束今日收益-未到账-到账金额
+2025-01-26 11:19:00.413  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比各项总收益数据
+2025-01-26 11:19:00.413  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 微信总收益支付，数据不一致，旧接口数据：768031.3500000000，新接口数据：768004.6
+2025-01-26 11:19:00.413  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 支付宝总收益支付，数据不一致，旧接口数据：95751.0600000000，新接口数据：95749.06
+2025-01-26 11:19:00.413  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比各项总收益数据
+2025-01-26 11:19:00.413  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 账号：18951280000 对比数据结束 
+2025-01-26 11:19:02.425  INFO 7980 --- [           main] cn.thtns.test.auto.verify.TokenManager   : Token 未找到，为账号 15956475028 生成新 Token...
+2025-01-26 11:19:02.500  INFO 7980 --- [           main] cn.thtns.test.auto.verify.TokenManager   : 成功获取 BEARER_TOKEN for 15956475028: bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3Mzc4NjE1MzcsIm5iZiI6MTczNzg2MTUzNiwiZXhwIjoxNzM4NDY2MzM3LCJ1X2lkIjozMDgsInVfdHlwZSI6MiwiY29tcGFueV9pZCI6MiwiaXNzIjoiZGlkaV93eiIsImlzX3N1cGVyIjowLCJpc19hZG1pbiI6MSwibWluaV9zb3VyY2UiOiJ3eiIsImlzX3Nob3dfc2V0dGxlYWNjb3VudF9yZWNvcmQiOjB9.bMRc4c0Ok5wsXEnNny7g4JF2ZDpeq8TwYX91zxvdE94
+2025-01-26 11:19:02.500  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 账号：15956475028 正在对比数据
+2025-01-26 11:19:03.171  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比天统计数据
+2025-01-26 11:19:03.172  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比天统计数据
+2025-01-26 11:19:03.172  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比周统计数据
+2025-01-26 11:19:03.172  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : wxPay支付，日期：2025/01/20-2025/01/26 数据不一致，旧接口数据：13849.4700000000，新接口数据：13135.14
+2025-01-26 11:19:03.172  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : aliPay支付，日期：2025/01/20-2025/01/26 数据不一致，旧接口数据：1008.9400000000，新接口数据：937.23
+2025-01-26 11:19:03.172  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : purse支付，日期：2025/01/20-2025/01/26 数据不一致，旧接口数据：128.1200000000，新接口数据：125.63
+2025-01-26 11:19:03.173  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比周统计数据
+2025-01-26 11:19:03.173  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比月统计数据
+2025-01-26 11:19:03.173  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比月统计数据
+2025-01-26 11:19:03.173  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比季度统计数据
+2025-01-26 11:19:03.173  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比季度统计数据
+2025-01-26 11:19:03.173  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比年度统计数据
+2025-01-26 11:19:03.173  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比年度统计数据
+2025-01-26 11:19:03.173  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始今日收益-未到账-到账金额
+2025-01-26 11:19:03.173  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束今日收益-未到账-到账金额
+2025-01-26 11:19:03.173  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比各项总收益数据
+2025-01-26 11:19:03.174  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 微信总收益支付，数据不一致，旧接口数据：3011973.9200000000，新接口数据：3011927.14
+2025-01-26 11:19:03.174  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 支付宝总收益支付，数据不一致，旧接口数据：266229.9200000000，新接口数据：266225.39
+2025-01-26 11:19:03.174  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 钱包支付总收益支付，数据不一致，旧接口数据：12941.0800000000，新接口数据：12940.08
+2025-01-26 11:19:03.174  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比各项总收益数据
+2025-01-26 11:19:03.174  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 账号：15956475028 对比数据结束 
+2025-01-26 11:19:05.184  INFO 7980 --- [           main] cn.thtns.test.auto.verify.TokenManager   : Token 未找到，为账号 13669687266 生成新 Token...
+2025-01-26 11:19:05.260  INFO 7980 --- [           main] cn.thtns.test.auto.verify.TokenManager   : 成功获取 BEARER_TOKEN for 13669687266: bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3Mzc4NjE1NDAsIm5iZiI6MTczNzg2MTUzOSwiZXhwIjoxNzM4NDY2MzQwLCJ1X2lkIjo2MCwidV90eXBlIjoyLCJjb21wYW55X2lkIjoyLCJpc3MiOiJkaWRpX3d6IiwiaXNfc3VwZXIiOjAsImlzX2FkbWluIjoxLCJtaW5pX3NvdXJjZSI6Ind6IiwiaXNfc2hvd19zZXR0bGVhY2NvdW50X3JlY29yZCI6MH0.GKNro9fZptHWCejx6FEboMism3n9BDJcCn1fmCY1cO8
+2025-01-26 11:19:05.260  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 账号：13669687266 正在对比数据
+2025-01-26 11:19:05.904  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比天统计数据
+2025-01-26 11:19:05.905  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比天统计数据
+2025-01-26 11:19:05.905  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比周统计数据
+2025-01-26 11:19:05.905  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : wxPay支付，日期：2025/01/20-2025/01/26 数据不一致，旧接口数据：76170.5900000000，新接口数据：71176.23
+2025-01-26 11:19:05.905  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : wxPay支付，日期：2024/12/30-2025/01/05 数据不一致，旧接口数据：94375.7600000000，新接口数据：94378.3
+2025-01-26 11:19:05.906  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : aliPay支付，日期：2025/01/20-2025/01/26 数据不一致，旧接口数据：5365.9100000000，新接口数据：5010.86
+2025-01-26 11:19:05.906  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : purse支付，日期：2025/01/20-2025/01/26 数据不一致，旧接口数据：1917.1600000000，新接口数据：1814.89
+2025-01-26 11:19:05.906  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比周统计数据
+2025-01-26 11:19:05.906  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比月统计数据
+2025-01-26 11:19:05.906  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : wxPay支付，日期：2024-12 数据不一致，旧接口数据：412156.9500000000，新接口数据：412159.49
+2025-01-26 11:19:05.906  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : wxPay支付，日期：2024-10 数据不一致，旧接口数据：386558.9600000000，新接口数据：386559.16
+2025-01-26 11:19:05.906  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : wxPay支付，日期：2024-08 数据不一致，旧接口数据：350930.3000000000，新接口数据：350930.13
+2025-01-26 11:19:05.906  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : aliPay支付，日期：2024-10 数据不一致，旧接口数据：28489.5100000000，新接口数据：28489.6
+2025-01-26 11:19:05.907  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比月统计数据
+2025-01-26 11:19:05.907  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比季度统计数据
+2025-01-26 11:19:05.907  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : wxPay支付，日期：2024_04 数据不一致，旧接口数据：1201855.9300000000，新接口数据：1201858.67
+2025-01-26 11:19:05.907  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : aliPay支付，日期：2024_04 数据不一致，旧接口数据：89444.1300000000，新接口数据：89444.22
+2025-01-26 11:19:05.907  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比季度统计数据
+2025-01-26 11:19:05.907  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比年度统计数据
+2025-01-26 11:19:05.907  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : wxPay支付，日期：2024 数据不一致，旧接口数据：4224135.2200000000，新接口数据：4224137.96
+2025-01-26 11:19:05.907  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : aliPay支付，日期：2024 数据不一致，旧接口数据：336627.5500000000，新接口数据：336627.64
+2025-01-26 11:19:05.907  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比年度统计数据
+2025-01-26 11:19:05.907  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始今日收益-未到账-到账金额
+2025-01-26 11:19:05.907  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束今日收益-未到账-到账金额
+2025-01-26 11:19:05.907  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比各项总收益数据
+2025-01-26 11:19:05.908  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 微信总收益支付，数据不一致，旧接口数据：16955293.1400000000，新接口数据：1.695508844E7
+2025-01-26 11:19:05.908  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 支付宝总收益支付，数据不一致，旧接口数据：1704314.3200000000，新接口数据：1704294.35
+2025-01-26 11:19:05.908  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 钱包支付总收益支付，数据不一致，旧接口数据：100463.8300000000，新接口数据：100460.76
+2025-01-26 11:19:05.908  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比各项总收益数据
+2025-01-26 11:19:05.908  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 账号：13669687266 对比数据结束 
+2025-01-26 11:19:07.921  INFO 7980 --- [           main] cn.thtns.test.auto.verify.TokenManager   : Token 未找到，为账号 18917688666 生成新 Token...
+2025-01-26 11:19:08.000  INFO 7980 --- [           main] cn.thtns.test.auto.verify.TokenManager   : 成功获取 BEARER_TOKEN for 18917688666: bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3Mzc4NjE1NDMsIm5iZiI6MTczNzg2MTU0MiwiZXhwIjoxNzM4NDY2MzQzLCJ1X2lkIjoxNjU4NSwidV90eXBlIjoyLCJjb21wYW55X2lkIjoyLCJpc3MiOiJkaWRpX3d6IiwiaXNfc3VwZXIiOjAsImlzX2FkbWluIjoxLCJtaW5pX3NvdXJjZSI6Ind6IiwiaXNfc2hvd19zZXR0bGVhY2NvdW50X3JlY29yZCI6MH0.meAsCAc3CMEPEgeCibI1f4sbQlfTjjGQCjRwCP1aS_4
+2025-01-26 11:19:08.001  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 账号：18917688666 正在对比数据
+2025-01-26 11:19:08.669  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比天统计数据
+2025-01-26 11:19:08.669  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比天统计数据
+2025-01-26 11:19:08.670  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比周统计数据
+2025-01-26 11:19:08.670  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : wxPay支付，日期：2025/01/20-2025/01/26 数据不一致，旧接口数据：31763.8500000000，新接口数据：29932.76
+2025-01-26 11:19:08.670  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : wxPay支付，日期：2025/01/06-2025/01/12 数据不一致，旧接口数据：37995.8500000000，新接口数据：37994.35
+2025-01-26 11:19:08.670  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : aliPay支付，日期：2025/01/20-2025/01/26 数据不一致，旧接口数据：5688.9700000000，新接口数据：5386.19
+2025-01-26 11:19:08.670  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : purse支付，日期：2025/01/20-2025/01/26 数据不一致，旧接口数据：306.4700000000，新接口数据：292.73
+2025-01-26 11:19:08.670  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : safeguard支付，日期：2025/01/20-2025/01/26 数据不一致，旧接口数据：363.6600000000，新接口数据：346.95
+2025-01-26 11:19:08.671  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比周统计数据
+2025-01-26 11:19:08.671  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比月统计数据
+2025-01-26 11:19:08.671  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : wxPay支付，日期：2025-01 数据不一致，旧接口数据：136589.5700000000，新接口数据：136588.07
+2025-01-26 11:19:08.671  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比月统计数据
+2025-01-26 11:19:08.671  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比季度统计数据
+2025-01-26 11:19:08.672  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : wxPay支付，日期：2025_01 数据不一致，旧接口数据：136589.5700000000，新接口数据：136588.07
+2025-01-26 11:19:08.672  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : wxPay支付，日期：2023_03 数据不一致，旧接口数据：290824.5200000000，新接口数据：290874.03
+2025-01-26 11:19:08.672  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比季度统计数据
+2025-01-26 11:19:08.672  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比年度统计数据
+2025-01-26 11:19:08.672  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : wxPay支付，日期：2025 数据不一致，旧接口数据：136589.5700000000，新接口数据：136588.07
+2025-01-26 11:19:08.672  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : wxPay支付，日期：2023 数据不一致，旧接口数据：1097065.2200000000，新接口数据：1097114.73
+2025-01-26 11:19:08.672  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比年度统计数据
+2025-01-26 11:19:08.672  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始今日收益-未到账-到账金额
+2025-01-26 11:19:08.673  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束今日收益-未到账-到账金额
+2025-01-26 11:19:08.673  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比各项总收益数据
+2025-01-26 11:19:08.673  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 微信总收益支付，数据不一致，旧接口数据：3602146.7300000000，新接口数据：3602021.33
+2025-01-26 11:19:08.673  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 支付宝总收益支付，数据不一致，旧接口数据：673557.4500000000，新接口数据：673528.93
+2025-01-26 11:19:08.673  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比各项总收益数据
+2025-01-26 11:19:08.673  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 账号：18917688666 对比数据结束 
+2025-01-26 11:19:10.677  INFO 7980 --- [           main] cn.thtns.test.auto.verify.TokenManager   : Token 未找到，为账号 13870135874 生成新 Token...
+2025-01-26 11:19:10.787  INFO 7980 --- [           main] cn.thtns.test.auto.verify.TokenManager   : 成功获取 BEARER_TOKEN for 13870135874: bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3Mzc4NjE1NDYsIm5iZiI6MTczNzg2MTU0NSwiZXhwIjoxNzM4NDY2MzQ2LCJ1X2lkIjo5MCwidV90eXBlIjoyLCJjb21wYW55X2lkIjoyLCJpc3MiOiJkaWRpX3d6IiwiaXNfc3VwZXIiOjAsImlzX2FkbWluIjoxLCJtaW5pX3NvdXJjZSI6Ind6IiwiaXNfc2hvd19zZXR0bGVhY2NvdW50X3JlY29yZCI6MH0.YYEKOmmCoZK8FNWCqk8WmKepaAMEf8YVib9Tnihl_iQ
+2025-01-26 11:19:10.787  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 账号：13870135874 正在对比数据
+2025-01-26 11:19:11.427  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比天统计数据
+2025-01-26 11:19:11.427  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比天统计数据
+2025-01-26 11:19:11.427  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比周统计数据
+2025-01-26 11:19:11.427  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : wxPay支付，日期：2025/01/20-2025/01/26 数据不一致，旧接口数据：19708.1200000000，新接口数据：18734.04
+2025-01-26 11:19:11.428  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : aliPay支付，日期：2025/01/20-2025/01/26 数据不一致，旧接口数据：1432.6300000000，新接口数据：1349.93
+2025-01-26 11:19:11.428  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : purse支付，日期：2025/01/20-2025/01/26 数据不一致，旧接口数据：229.4800000000，新接口数据：218.07
+2025-01-26 11:19:11.428  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比周统计数据
+2025-01-26 11:19:11.428  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比月统计数据
+2025-01-26 11:19:11.428  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比月统计数据
+2025-01-26 11:19:11.428  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比季度统计数据
+2025-01-26 11:19:11.428  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比季度统计数据
+2025-01-26 11:19:11.429  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比年度统计数据
+2025-01-26 11:19:11.429  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比年度统计数据
+2025-01-26 11:19:11.429  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始今日收益-未到账-到账金额
+2025-01-26 11:19:11.429  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束今日收益-未到账-到账金额
+2025-01-26 11:19:11.429  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比各项总收益数据
+2025-01-26 11:19:11.429  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 微信总收益支付，数据不一致，旧接口数据：2426400.0900000000，新接口数据：2426347.46
+2025-01-26 11:19:11.429  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 支付宝总收益支付，数据不一致，旧接口数据：198959.8000000000，新接口数据：198956.63
+2025-01-26 11:19:11.429  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比各项总收益数据
+2025-01-26 11:19:11.429  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 账号：13870135874 对比数据结束 
+2025-01-26 11:19:13.434  INFO 7980 --- [           main] cn.thtns.test.auto.verify.TokenManager   : Token 未找到，为账号 15665891805 生成新 Token...
+2025-01-26 11:19:13.511  INFO 7980 --- [           main] cn.thtns.test.auto.verify.TokenManager   : 成功获取 BEARER_TOKEN for 15665891805: bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3Mzc4NjE1NDgsIm5iZiI6MTczNzg2MTU0NywiZXhwIjoxNzM4NDY2MzQ4LCJ1X2lkIjoxMTkyODYyNTEsInVfdHlwZSI6MiwiY29tcGFueV9pZCI6MiwiaXNzIjoiZGlkaV93eiIsImlzX3N1cGVyIjowLCJpc19hZG1pbiI6MSwibWluaV9zb3VyY2UiOiJ3eiIsImlzX3Nob3dfc2V0dGxlYWNjb3VudF9yZWNvcmQiOjB9.eCSPMPN9kW5wY6ZnIhprrmKamnMmg_hTr1yk8bsT8ho
+2025-01-26 11:19:13.511  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 账号：15665891805 正在对比数据
+2025-01-26 11:19:15.731  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比天统计数据
+2025-01-26 11:19:15.731  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比天统计数据
+2025-01-26 11:19:15.731  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比周统计数据
+2025-01-26 11:19:15.732  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : wxPay支付，日期：2025/01/20-2025/01/26 数据不一致，旧接口数据：127.5900000000，新接口数据：126.7
+2025-01-26 11:19:15.732  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比周统计数据
+2025-01-26 11:19:15.732  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比月统计数据
+2025-01-26 11:19:15.732  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比月统计数据
+2025-01-26 11:19:15.732  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比季度统计数据
+2025-01-26 11:19:15.732  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比季度统计数据
+2025-01-26 11:19:15.732  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比年度统计数据
+2025-01-26 11:19:15.733  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比年度统计数据
+2025-01-26 11:19:15.733  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始今日收益-未到账-到账金额
+2025-01-26 11:19:15.733  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束今日收益-未到账-到账金额
+2025-01-26 11:19:15.733  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比各项总收益数据
+2025-01-26 11:19:15.733  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比各项总收益数据
+2025-01-26 11:19:15.733  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 账号：15665891805 对比数据结束 
+2025-01-26 11:19:17.736  INFO 7980 --- [           main] cn.thtns.test.auto.verify.TokenManager   : Token 未找到，为账号 13093705353 生成新 Token...
+2025-01-26 11:19:17.810  INFO 7980 --- [           main] cn.thtns.test.auto.verify.TokenManager   : 成功获取 BEARER_TOKEN for 13093705353: bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3Mzc4NjE1NTMsIm5iZiI6MTczNzg2MTU1MiwiZXhwIjoxNzM4NDY2MzUzLCJ1X2lkIjo0ODAxNSwidV90eXBlIjoyLCJjb21wYW55X2lkIjoyLCJpc3MiOiJkaWRpX3d6IiwiaXNfc3VwZXIiOjAsImlzX2FkbWluIjoxLCJtaW5pX3NvdXJjZSI6Ind6IiwiaXNfc2hvd19zZXR0bGVhY2NvdW50X3JlY29yZCI6MH0.WoxzO6l_GnpT5052bYaEg2vBGDnOTIDgh4aBd1auJ98
+2025-01-26 11:19:17.810  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 账号：13093705353 正在对比数据
+2025-01-26 11:19:18.732  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比天统计数据
+2025-01-26 11:19:18.733  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比天统计数据
+2025-01-26 11:19:18.733  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比周统计数据
+2025-01-26 11:19:18.733  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : wxPay支付，日期：2025/01/20-2025/01/26 数据不一致，旧接口数据：106.0200000000，新接口数据：100.28
+2025-01-26 11:19:18.733  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : wxPay支付，日期：2024/12/16-2024/12/22 数据不一致，旧接口数据：388.3900000000，新接口数据：390.79
+2025-01-26 11:19:18.733  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比周统计数据
+2025-01-26 11:19:18.733  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比月统计数据
+2025-01-26 11:19:18.733  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : wxPay支付，日期：2024-12 数据不一致，旧接口数据：2217.8300000000，新接口数据：2220.23
+2025-01-26 11:19:18.733  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比月统计数据
+2025-01-26 11:19:18.733  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比季度统计数据
+2025-01-26 11:19:18.733  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : wxPay支付，日期：2024_04 数据不一致，旧接口数据：2271.8300000000，新接口数据：2274.23
+2025-01-26 11:19:18.734  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比季度统计数据
+2025-01-26 11:19:18.734  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比年度统计数据
+2025-01-26 11:19:18.734  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : wxPay支付，日期：2024 数据不一致，旧接口数据：2366.8300000000，新接口数据：2369.23
+2025-01-26 11:19:18.734  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比年度统计数据
+2025-01-26 11:19:18.734  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始今日收益-未到账-到账金额
+2025-01-26 11:19:18.734  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束今日收益-未到账-到账金额
+2025-01-26 11:19:18.734  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比各项总收益数据
+2025-01-26 11:19:18.734  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比各项总收益数据
+2025-01-26 11:19:18.734  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 账号：13093705353 对比数据结束 
+2025-01-26 11:19:20.736  INFO 7980 --- [           main] cn.thtns.test.auto.verify.TokenManager   : Token 未找到，为账号 18268180552 生成新 Token...
+2025-01-26 11:19:20.810  INFO 7980 --- [           main] cn.thtns.test.auto.verify.TokenManager   : 成功获取 BEARER_TOKEN for 18268180552: bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3Mzc4NjE1NTYsIm5iZiI6MTczNzg2MTU1NSwiZXhwIjoxNzM4NDY2MzU2LCJ1X2lkIjoyMywidV90eXBlIjoyLCJjb21wYW55X2lkIjoyLCJpc3MiOiJkaWRpX3d6IiwiaXNfc3VwZXIiOjAsImlzX2FkbWluIjoxLCJtaW5pX3NvdXJjZSI6Ind6IiwiaXNfc2hvd19zZXR0bGVhY2NvdW50X3JlY29yZCI6MH0.HuWFFbPWlKOdw-2Gji8RZeTF_oqEeKYnM8LDCXpLvYU
+2025-01-26 11:19:20.810  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 账号：18268180552 正在对比数据
+2025-01-26 11:19:21.450  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比天统计数据
+2025-01-26 11:19:21.451  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比天统计数据
+2025-01-26 11:19:21.451  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比周统计数据
+2025-01-26 11:19:21.451  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : wxPay支付，日期：2025/01/20-2025/01/26 数据不一致，旧接口数据：8740.0200000000，新接口数据：8367.16
+2025-01-26 11:19:21.451  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : aliPay支付，日期：2025/01/20-2025/01/26 数据不一致，旧接口数据：2101.5300000000，新接口数据：2008.71
+2025-01-26 11:19:21.451  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : purse支付，日期：2025/01/20-2025/01/26 数据不一致，旧接口数据：208.1900000000，新接口数据：203.34
+2025-01-26 11:19:21.451  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比周统计数据
+2025-01-26 11:19:21.451  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比月统计数据
+2025-01-26 11:19:21.452  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比月统计数据
+2025-01-26 11:19:21.452  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比季度统计数据
+2025-01-26 11:19:21.452  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比季度统计数据
+2025-01-26 11:19:21.452  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比年度统计数据
+2025-01-26 11:19:21.452  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比年度统计数据
+2025-01-26 11:19:21.452  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始今日收益-未到账-到账金额
+2025-01-26 11:19:21.452  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束今日收益-未到账-到账金额
+2025-01-26 11:19:21.452  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比各项总收益数据
+2025-01-26 11:19:21.452  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 微信总收益支付，数据不一致，旧接口数据：2721408.5300000000，新接口数据：2721373.17
+2025-01-26 11:19:21.453  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 支付宝总收益支付，数据不一致，旧接口数据：832312.1400000000，新接口数据：832304.9
+2025-01-26 11:19:21.453  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比各项总收益数据
+2025-01-26 11:19:21.453  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 账号：18268180552 对比数据结束 
+2025-01-26 11:19:23.465  INFO 7980 --- [           main] cn.thtns.test.auto.verify.TokenManager   : Token 未找到，为账号 18863635300 生成新 Token...
+2025-01-26 11:19:23.542  INFO 7980 --- [           main] cn.thtns.test.auto.verify.TokenManager   : 成功获取 BEARER_TOKEN for 18863635300: bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3Mzc4NjE1NTgsIm5iZiI6MTczNzg2MTU1NywiZXhwIjoxNzM4NDY2MzU4LCJ1X2lkIjoxNzY5OSwidV90eXBlIjoyLCJjb21wYW55X2lkIjoyLCJpc3MiOiJkaWRpX3d6IiwiaXNfc3VwZXIiOjAsImlzX2FkbWluIjoxLCJtaW5pX3NvdXJjZSI6Ind6IiwiaXNfc2hvd19zZXR0bGVhY2NvdW50X3JlY29yZCI6MH0.WT7_Y8GUGZ_X3uyGg7K19n5U2TMicO9nowPmddcCc0o
+2025-01-26 11:19:23.543  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 账号：18863635300 正在对比数据
+2025-01-26 11:19:24.789  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比天统计数据
+2025-01-26 11:19:24.789  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比天统计数据
+2025-01-26 11:19:24.789  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比周统计数据
+2025-01-26 11:19:24.789  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : wxPay支付，日期：2025/01/20-2025/01/26 数据不一致，旧接口数据：21102.4200000000，新接口数据：20099.53
+2025-01-26 11:19:24.789  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : aliPay支付，日期：2025/01/20-2025/01/26 数据不一致，旧接口数据：1497.4200000000，新接口数据：1415.56
+2025-01-26 11:19:24.790  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : safeguard支付，日期：2025/01/20-2025/01/26 数据不一致，旧接口数据：281.4900000000，新接口数据：268.98
+2025-01-26 11:19:24.790  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比周统计数据
+2025-01-26 11:19:24.790  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比月统计数据
+2025-01-26 11:19:24.790  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比月统计数据
+2025-01-26 11:19:24.790  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比季度统计数据
+2025-01-26 11:19:24.791  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比季度统计数据
+2025-01-26 11:19:24.791  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比年度统计数据
+2025-01-26 11:19:24.791  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比年度统计数据
+2025-01-26 11:19:24.791  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始今日收益-未到账-到账金额
+2025-01-26 11:19:24.791  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束今日收益-未到账-到账金额
+2025-01-26 11:19:24.791  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比各项总收益数据
+2025-01-26 11:19:24.791  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 微信总收益支付，数据不一致，旧接口数据：3163319.2500000000，新接口数据：3163259.89
+2025-01-26 11:19:24.791  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 支付宝总收益支付，数据不一致，旧接口数据：249331.1400000000，新接口数据：249325.59
+2025-01-26 11:19:24.791  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比各项总收益数据
+2025-01-26 11:19:24.791  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 账号：18863635300 对比数据结束 
+2025-01-26 11:19:26.802  INFO 7980 --- [           main] cn.thtns.test.auto.verify.TokenManager   : Token 未找到，为账号 15394202082 生成新 Token...
+2025-01-26 11:19:26.878  INFO 7980 --- [           main] cn.thtns.test.auto.verify.TokenManager   : 成功获取 BEARER_TOKEN for 15394202082: bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3Mzc4NjE1NjIsIm5iZiI6MTczNzg2MTU2MSwiZXhwIjoxNzM4NDY2MzYyLCJ1X2lkIjoxNTUxLCJ1X3R5cGUiOjIsImNvbXBhbnlfaWQiOjIsImlzcyI6ImRpZGlfd3oiLCJpc19zdXBlciI6MCwiaXNfYWRtaW4iOjEsIm1pbmlfc291cmNlIjoid3oiLCJpc19zaG93X3NldHRsZWFjY291bnRfcmVjb3JkIjowfQ.Qa6GT8BEW8jDS5zKn_ISguJIIilJK18pw8ksuO1jlog
+2025-01-26 11:19:26.879  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 账号：15394202082 正在对比数据
+2025-01-26 11:19:27.514  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比天统计数据
+2025-01-26 11:19:27.514  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比天统计数据
+2025-01-26 11:19:27.514  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比周统计数据
+2025-01-26 11:19:27.514  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : wxPay支付，日期：2025/01/20-2025/01/26 数据不一致，旧接口数据：0.5800000000，新接口数据：0.42
+2025-01-26 11:19:27.515  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比周统计数据
+2025-01-26 11:19:27.515  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比月统计数据
+2025-01-26 11:19:27.515  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比月统计数据
+2025-01-26 11:19:27.515  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比季度统计数据
+2025-01-26 11:19:27.515  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比季度统计数据
+2025-01-26 11:19:27.515  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比年度统计数据
+2025-01-26 11:19:27.515  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比年度统计数据
+2025-01-26 11:19:27.515  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始今日收益-未到账-到账金额
+2025-01-26 11:19:27.515  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束今日收益-未到账-到账金额
+2025-01-26 11:19:27.515  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比各项总收益数据
+2025-01-26 11:19:27.515  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比各项总收益数据
+2025-01-26 11:19:27.516  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 账号：15394202082 对比数据结束 
+2025-01-26 11:19:29.531  INFO 7980 --- [           main] cn.thtns.test.auto.verify.TokenManager   : Token 未找到，为账号 15334893115 生成新 Token...
+2025-01-26 11:19:29.604  INFO 7980 --- [           main] cn.thtns.test.auto.verify.TokenManager   : 成功获取 BEARER_TOKEN for 15334893115: bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3Mzc4NjE1NjQsIm5iZiI6MTczNzg2MTU2MywiZXhwIjoxNzM4NDY2MzY0LCJ1X2lkIjoxNDk4MSwidV90eXBlIjoyLCJjb21wYW55X2lkIjoyLCJpc3MiOiJkaWRpX3d6IiwiaXNfc3VwZXIiOjAsImlzX2FkbWluIjoxLCJtaW5pX3NvdXJjZSI6Ind6IiwiaXNfc2hvd19zZXR0bGVhY2NvdW50X3JlY29yZCI6MH0.RK5d3YQjaLXk_jGIDe6LmZ5McfrAyVkVg36M5DaPGCg
+2025-01-26 11:19:29.604  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 账号：15334893115 正在对比数据
+2025-01-26 11:19:30.332  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比天统计数据
+2025-01-26 11:19:30.332  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比天统计数据
+2025-01-26 11:19:30.332  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比周统计数据
+2025-01-26 11:19:30.333  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : wxPay支付，日期：2025/01/20-2025/01/26 数据不一致，旧接口数据：11611.0400000000，新接口数据：11156.55
+2025-01-26 11:19:30.333  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : aliPay支付，日期：2025/01/20-2025/01/26 数据不一致，旧接口数据：267.9100000000，新接口数据：257.32
+2025-01-26 11:19:30.333  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : purse支付，日期：2025/01/20-2025/01/26 数据不一致，旧接口数据：450.0500000000，新接口数据：427.37
+2025-01-26 11:19:30.333  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比周统计数据
+2025-01-26 11:19:30.333  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比月统计数据
+2025-01-26 11:19:30.333  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : wxPay支付，日期：2024-10 数据不一致，旧接口数据：80134.5000000000，新接口数据：80135.38
+2025-01-26 11:19:30.334  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比月统计数据
+2025-01-26 11:19:30.334  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比季度统计数据
+2025-01-26 11:19:30.334  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : wxPay支付，日期：2024_04 数据不一致，旧接口数据：220671.3200000000，新接口数据：220672.2
+2025-01-26 11:19:30.334  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比季度统计数据
+2025-01-26 11:19:30.334  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比年度统计数据
+2025-01-26 11:19:30.334  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : wxPay支付，日期：2024 数据不一致，旧接口数据：776484.7300000000，新接口数据：776485.61
+2025-01-26 11:19:30.334  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比年度统计数据
+2025-01-26 11:19:30.335  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始今日收益-未到账-到账金额
+2025-01-26 11:19:30.335  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束今日收益-未到账-到账金额
+2025-01-26 11:19:30.335  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比各项总收益数据
+2025-01-26 11:19:30.335  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 微信总收益支付，数据不一致，旧接口数据：1398145.1700000000，新接口数据：1398116.45
+2025-01-26 11:19:30.335  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 钱包支付总收益支付，数据不一致，旧接口数据：30920.3700000000，新接口数据：30918.22
+2025-01-26 11:19:30.335  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比各项总收益数据
+2025-01-26 11:19:30.335  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 账号：15334893115 对比数据结束 
+2025-01-26 11:19:32.349  INFO 7980 --- [           main] cn.thtns.test.auto.verify.TokenManager   : Token 未找到，为账号 13767389295 生成新 Token...
+2025-01-26 11:19:32.423  INFO 7980 --- [           main] cn.thtns.test.auto.verify.TokenManager   : 成功获取 BEARER_TOKEN for 13767389295: bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3Mzc4NjE1NjcsIm5iZiI6MTczNzg2MTU2NiwiZXhwIjoxNzM4NDY2MzY3LCJ1X2lkIjo3NDI1LCJ1X3R5cGUiOjIsImNvbXBhbnlfaWQiOjIsImlzcyI6ImRpZGlfd3oiLCJpc19zdXBlciI6MCwiaXNfYWRtaW4iOjEsIm1pbmlfc291cmNlIjoid3oiLCJpc19zaG93X3NldHRsZWFjY291bnRfcmVjb3JkIjowfQ.if554HQVKLhvYq0DJAWRl78cecqSvX10LrBW_7Azitc
+2025-01-26 11:19:32.423  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 账号：13767389295 正在对比数据
+2025-01-26 11:19:33.221  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比天统计数据
+2025-01-26 11:19:33.221  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比天统计数据
+2025-01-26 11:19:33.221  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比周统计数据
+2025-01-26 11:19:33.222  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : wxPay支付，日期：2025/01/20-2025/01/26 数据不一致，旧接口数据：18188.4400000000，新接口数据：17442.97
+2025-01-26 11:19:33.222  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : aliPay支付，日期：2025/01/20-2025/01/26 数据不一致，旧接口数据：1247.3200000000，新接口数据：1201.18
+2025-01-26 11:19:33.222  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比周统计数据
+2025-01-26 11:19:33.222  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比月统计数据
+2025-01-26 11:19:33.222  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : wxPay支付，日期：2024-11 数据不一致，旧接口数据：144635.5900000000，新接口数据：144615.59
+2025-01-26 11:19:33.222  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比月统计数据
+2025-01-26 11:19:33.222  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比季度统计数据
+2025-01-26 11:19:33.222  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : wxPay支付，日期：2024_04 数据不一致，旧接口数据：438353.8800000000，新接口数据：438333.88
+2025-01-26 11:19:33.222  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比季度统计数据
+2025-01-26 11:19:33.222  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比年度统计数据
+2025-01-26 11:19:33.222  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : wxPay支付，日期：2024 数据不一致，旧接口数据：1495707.8200000000，新接口数据：1495687.82
+2025-01-26 11:19:33.222  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比年度统计数据
+2025-01-26 11:19:33.222  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始今日收益-未到账-到账金额
+2025-01-26 11:19:33.222  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束今日收益-未到账-到账金额
+2025-01-26 11:19:33.222  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比各项总收益数据
+2025-01-26 11:19:33.223  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 微信总收益支付，数据不一致，旧接口数据：3870889.1600000000，新接口数据：3870806.68
+2025-01-26 11:19:33.223  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 支付宝总收益支付，数据不一致，旧接口数据：258340.4100000000，新接口数据：258335.31
+2025-01-26 11:19:33.223  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比各项总收益数据
+2025-01-26 11:19:33.223  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 账号：13767389295 对比数据结束 
+2025-01-26 11:19:35.232  INFO 7980 --- [           main] cn.thtns.test.auto.verify.TokenManager   : Token 未找到，为账号 13761260055 生成新 Token...
+2025-01-26 11:19:35.307  INFO 7980 --- [           main] cn.thtns.test.auto.verify.TokenManager   : 成功获取 BEARER_TOKEN for 13761260055: bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3Mzc4NjE1NzAsIm5iZiI6MTczNzg2MTU2OSwiZXhwIjoxNzM4NDY2MzcwLCJ1X2lkIjoxMDM0NTc5NDAsInVfdHlwZSI6MiwiY29tcGFueV9pZCI6MiwiaXNzIjoiZGlkaV93eiIsImlzX3N1cGVyIjowLCJpc19hZG1pbiI6MSwibWluaV9zb3VyY2UiOiJ3eiIsImlzX3Nob3dfc2V0dGxlYWNjb3VudF9yZWNvcmQiOjB9.7nD-oIYuDe1v7mfI2uJe7fMxfxwhqHC7e4av-2jvayo
+2025-01-26 11:19:35.307  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 账号：13761260055 正在对比数据
+2025-01-26 11:19:36.053  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比天统计数据
+2025-01-26 11:19:36.053  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比天统计数据
+2025-01-26 11:19:36.053  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比周统计数据
+2025-01-26 11:19:36.053  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : wxPay支付，日期：2025/01/20-2025/01/26 数据不一致，旧接口数据：4307.4300000000，新接口数据：4068.35
+2025-01-26 11:19:36.053  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : aliPay支付，日期：2025/01/20-2025/01/26 数据不一致，旧接口数据：565.6300000000，新接口数据：536.78
+2025-01-26 11:19:36.053  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : purse支付，日期：2025/01/20-2025/01/26 数据不一致，旧接口数据：111.2500000000，新接口数据：104.27
+2025-01-26 11:19:36.054  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比周统计数据
+2025-01-26 11:19:36.054  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比月统计数据
+2025-01-26 11:19:36.054  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : wxPay支付，日期：2024-09 数据不一致，旧接口数据：21340.4300000000，新接口数据：21338.43
+2025-01-26 11:19:36.054  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比月统计数据
+2025-01-26 11:19:36.054  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比季度统计数据
+2025-01-26 11:19:36.054  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : wxPay支付，日期：2024_03 数据不一致，旧接口数据：57454.4800000000，新接口数据：57452.48
+2025-01-26 11:19:36.054  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比季度统计数据
+2025-01-26 11:19:36.054  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比年度统计数据
+2025-01-26 11:19:36.054  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : wxPay支付，日期：2024 数据不一致，旧接口数据：187230.4600000000，新接口数据：187228.46
+2025-01-26 11:19:36.054  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比年度统计数据
+2025-01-26 11:19:36.054  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始今日收益-未到账-到账金额
+2025-01-26 11:19:36.054  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束今日收益-未到账-到账金额
+2025-01-26 11:19:36.054  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比各项总收益数据
+2025-01-26 11:19:36.054  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 微信总收益支付，数据不一致，旧接口数据：241529.7200000000，新接口数据：241511.8
+2025-01-26 11:19:36.054  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 支付宝总收益支付，数据不一致，旧接口数据：32417.4900000000，新接口数据：32413.51
+2025-01-26 11:19:36.054  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比各项总收益数据
+2025-01-26 11:19:36.054  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 账号：13761260055 对比数据结束 
+2025-01-26 11:19:38.064  INFO 7980 --- [           main] cn.thtns.test.auto.verify.TokenManager   : Token 未找到，为账号 15357550927 生成新 Token...
+2025-01-26 11:19:38.144  INFO 7980 --- [           main] cn.thtns.test.auto.verify.TokenManager   : 成功获取 BEARER_TOKEN for 15357550927: bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3Mzc4NjE1NzMsIm5iZiI6MTczNzg2MTU3MiwiZXhwIjoxNzM4NDY2MzczLCJ1X2lkIjo5MDI4LCJ1X3R5cGUiOjIsImNvbXBhbnlfaWQiOjIsImlzcyI6ImRpZGlfd3oiLCJpc19zdXBlciI6MCwiaXNfYWRtaW4iOjEsIm1pbmlfc291cmNlIjoid3oiLCJpc19zaG93X3NldHRsZWFjY291bnRfcmVjb3JkIjowfQ.ruwdmVDARz-OTW8eI22TAUNAbPCzG5Lg6nbpoj4quwo
+2025-01-26 11:19:38.144  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 账号：15357550927 正在对比数据
+2025-01-26 11:19:39.006  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比天统计数据
+2025-01-26 11:19:39.006  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比天统计数据
+2025-01-26 11:19:39.006  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比周统计数据
+2025-01-26 11:19:39.006  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : wxPay支付，日期：2025/01/20-2025/01/26 数据不一致，旧接口数据：16534.6600000000，新接口数据：15487.52
+2025-01-26 11:19:39.007  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : aliPay支付，日期：2025/01/20-2025/01/26 数据不一致，旧接口数据：1353.3600000000，新接口数据：1277.34
+2025-01-26 11:19:39.007  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : purse支付，日期：2025/01/20-2025/01/26 数据不一致，旧接口数据：56.6900000000，新接口数据：56.29
+2025-01-26 11:19:39.007  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : safeguard支付，日期：2025/01/20-2025/01/26 数据不一致，旧接口数据：222.3300000000，新接口数据：210.99
+2025-01-26 11:19:39.007  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比周统计数据
+2025-01-26 11:19:39.007  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比月统计数据
+2025-01-26 11:19:39.007  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比月统计数据
+2025-01-26 11:19:39.007  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比季度统计数据
+2025-01-26 11:19:39.007  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比季度统计数据
+2025-01-26 11:19:39.007  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比年度统计数据
+2025-01-26 11:19:39.007  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比年度统计数据
+2025-01-26 11:19:39.007  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始今日收益-未到账-到账金额
+2025-01-26 11:19:39.008  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束今日收益-未到账-到账金额
+2025-01-26 11:19:39.008  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比各项总收益数据
+2025-01-26 11:19:39.008  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 微信总收益支付，数据不一致，旧接口数据：1582694.9600000000，新接口数据：1582654.57
+2025-01-26 11:19:39.008  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 支付宝总收益支付，数据不一致，旧接口数据：132588.8800000000，新接口数据：132582.28
+2025-01-26 11:19:39.008  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 钱包支付总收益支付，数据不一致，旧接口数据：2803.1800000000，新接口数据：2801.44
+2025-01-26 11:19:39.008  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比各项总收益数据
+2025-01-26 11:19:39.008  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 账号：15357550927 对比数据结束 
+2025-01-26 11:19:41.015  INFO 7980 --- [           main] cn.thtns.test.auto.verify.TokenManager   : Token 未找到，为账号 13914979477 生成新 Token...
+2025-01-26 11:19:41.096  INFO 7980 --- [           main] cn.thtns.test.auto.verify.TokenManager   : 成功获取 BEARER_TOKEN for 13914979477: bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3Mzc4NjE1NzYsIm5iZiI6MTczNzg2MTU3NSwiZXhwIjoxNzM4NDY2Mzc2LCJ1X2lkIjoxMzcsInVfdHlwZSI6MiwiY29tcGFueV9pZCI6MiwiaXNzIjoiZGlkaV93eiIsImlzX3N1cGVyIjowLCJpc19hZG1pbiI6MSwibWluaV9zb3VyY2UiOiJ3eiIsImlzX3Nob3dfc2V0dGxlYWNjb3VudF9yZWNvcmQiOjB9.sSbD0jb1jN5XJDOBkZ50_sRXuf-SS-wdU_WW2sFm1M8
+2025-01-26 11:19:41.096  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 账号：13914979477 正在对比数据
+2025-01-26 11:19:41.763  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比天统计数据
+2025-01-26 11:19:41.765  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比天统计数据
+2025-01-26 11:19:41.765  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比周统计数据
+2025-01-26 11:19:41.765  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : wxPay支付，日期：2025/01/20-2025/01/26 数据不一致，旧接口数据：17423.6900000000，新接口数据：16389.77
+2025-01-26 11:19:41.765  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : aliPay支付，日期：2025/01/20-2025/01/26 数据不一致，旧接口数据：7955.3700000000，新接口数据：7549.45
+2025-01-26 11:19:41.765  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : purse支付，日期：2025/01/20-2025/01/26 数据不一致，旧接口数据：31.0000000000，新接口数据：29
+2025-01-26 11:19:41.765  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比周统计数据
+2025-01-26 11:19:41.765  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比月统计数据
+2025-01-26 11:19:41.765  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比月统计数据
+2025-01-26 11:19:41.765  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比季度统计数据
+2025-01-26 11:19:41.766  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比季度统计数据
+2025-01-26 11:19:41.766  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比年度统计数据
+2025-01-26 11:19:41.766  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比年度统计数据
+2025-01-26 11:19:41.766  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始今日收益-未到账-到账金额
+2025-01-26 11:19:41.766  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束今日收益-未到账-到账金额
+2025-01-26 11:19:41.766  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比各项总收益数据
+2025-01-26 11:19:41.766  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 微信总收益支付，数据不一致，旧接口数据：4984580.1400000000，新接口数据：4984531.07
+2025-01-26 11:19:41.766  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 支付宝总收益支付，数据不一致，旧接口数据：1403349.0500000000，新接口数据：1403303.27
+2025-01-26 11:19:41.766  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 钱包支付总收益支付，数据不一致，旧接口数据：751.5000000000，新接口数据：750.5
+2025-01-26 11:19:41.766  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比各项总收益数据
+2025-01-26 11:19:41.766  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 账号：13914979477 对比数据结束 
+2025-01-26 11:19:43.776  INFO 7980 --- [           main] cn.thtns.test.auto.verify.TokenManager   : Token 未找到，为账号 13851717732 生成新 Token...
+2025-01-26 11:19:43.850  INFO 7980 --- [           main] cn.thtns.test.auto.verify.TokenManager   : 成功获取 BEARER_TOKEN for 13851717732: bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3Mzc4NjE1NzksIm5iZiI6MTczNzg2MTU3OCwiZXhwIjoxNzM4NDY2Mzc5LCJ1X2lkIjoyMjIsInVfdHlwZSI6MiwiY29tcGFueV9pZCI6MiwiaXNzIjoiZGlkaV93eiIsImlzX3N1cGVyIjowLCJpc19hZG1pbiI6MSwibWluaV9zb3VyY2UiOiJ3eiIsImlzX3Nob3dfc2V0dGxlYWNjb3VudF9yZWNvcmQiOjB9.xPKXGGurJJf6IdIrbMd_Y71dV9oeq2IEmbs5lAqvXI8
+2025-01-26 11:19:43.850  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 账号：13851717732 正在对比数据
+2025-01-26 11:19:45.580  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比天统计数据
+2025-01-26 11:19:45.580  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比天统计数据
+2025-01-26 11:19:45.580  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比周统计数据
+2025-01-26 11:19:45.580  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : wxPay支付，日期：2025/01/20-2025/01/26 数据不一致，旧接口数据：16258.9900000000，新接口数据：15334.12
+2025-01-26 11:19:45.580  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : aliPay支付，日期：2025/01/20-2025/01/26 数据不一致，旧接口数据：2018.2800000000，新接口数据：1903.05
+2025-01-26 11:19:45.580  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : purse支付，日期：2025/01/20-2025/01/26 数据不一致，旧接口数据：630.8700000000，新接口数据：602.25
+2025-01-26 11:19:45.580  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比周统计数据
+2025-01-26 11:19:45.580  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比月统计数据
+2025-01-26 11:19:45.581  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比月统计数据
+2025-01-26 11:19:45.581  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比季度统计数据
+2025-01-26 11:19:45.581  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比季度统计数据
+2025-01-26 11:19:45.581  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比年度统计数据
+2025-01-26 11:19:45.581  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比年度统计数据
+2025-01-26 11:19:45.581  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始今日收益-未到账-到账金额
+2025-01-26 11:19:45.581  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束今日收益-未到账-到账金额
+2025-01-26 11:19:45.581  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比各项总收益数据
+2025-01-26 11:19:45.581  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 微信总收益支付，数据不一致，旧接口数据：2393423.7200000000，新接口数据：2393358.77
+2025-01-26 11:19:45.581  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 支付宝总收益支付，数据不一致，旧接口数据：348814.7400000000，新接口数据：348807.15
+2025-01-26 11:19:45.581  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 钱包支付总收益支付，数据不一致，旧接口数据：40218.0900000000，新接口数据：40213.8
+2025-01-26 11:19:45.581  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比各项总收益数据
+2025-01-26 11:19:45.581  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 账号：13851717732 对比数据结束 
+2025-01-26 11:19:47.583  INFO 7980 --- [           main] cn.thtns.test.auto.verify.TokenManager   : Token 未找到，为账号 13333703000 生成新 Token...
+2025-01-26 11:19:47.658  INFO 7980 --- [           main] cn.thtns.test.auto.verify.TokenManager   : 成功获取 BEARER_TOKEN for 13333703000: bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3Mzc4NjE1ODIsIm5iZiI6MTczNzg2MTU4MSwiZXhwIjoxNzM4NDY2MzgyLCJ1X2lkIjo2NzEwLCJ1X3R5cGUiOjIsImNvbXBhbnlfaWQiOjIsImlzcyI6ImRpZGlfd3oiLCJpc19zdXBlciI6MCwiaXNfYWRtaW4iOjEsIm1pbmlfc291cmNlIjoid3oiLCJpc19zaG93X3NldHRsZWFjY291bnRfcmVjb3JkIjowfQ.2TkS3o-0XrfMz8VGCJlvxRjI6vFhL9g2p8nqL0IKt20
+2025-01-26 11:19:47.659  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 账号：13333703000 正在对比数据
+2025-01-26 11:20:08.014  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比天统计数据
+2025-01-26 11:20:08.014  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比天统计数据
+2025-01-26 11:20:08.014  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比周统计数据
+2025-01-26 11:20:08.014  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : wxPay支付，日期：2025/01/20-2025/01/26 数据不一致，旧接口数据：1179.7200000000，新接口数据：1077.51
+2025-01-26 11:20:08.014  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : aliPay支付，日期：2025/01/20-2025/01/26 数据不一致，旧接口数据：104.7800000000，新接口数据：95.66
+2025-01-26 11:20:08.015  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比周统计数据
+2025-01-26 11:20:08.015  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比月统计数据
+2025-01-26 11:20:08.015  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比月统计数据
+2025-01-26 11:20:08.015  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比季度统计数据
+2025-01-26 11:20:08.015  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比季度统计数据
+2025-01-26 11:20:08.015  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比年度统计数据
+2025-01-26 11:20:08.015  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比年度统计数据
+2025-01-26 11:20:08.015  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始今日收益-未到账-到账金额
+2025-01-26 11:20:08.015  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束今日收益-未到账-到账金额
+2025-01-26 11:20:08.015  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 开始对比各项总收益数据
+2025-01-26 11:20:08.015  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 微信总收益支付，数据不一致，旧接口数据：715578.3000000000，新接口数据：715573.01
+2025-01-26 11:20:08.015  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 结束对比各项总收益数据
+2025-01-26 11:20:08.015  INFO 7980 --- [           main] cn.thtns.test.auto.verify.ProfitTest     : 账号：13333703000 对比数据结束 
