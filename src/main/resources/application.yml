@@ -7,9 +7,9 @@ spring:
       strict: false #严格匹配数据源,默认false. true未匹配到指定数据源时抛异常,false使用默认数据源
       datasource:
         order:
-          url: jdbc:mysql://rr-bp1g8x8p43j5v2a5wao.mysql.rds.aliyuncs.com:3306/test?useSSL=false&serverTimezone=Asia/Shanghai
-          username: root
-          password: 123456
+          url: jdbc:mysql://rr-bp1gi6wtrnz2o2m2lio.mysql.rds.aliyuncs.com:3306/test?useSSL=false&serverTimezone=Asia/Shanghai
+          username: wz_select_2021
+          password: 3!F1QsVA&II9&f#Q
           type: com.zaxxer.hikari.HikariDataSource
   #        split:
   #          url: jdbc:mysql://rm-bp1yo55w42q8j7244bo.mysql.rds.aliyuncs.com:3306/dynamic
