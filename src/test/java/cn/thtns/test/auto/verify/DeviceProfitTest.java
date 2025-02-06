@@ -195,7 +195,7 @@ public class DeviceProfitTest {
     @Test
     public void profitComparison() throws JsonProcessingException {
 
-        List<SysUser> userVoByUsername = sysUserMapper.listAll();
+//        List<SysUser> userVoByUsername = sysUserMapper.listAll();
 
 //        log.info("user:{}",userVoByUsername);
 
