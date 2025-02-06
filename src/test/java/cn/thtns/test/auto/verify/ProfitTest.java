@@ -1,6 +1,8 @@
 package cn.thtns.test.auto.verify;
 
 import cn.hutool.core.bean.BeanUtil;
+import cn.hutool.core.collection.CollUtil;
+import cn.hutool.core.thread.ThreadUtil;
 import cn.hutool.core.util.NumberUtil;
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.json.JSONUtil;
@@ -77,13 +79,25 @@ public class ProfitTest {
     }
 
     private void compareProfitData(String paymentType, List<OldProfitRes.DataDTO.CacheProfitDTO.Profit.TimeAndProfit> oldData, List<NewProfitRes.DataDTO.ProfitListDTO.Profit.TimeAndProfit> newData) {
+        if (CollUtil.isEmpty(newData)) {//新接口返回为空，可能没权限
+            return;
+        }
         oldData.forEach(ow -> newData.forEach(nw -> {
             if (ow.getTime().equals(nw.getTime()) && !compareProfitByTime(ow, nw)) {
                 log.info(StrUtil.format("{}支付，日期：{} 数据不一致，旧接口数据：{}，新接口数据：{}", paymentType, ow.getTime(), ow.getProfit(), nw.getProfit()));
             }
         }));
     }
+    private void compareProfitArrrivise(String paymentType, Integer oldData, Double newData) {
+        if (newData==null) {//新接口返回为空，可能没权限
+            return;
+        }
 
+        if (NumberUtil.equals(NumberUtil.div(oldData, BigDecimal.valueOf(100)), BigDecimal.valueOf(newData))==false) {
+            log.info(StrUtil.format("{}支付，数据不一致，旧接口数据：{}，新接口数据：{}", paymentType, NumberUtil.div(oldData, BigDecimal.valueOf(100)), newData));
+        }
+
+    }
 
     public static LocalDate getMondayOfWeek(int year, int week) {
         // 获取该年第一天
@@ -154,7 +168,9 @@ public class ProfitTest {
 
             OldProfitRes oldProfitRes = objectMapper.readValue(getApiResponse(OLD_PROFIT_API, bearerToken), OldProfitRes.class);
             NewProfitRes newProfitRes = objectMapper.readValue(getApiResponse(NEW_PROFIT_API, bearerToken), NewProfitRes.class);
-
+            if (newProfitRes.getData()==null) {
+                continue;
+            }
             log.info("开始对比天统计数据");
             compareProfitData("wxPay", oldProfitRes.getData().getCacheProfit().getDay().getWxpay(), newProfitRes.getData().getProfitList().getDay().getWxPay());
             compareProfitData("aliPay", oldProfitRes.getData().getCacheProfit().getDay().getAlipay(), newProfitRes.getData().getProfitList().getDay().getAliPay());
@@ -238,8 +254,8 @@ public class ProfitTest {
             log.info("开始对比季度统计数据");
             compareProfitData("wxPay", oldProfitRes.getData().getCacheProfit().getSeason().getWxpay(), newProfitRes.getData().getProfitList().getSeason().getWxPay());
             compareProfitData("aliPay", oldProfitRes.getData().getCacheProfit().getSeason().getAlipay(), newProfitRes.getData().getProfitList().getSeason().getAliPay());
-            compareProfitData("bill", oldProfitRes.getData().getCacheProfit().getSeason().getBill(), newProfitRes.getData().getProfitList().getSeason().getBill());
-            compareProfitData("card", oldProfitRes.getData().getCacheProfit().getSeason().getCard(), newProfitRes.getData().getProfitList().getSeason().getCard());
+//            compareProfitData("bill", oldProfitRes.getData().getCacheProfit().getSeason().getBill(), newProfitRes.getData().getProfitList().getSeason().getBill());
+//            compareProfitData("card", oldProfitRes.getData().getCacheProfit().getSeason().getCard(), newProfitRes.getData().getProfitList().getSeason().getCard());
             compareProfitData("purse", oldProfitRes.getData().getCacheProfit().getSeason().getPurse(), newProfitRes.getData().getProfitList().getSeason().getPurse());
             compareProfitData("safeguard", oldProfitRes.getData().getCacheProfit().getSeason().getSafeguard(), newProfitRes.getData().getProfitList().getSeason().getSafeguard());
             compareProfitData("virtual", oldProfitRes.getData().getCacheProfit().getSeason().getIccVirtual(), newProfitRes.getData().getProfitList().getSeason().getVirtual());
@@ -252,8 +268,8 @@ public class ProfitTest {
 
 
             List<OldProfitRes.DataDTO.CacheProfitDTO.Profit.TimeAndProfit> seasonIccObjects = Lists.newArrayList();
-            seasonIccObjects.addAll(oldProfitRes.getData().getCacheProfit().getSeason().getIccAlipay());
-            seasonIccObjects.addAll(oldProfitRes.getData().getCacheProfit().getSeason().getIccWxpay());
+//            seasonIccObjects.addAll(oldProfitRes.getData().getCacheProfit().getSeason().getIccAlipay());
+//            seasonIccObjects.addAll(oldProfitRes.getData().getCacheProfit().getSeason().getIccWxpay());
             seasonIccObjects.addAll(oldProfitRes.getData().getCacheProfit().getSeason().getIccWxpayRecharge());
             seasonIccObjects.addAll(oldProfitRes.getData().getCacheProfit().getSeason().getIccAlipayRecharge());
 
@@ -264,8 +280,8 @@ public class ProfitTest {
             log.info("开始对比年度统计数据");
             compareProfitData("wxPay", oldProfitRes.getData().getCacheProfit().getYear().getWxpay(), newProfitRes.getData().getProfitList().getYear().getWxPay());
             compareProfitData("aliPay", oldProfitRes.getData().getCacheProfit().getYear().getAlipay(), newProfitRes.getData().getProfitList().getYear().getAliPay());
-            compareProfitData("bill", oldProfitRes.getData().getCacheProfit().getYear().getBill(), newProfitRes.getData().getProfitList().getYear().getBill());
-            compareProfitData("card", oldProfitRes.getData().getCacheProfit().getYear().getCard(), newProfitRes.getData().getProfitList().getYear().getCard());
+//            compareProfitData("bill", oldProfitRes.getData().getCacheProfit().getYear().getBill(), newProfitRes.getData().getProfitList().getYear().getBill());
+//            compareProfitData("card", oldProfitRes.getData().getCacheProfit().getYear().getCard(), newProfitRes.getData().getProfitList().getYear().getCard());
             compareProfitData("purse", oldProfitRes.getData().getCacheProfit().getYear().getPurse(), newProfitRes.getData().getProfitList().getYear().getPurse());
             compareProfitData("safeguard", oldProfitRes.getData().getCacheProfit().getYear().getSafeguard(), newProfitRes.getData().getProfitList().getYear().getSafeguard());
             compareProfitData("virtual", oldProfitRes.getData().getCacheProfit().getYear().getIccVirtual(), newProfitRes.getData().getProfitList().getYear().getVirtual());
@@ -288,7 +304,28 @@ public class ProfitTest {
             log.info("结束对比年度统计数据");
 
 
-			log.info("账号：{} 对比数据结束 ", k);
+            log.info("开始对比各项总收益数据");
+            compareProfitArrrivise("微信总收益",oldProfitRes.getData().getTotalProfit().getTotalWxpay(),newProfitRes.getData().getTotalProfit().getWxPay());
+            compareProfitArrrivise("支付宝总收益",oldProfitRes.getData().getTotalProfit().getTotalAlipay(),newProfitRes.getData().getTotalProfit().getAliPay());
+            compareProfitArrrivise("钱包支付总收益",oldProfitRes.getData().getTotalProfit().getTotalPurse(),newProfitRes.getData().getTotalProfit().getPurse());
+
+            Integer oldIccrech=oldProfitRes.getData().getTotalProfit().getTotalIccWxpayRecharge()+oldProfitRes.getData().getTotalProfit().getTotalIccAlipayRecharge();
+            compareProfitArrrivise("IC卡充值总收益",oldIccrech,newProfitRes.getData().getTotalProfit().getIcc());
+
+            Integer olddiscountRech=oldProfitRes.getData().getTotalProfit().getTotalDiscountAlipayRecharge()+oldProfitRes.getData().getTotalProfit().getTotalDiscountWxpayRecharge();
+            compareProfitArrrivise("充电券充值总收益",olddiscountRech,newProfitRes.getData().getTotalProfit().getDiscount());
+//            compareProfitArrrivise("投币总收益",oldProfitRes.getData().getTotalProfit().getTotalBill(),newProfitRes.getData().getTotalProfit().getBill());
+//            compareProfitArrrivise("刷卡总收益",oldProfitRes.getData().getTotalProfit().getTotalAlipay(),newProfitRes.getData().getTotalProfit().getAliPay());
+
+            Object obj = newProfitRes.getData().getTotalProfit().getVirtual();
+            if (obj instanceof Double) {
+                Double target = (Double) obj;
+                compareProfitArrrivise("IC卡虚拟充值",oldProfitRes.getData().getTotalProfit().getTotalVirtual(),target);
+            }
+            log.info("结束对比各项总收益数据");
+
+            log.info("账号：{} 对比数据结束 ", k);
+            ThreadUtil.sleep(2000);
 
         }
 

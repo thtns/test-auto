@@ -44,6 +44,7 @@ public class DeviceProfitTest {
 
     // 分组收益
     private static final String OLD_PROFIT_API_group = "https://agentv2.wanzhuangkj.com/api/profit/get/all?profit_type=group&group_id={}";
+    private static final String NEW_PROFIT_API_group = "https://agentv2.wanzhuangkj.com/api/operator/income/profitReport?groupId={}";
 
     // 设备类型
     private static final String OLD_PROFIT_API_DEVICE_TYPE = "https://agentv2.wanzhuangkj.com/api/device/getDeviceType?group_id={}";
@@ -54,7 +55,7 @@ public class DeviceProfitTest {
     // 设备收益
     private static final String DEVICE_PROFIT = "https://agentv2.wanzhuangkj.com/api/profit/get/all?profit_type=device&device_num={}";
 
-    private static final String NEW_PROFIT_API = "https://agentv2.wanzhuangkj.com/api/operator/income/profitReport";
+    private static final String NEW_DevicePROFIT_API = "https://agentv2.wanzhuangkj.com/api/operator/income/profitReport?deviceId={}";
 
 
 
@@ -217,7 +218,8 @@ public class DeviceProfitTest {
             for (DeviceGroupRes.Data.ListBean listBean : list) {
                 Integer groupId = listBean.getGroupId();
                 //分组收益
-//                OldProfitRes oldProfitResGroup = objectMapper.readValue(getApiResponse(StrUtil.format(OLD_PROFIT_API_group,groupId), bearerToken), OldProfitRes.class);
+                OldProfitRes oldProfitResGroup = objectMapper.readValue(getApiResponse(StrUtil.format(OLD_PROFIT_API_group,groupId), bearerToken), OldProfitRes.class);
+                NewProfitRes newProfitResGroup = objectMapper.readValue(getApiResponse(StrUtil.format(NEW_PROFIT_API_group,groupId), bearerToken), NewProfitRes.class);
 
                 DeviceTypeRes deviceTypeRes = objectMapper.readValue(getApiResponse(StrUtil.format(OLD_PROFIT_API_DEVICE_TYPE,groupId), bearerToken), DeviceTypeRes.class);
 
@@ -227,16 +229,19 @@ public class DeviceProfitTest {
                     for (DeviceByTypeRes.Data.ListBean bean : deviceByTypeRes.getData().getList()) {
 
                         Long deviceNum = bean.getDeviceNum();
+                        Integer deviceId = bean.getId();
                         //设备收益
                         OldProfitRes deviceProfit = objectMapper.readValue(getApiResponse(StrUtil.format(DEVICE_PROFIT,deviceNum), bearerToken), OldProfitRes.class);
+                        NewProfitRes newDeviceProfit = objectMapper.readValue(getApiResponse(StrUtil.format(NEW_DevicePROFIT_API,deviceId), bearerToken), NewProfitRes.class);
                         log.info("deviceProfit:{}",JSONUtil.toJsonStr(deviceProfit));
-
+//                      对比设备收益数据
+                        verify(deviceProfit, newDeviceProfit, k);
                     }
 
                 }
 
-//             对比数据
-//                verify(oldProfitResGroup, newProfitRes, k);
+//             对比分组收益数据
+                verify(oldProfitResGroup, newProfitResGroup, k);
 
 //                log.info("oldProfitResGroup:{}",JSONUtil.toJsonStr(oldProfitResGroup));
 

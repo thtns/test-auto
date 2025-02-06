@@ -47,7 +47,7 @@ public class TokenManager {
     public String login(String phone, String password) {
 
         String body = restClient.get()
-                .uri(StrUtil.format("https://agentv2.wanzhuangkj.com/api/auth/agentLogin?password={}&company_id=2&phone={}&type=2", password, phone))
+                .uri(StrUtil.format("https://agentv2.wanzhuangkj.com/api/auth/adminLogin?phone={}&company_id=2&password=wz020202&operator_phone=18327519799&is_operator=1", phone))
                 .retrieve()
                 .body(String.class);
 
