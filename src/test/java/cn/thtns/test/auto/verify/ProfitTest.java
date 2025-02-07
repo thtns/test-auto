@@ -84,7 +84,7 @@ public class ProfitTest {
         }
         oldData.forEach(ow -> newData.forEach(nw -> {
             if (ow.getTime().equals(nw.getTime()) && !compareProfitByTime(ow, nw)) {
-                log.info(StrUtil.format("{}支付，日期：{} 数据不一致，旧接口数据：{}，新接口数据：{}", paymentType, ow.getTime(), ow.getProfit(), nw.getProfit()));
+                log.info(StrUtil.format("{}支付，日期：{} 数据不一致，旧接口数据：{}，新接口数据：{}", paymentType, ow.getTime(), NumberUtil.div(ow.getProfit(), BigDecimal.valueOf(100)), nw.getProfit()));
             }
         }));
     }
@@ -164,7 +164,7 @@ public class ProfitTest {
             String v = entry.getValue();
             String bearerToken = tokenManager.getToken(k, v);
 
-			log.info("账号：{} 正在对比数据", k);
+			log.info("账号：{} 正在对比总收益数据", k);
 
             OldProfitRes oldProfitRes = objectMapper.readValue(getApiResponse(OLD_PROFIT_API, bearerToken), OldProfitRes.class);
             NewProfitRes newProfitRes = objectMapper.readValue(getApiResponse(NEW_PROFIT_API, bearerToken), NewProfitRes.class);
@@ -324,7 +324,7 @@ public class ProfitTest {
             }
             log.info("结束对比各项总收益数据");
 
-            log.info("账号：{} 对比数据结束 ", k);
+            log.info("账号：{} 对比总收益数据结束 ", k);
             ThreadUtil.sleep(2000);
 
         }

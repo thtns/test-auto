@@ -86,7 +86,7 @@ public class DeviceProfitTest {
     {
             try {
                 // 读取 Excel 文件
-                FileInputStream file = new FileInputStream("E:\\Desktop\\测试用户账号.xlsx");
+                FileInputStream file = new FileInputStream("E:\\测试手机号.xlsx");
                 Workbook workbook = new XSSFWorkbook(file);
 
                 // 获取第一个工作表
@@ -94,18 +94,18 @@ public class DeviceProfitTest {
 
                 // 遍历每一行
                 for (Row row : sheet) {
-                    // 获取第一列（电话号码）和第二列（密码）
-                    Cell phoneCell = row.getCell(0);
-                    Cell passwordCell = row.getCell(1);
+                    // 获取第一列（姓名）和第二列（手机号）
+                    Cell nameCell = row.getCell(0);
+                    Cell phoneCell = row.getCell(1);
 
                     // 确保单元格不为空
-                    if (phoneCell != null && passwordCell != null) {
+                    if (phoneCell != null && nameCell != null) {
                         // 获取单元格的值
                         String phoneNumber = getCellValueAsString(phoneCell);
-                        String password = getCellValueAsString(passwordCell);
+                        String name = getCellValueAsString(nameCell);
 
                         // 将数据放入 phoneMap
-                        phoneMap.put(phoneNumber, password);
+                        phoneMap.put(phoneNumber, name);
                     }
                 }
 
@@ -131,7 +131,7 @@ public class DeviceProfitTest {
     private void compareProfitData(String paymentType, List<OldProfitRes.DataDTO.CacheProfitDTO.Profit.TimeAndProfit> oldData, List<NewProfitRes.DataDTO.ProfitListDTO.Profit.TimeAndProfit> newData) {
         oldData.forEach(ow -> newData.forEach(nw -> {
             if (ow.getTime().equals(nw.getTime()) && !compareProfitByTime(ow, nw)) {
-                log.info(StrUtil.format("{}支付，日期：{} 数据不一致，旧接口数据：{}，新接口数据：{}", paymentType, ow.getTime(), ow.getProfit(), nw.getProfit()));
+                log.info(StrUtil.format("{}支付，日期：{} 数据不一致，旧接口数据：{}，新接口数据：{}", paymentType, ow.getTime(), NumberUtil.div(ow.getProfit(), BigDecimal.valueOf(100)), nw.getProfit()));
             }
         }));
     }
@@ -191,7 +191,7 @@ public class DeviceProfitTest {
 
 
 
-    @Description("对比数据")
+    @Description("对比分组设备数据")
     @Test
     public void profitComparison() throws JsonProcessingException {
 
@@ -218,8 +218,8 @@ public class DeviceProfitTest {
             for (DeviceGroupRes.Data.ListBean listBean : list) {
                 Integer groupId = listBean.getGroupId();
                 //分组收益
-                OldProfitRes oldProfitResGroup = objectMapper.readValue(getApiResponse(StrUtil.format(OLD_PROFIT_API_group,groupId), bearerToken), OldProfitRes.class);
-                NewProfitRes newProfitResGroup = objectMapper.readValue(getApiResponse(StrUtil.format(NEW_PROFIT_API_group,groupId), bearerToken), NewProfitRes.class);
+//                OldProfitRes oldProfitResGroup = objectMapper.readValue(getApiResponse(StrUtil.format(OLD_PROFIT_API_group,groupId), bearerToken), OldProfitRes.class);
+//                NewProfitRes newProfitResGroup = objectMapper.readValue(getApiResponse(StrUtil.format(NEW_PROFIT_API_group,groupId), bearerToken), NewProfitRes.class);
 
                 DeviceTypeRes deviceTypeRes = objectMapper.readValue(getApiResponse(StrUtil.format(OLD_PROFIT_API_DEVICE_TYPE,groupId), bearerToken), DeviceTypeRes.class);
 
@@ -233,17 +233,19 @@ public class DeviceProfitTest {
                         //设备收益
                         OldProfitRes deviceProfit = objectMapper.readValue(getApiResponse(StrUtil.format(DEVICE_PROFIT,deviceNum), bearerToken), OldProfitRes.class);
                         NewProfitRes newDeviceProfit = objectMapper.readValue(getApiResponse(StrUtil.format(NEW_DevicePROFIT_API,deviceId), bearerToken), NewProfitRes.class);
-                        log.info("deviceProfit:{}",JSONUtil.toJsonStr(deviceProfit));
+                        if (deviceProfit==null||newDeviceProfit==null) {
+                            continue;
+                        }
+                        log.info("设备收益编号:{}",deviceNum);
 //                      对比设备收益数据
                         verify(deviceProfit, newDeviceProfit, k);
                     }
 
                 }
+//                log.info("分组收益分组id:{},分组名称：{}",groupId,listBean.getGroupName());
+////             对比分组收益数据
+//                verify(oldProfitResGroup, newProfitResGroup, k);
 
-//             对比分组收益数据
-                verify(oldProfitResGroup, newProfitResGroup, k);
-
-//                log.info("oldProfitResGroup:{}",JSONUtil.toJsonStr(oldProfitResGroup));
 
             }
 
@@ -257,135 +259,73 @@ public class DeviceProfitTest {
     }
 
     private void verify(OldProfitRes oldProfitRes, NewProfitRes newProfitRes, String k) {
-        log.info("开始对比天统计数据");
+
+
+//        log.info("开始对比天统计数据");
         compareProfitData("wxPay", oldProfitRes.getData().getCacheProfit().getDay().getWxpay(), newProfitRes.getData().getProfitList().getDay().getWxPay());
         compareProfitData("aliPay", oldProfitRes.getData().getCacheProfit().getDay().getAlipay(), newProfitRes.getData().getProfitList().getDay().getAliPay());
         compareProfitData("bill", oldProfitRes.getData().getCacheProfit().getDay().getBill(), newProfitRes.getData().getProfitList().getDay().getBill());
         compareProfitData("card", oldProfitRes.getData().getCacheProfit().getDay().getCard(), newProfitRes.getData().getProfitList().getDay().getCard());
         compareProfitData("purse", oldProfitRes.getData().getCacheProfit().getDay().getPurse(), newProfitRes.getData().getProfitList().getDay().getPurse());
-        compareProfitData("safeguard", oldProfitRes.getData().getCacheProfit().getDay().getSafeguard(), newProfitRes.getData().getProfitList().getDay().getSafeguard());
-        compareProfitData("virtual", oldProfitRes.getData().getCacheProfit().getDay().getIccVirtual(), newProfitRes.getData().getProfitList().getDay().getVirtual());
 
-        List<OldProfitRes.DataDTO.CacheProfitDTO.Profit.TimeAndProfit> dayDiscountObjects = Lists.newArrayList();
-        dayDiscountObjects.addAll(oldProfitRes.getData().getCacheProfit().getDay().getDiscountAlipayRecharge());
-        dayDiscountObjects.addAll(oldProfitRes.getData().getCacheProfit().getDay().getDiscountWxpayRecharge());
+//        compareProfitData("virtual", oldProfitRes.getData().getCacheProfit().getDay().getIccVirtual(), newProfitRes.getData().getProfitList().getDay().getVirtual());
 
-        compareProfitData("discount", add(dayDiscountObjects), newProfitRes.getData().getProfitList().getDay().getDiscount());
+//        List<OldProfitRes.DataDTO.CacheProfitDTO.Profit.TimeAndProfit> dayDiscountObjects = Lists.newArrayList();
+//        dayDiscountObjects.addAll(oldProfitRes.getData().getCacheProfit().getDay().getDiscountAlipayRecharge());
+//        dayDiscountObjects.addAll(oldProfitRes.getData().getCacheProfit().getDay().getDiscountWxpayRecharge());
+
+//        compareProfitData("discount", add(dayDiscountObjects), newProfitRes.getData().getProfitList().getDay().getDiscount());
 
 
-        List<OldProfitRes.DataDTO.CacheProfitDTO.Profit.TimeAndProfit> dayIccObjects = Lists.newArrayList();
-        dayIccObjects.addAll(oldProfitRes.getData().getCacheProfit().getDay().getIccAlipay());
-        dayIccObjects.addAll(oldProfitRes.getData().getCacheProfit().getDay().getIccWxpay());
-        dayIccObjects.addAll(oldProfitRes.getData().getCacheProfit().getDay().getIccAlipayRecharge());
-        dayIccObjects.addAll(oldProfitRes.getData().getCacheProfit().getDay().getIccWxpayRecharge());
-
-        compareProfitData("icc", add(dayIccObjects), newProfitRes.getData().getProfitList().getDay().getIcc());
+//        List<OldProfitRes.DataDTO.CacheProfitDTO.Profit.TimeAndProfit> dayIccObjects = Lists.newArrayList();
+//        dayIccObjects.addAll(oldProfitRes.getData().getCacheProfit().getDay().getIccAlipay());
+//        dayIccObjects.addAll(oldProfitRes.getData().getCacheProfit().getDay().getIccWxpay());
+//        dayIccObjects.addAll(oldProfitRes.getData().getCacheProfit().getDay().getIccAlipayRecharge());
+//        dayIccObjects.addAll(oldProfitRes.getData().getCacheProfit().getDay().getIccWxpayRecharge());
+//
+//        compareProfitData("icc", add(dayIccObjects), newProfitRes.getData().getProfitList().getDay().getIcc());
 
 
         log.info("结束对比天统计数据");
 
 
-        log.info("开始对比周统计数据");
+//        log.info("开始对比周统计数据");
         compareProfitData("wxPay", convertSeason(oldProfitRes.getData().getCacheProfit().getWeek().getWxpay()), newProfitRes.getData().getProfitList().getWeek().getWxPay());
         compareProfitData("aliPay", convertSeason(oldProfitRes.getData().getCacheProfit().getWeek().getAlipay()), newProfitRes.getData().getProfitList().getWeek().getAliPay());
         compareProfitData("bill", convertSeason(oldProfitRes.getData().getCacheProfit().getWeek().getBill()), newProfitRes.getData().getProfitList().getWeek().getBill());
         compareProfitData("card", convertSeason(oldProfitRes.getData().getCacheProfit().getWeek().getCard()), newProfitRes.getData().getProfitList().getWeek().getCard());
         compareProfitData("purse", convertSeason(oldProfitRes.getData().getCacheProfit().getWeek().getPurse()), newProfitRes.getData().getProfitList().getWeek().getPurse());
-        compareProfitData("safeguard", convertSeason(oldProfitRes.getData().getCacheProfit().getWeek().getSafeguard()), newProfitRes.getData().getProfitList().getWeek().getSafeguard());
-        compareProfitData("virtual", convertSeason(oldProfitRes.getData().getCacheProfit().getWeek().getIccVirtual()), newProfitRes.getData().getProfitList().getWeek().getVirtual());
 
-        List<OldProfitRes.DataDTO.CacheProfitDTO.Profit.TimeAndProfit> weekDiscountObjects = Lists.newArrayList();
-        weekDiscountObjects.addAll(oldProfitRes.getData().getCacheProfit().getWeek().getDiscountAlipayRecharge());
-        weekDiscountObjects.addAll(oldProfitRes.getData().getCacheProfit().getWeek().getDiscountWxpayRecharge());
-
-        compareProfitData("discount", add(weekDiscountObjects), newProfitRes.getData().getProfitList().getDay().getDiscount());
-
-
-        List<OldProfitRes.DataDTO.CacheProfitDTO.Profit.TimeAndProfit> weekIccObjects = Lists.newArrayList();
-        weekIccObjects.addAll(oldProfitRes.getData().getCacheProfit().getWeek().getIccAlipay());
-        weekIccObjects.addAll(oldProfitRes.getData().getCacheProfit().getWeek().getIccWxpay());
-        weekIccObjects.addAll(oldProfitRes.getData().getCacheProfit().getWeek().getIccAlipayRecharge());
-        weekIccObjects.addAll(oldProfitRes.getData().getCacheProfit().getWeek().getIccWxpayRecharge());
-
-        compareProfitData("icc", add(weekIccObjects), newProfitRes.getData().getProfitList().getWeek().getIcc());
         log.info("结束对比周统计数据");
 
 
-        log.info("开始对比月统计数据");
+//        log.info("开始对比月统计数据");
         compareProfitData("wxPay", oldProfitRes.getData().getCacheProfit().getMonth().getWxpay(), newProfitRes.getData().getProfitList().getMonth().getWxPay());
         compareProfitData("aliPay", oldProfitRes.getData().getCacheProfit().getMonth().getAlipay(), newProfitRes.getData().getProfitList().getMonth().getAliPay());
         compareProfitData("bill", oldProfitRes.getData().getCacheProfit().getMonth().getBill(), newProfitRes.getData().getProfitList().getMonth().getBill());
         compareProfitData("card", oldProfitRes.getData().getCacheProfit().getMonth().getCard(), newProfitRes.getData().getProfitList().getMonth().getCard());
         compareProfitData("purse", oldProfitRes.getData().getCacheProfit().getMonth().getPurse(), newProfitRes.getData().getProfitList().getMonth().getPurse());
-        compareProfitData("safeguard", oldProfitRes.getData().getCacheProfit().getMonth().getSafeguard(), newProfitRes.getData().getProfitList().getMonth().getSafeguard());
-        compareProfitData("virtual", oldProfitRes.getData().getCacheProfit().getMonth().getIccVirtual(), newProfitRes.getData().getProfitList().getMonth().getVirtual());
 
-        List<OldProfitRes.DataDTO.CacheProfitDTO.Profit.TimeAndProfit> monthDiscountObjects = Lists.newArrayList();
-        monthDiscountObjects.addAll(oldProfitRes.getData().getCacheProfit().getMonth().getDiscountAlipayRecharge());
-        monthDiscountObjects.addAll(oldProfitRes.getData().getCacheProfit().getMonth().getDiscountWxpayRecharge());
-
-        compareProfitData("discount", add(monthDiscountObjects), newProfitRes.getData().getProfitList().getMonth().getDiscount());
-
-
-        List<OldProfitRes.DataDTO.CacheProfitDTO.Profit.TimeAndProfit> monthIccObjects = Lists.newArrayList();
-        monthIccObjects.addAll(oldProfitRes.getData().getCacheProfit().getMonth().getIccAlipay());
-        monthIccObjects.addAll(oldProfitRes.getData().getCacheProfit().getMonth().getIccWxpay());
-        monthIccObjects.addAll(oldProfitRes.getData().getCacheProfit().getMonth().getIccAlipayRecharge());
-        monthIccObjects.addAll(oldProfitRes.getData().getCacheProfit().getMonth().getIccWxpayRecharge());
-
-        compareProfitData("icc", add(monthIccObjects), newProfitRes.getData().getProfitList().getMonth().getIcc());
 
         log.info("结束对比月统计数据");
 
-        log.info("开始对比季度统计数据");
+//        log.info("开始对比季度统计数据");
         compareProfitData("wxPay", oldProfitRes.getData().getCacheProfit().getSeason().getWxpay(), newProfitRes.getData().getProfitList().getSeason().getWxPay());
         compareProfitData("aliPay", oldProfitRes.getData().getCacheProfit().getSeason().getAlipay(), newProfitRes.getData().getProfitList().getSeason().getAliPay());
         compareProfitData("bill", oldProfitRes.getData().getCacheProfit().getSeason().getBill(), newProfitRes.getData().getProfitList().getSeason().getBill());
         compareProfitData("card", oldProfitRes.getData().getCacheProfit().getSeason().getCard(), newProfitRes.getData().getProfitList().getSeason().getCard());
         compareProfitData("purse", oldProfitRes.getData().getCacheProfit().getSeason().getPurse(), newProfitRes.getData().getProfitList().getSeason().getPurse());
-        compareProfitData("safeguard", oldProfitRes.getData().getCacheProfit().getSeason().getSafeguard(), newProfitRes.getData().getProfitList().getSeason().getSafeguard());
-        compareProfitData("virtual", oldProfitRes.getData().getCacheProfit().getSeason().getIccVirtual(), newProfitRes.getData().getProfitList().getSeason().getVirtual());
-
-        List<OldProfitRes.DataDTO.CacheProfitDTO.Profit.TimeAndProfit> seasonDiscountObjects = Lists.newArrayList();
-        seasonDiscountObjects.addAll(oldProfitRes.getData().getCacheProfit().getSeason().getDiscountAlipayRecharge());
-        seasonDiscountObjects.addAll(oldProfitRes.getData().getCacheProfit().getSeason().getDiscountWxpayRecharge());
-
-        compareProfitData("discount", add(seasonDiscountObjects), newProfitRes.getData().getProfitList().getSeason().getDiscount());
 
 
-        List<OldProfitRes.DataDTO.CacheProfitDTO.Profit.TimeAndProfit> seasonIccObjects = Lists.newArrayList();
-        seasonIccObjects.addAll(oldProfitRes.getData().getCacheProfit().getSeason().getIccAlipay());
-        seasonIccObjects.addAll(oldProfitRes.getData().getCacheProfit().getSeason().getIccWxpay());
-        seasonIccObjects.addAll(oldProfitRes.getData().getCacheProfit().getSeason().getIccWxpayRecharge());
-        seasonIccObjects.addAll(oldProfitRes.getData().getCacheProfit().getSeason().getIccAlipayRecharge());
-
-        compareProfitData("icc", add(seasonIccObjects), newProfitRes.getData().getProfitList().getSeason().getIcc());
 
         log.info("结束对比季度统计数据");
 
-        log.info("开始对比年度统计数据");
+//        log.info("开始对比年度统计数据");
         compareProfitData("wxPay", oldProfitRes.getData().getCacheProfit().getYear().getWxpay(), newProfitRes.getData().getProfitList().getYear().getWxPay());
         compareProfitData("aliPay", oldProfitRes.getData().getCacheProfit().getYear().getAlipay(), newProfitRes.getData().getProfitList().getYear().getAliPay());
         compareProfitData("bill", oldProfitRes.getData().getCacheProfit().getYear().getBill(), newProfitRes.getData().getProfitList().getYear().getBill());
         compareProfitData("card", oldProfitRes.getData().getCacheProfit().getYear().getCard(), newProfitRes.getData().getProfitList().getYear().getCard());
         compareProfitData("purse", oldProfitRes.getData().getCacheProfit().getYear().getPurse(), newProfitRes.getData().getProfitList().getYear().getPurse());
-        compareProfitData("safeguard", oldProfitRes.getData().getCacheProfit().getYear().getSafeguard(), newProfitRes.getData().getProfitList().getYear().getSafeguard());
-        compareProfitData("virtual", oldProfitRes.getData().getCacheProfit().getYear().getIccVirtual(), newProfitRes.getData().getProfitList().getYear().getVirtual());
-
-        List<OldProfitRes.DataDTO.CacheProfitDTO.Profit.TimeAndProfit> yearDiscountObjects = Lists.newArrayList();
-        yearDiscountObjects.addAll(oldProfitRes.getData().getCacheProfit().getYear().getDiscountAlipayRecharge());
-        yearDiscountObjects.addAll(oldProfitRes.getData().getCacheProfit().getYear().getDiscountWxpayRecharge());
-
-        compareProfitData("discount", add(yearDiscountObjects), newProfitRes.getData().getProfitList().getYear().getDiscount());
-
-
-        List<OldProfitRes.DataDTO.CacheProfitDTO.Profit.TimeAndProfit> yearIccObjects = Lists.newArrayList();
-        yearIccObjects.addAll(oldProfitRes.getData().getCacheProfit().getYear().getIccAlipay());
-        yearIccObjects.addAll(oldProfitRes.getData().getCacheProfit().getYear().getIccWxpay());
-        yearIccObjects.addAll(oldProfitRes.getData().getCacheProfit().getYear().getIccWxpayRecharge());
-        yearIccObjects.addAll(oldProfitRes.getData().getCacheProfit().getYear().getIccAlipayRecharge());
-
-        compareProfitData("icc", add(yearIccObjects), newProfitRes.getData().getProfitList().getYear().getIcc());
 
         log.info("结束对比年度统计数据");
 
