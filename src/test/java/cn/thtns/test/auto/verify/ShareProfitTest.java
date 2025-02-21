@@ -3,15 +3,12 @@ package cn.thtns.test.auto.verify;
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.util.NumberUtil;
 import cn.hutool.core.util.StrUtil;
-import cn.hutool.json.JSONUtil;
-import cn.thtns.test.auto.entity.SysUser;
 import cn.thtns.test.auto.mapper.SysUserMapper;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.qameta.allure.Description;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.poi.ss.usermodel.Sheet;
-import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,8 +16,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.web.client.RestClient;
 import org.testng.collections.Lists;
 import org.testng.collections.Maps;
-
-import org.apache.poi.ss.usermodel.*;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -34,11 +29,11 @@ import java.util.stream.Collectors;
 
 /**
  * @author liuyj
- * Node 收益比对
+ * Node 合伙人收益对比
  */
 @SpringBootTest
 @Slf4j
-public class DeviceProfitTest {
+public class ShareProfitTest {
 
     private static final String AUTHORIZATION_HEADER = "authorization";
     private static final String OLD_PROFIT_API = "https://agentv2.wanzhuangkj.com/api/profit/get/all?profit_type=dealer";
@@ -85,38 +80,38 @@ public class DeviceProfitTest {
 
 
     {
-            try {
-                // 读取 Excel 文件
-                FileInputStream file = new FileInputStream("E:\\测试手机号.xlsx");
-                Workbook workbook = new XSSFWorkbook(file);
+        try {
+            // 读取 Excel 文件
+            FileInputStream file = new FileInputStream("E:\\测试手机号.xlsx");
+            Workbook workbook = new XSSFWorkbook(file);
 
-                // 获取第一个工作表
-                Sheet sheet = workbook.getSheetAt(0);
+            // 获取第一个工作表
+            Sheet sheet = workbook.getSheetAt(1);
 
-                // 遍历每一行
-                for (Row row : sheet) {
-                    // 获取第二列（手机号）和第三列（公司ID）
-                    Cell companyCell = row.getCell(2);
-                    Cell phoneCell = row.getCell(1);
+            // 遍历每一行
+            for (Row row : sheet) {
+                // 获取第二列（手机号）和第三列（公司ID）
+                Cell companyCell = row.getCell(2);
+                Cell phoneCell = row.getCell(1);
 
-                    // 确保单元格不为空
-                    if (phoneCell != null && companyCell != null) {
-                        // 获取单元格的值
-                        String phoneNumber = getCellValueAsString(phoneCell);
-                        String companyNum = getCellValueAsString(companyCell);
+                // 确保单元格不为空
+                if (phoneCell != null && companyCell != null) {
+                    // 获取单元格的值
+                    String phoneNumber = getCellValueAsString(phoneCell);
+                    String companyNum = getCellValueAsString(companyCell);
 
-                        // 将数据放入 phoneMap
-                        phoneMap.put(phoneNumber, companyNum);
-                    }
+                    // 将数据放入 phoneMap
+                    phoneMap.put(phoneNumber, companyNum);
                 }
-
-                // 关闭工作簿和文件流
-                workbook.close();
-                file.close();
-
-            } catch (IOException e) {
-                e.printStackTrace();
             }
+
+            // 关闭工作簿和文件流
+            workbook.close();
+            file.close();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     private boolean compareProfitByTime(OldProfitRes.DataDTO.CacheProfitDTO.Profit.TimeAndProfit oldRes, NewProfitRes.DataDTO.ProfitListDTO.Profit.TimeAndProfit newRes) {
@@ -218,7 +213,7 @@ public class DeviceProfitTest {
 
             String k = entry.getKey();
             String v = entry.getValue();
-            String bearerToken = tokenManager.getToken(k, v);
+            String bearerToken = tokenManager.getShareToken(k, v);
 
             log.info("公司ID：{} 账号：{} 正在对比设备数据",v, k);
 
@@ -475,4 +470,6 @@ public class DeviceProfitTest {
                 return "";
         }
     }
+
+
 }

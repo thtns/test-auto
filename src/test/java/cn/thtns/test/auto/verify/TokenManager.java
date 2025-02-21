@@ -25,15 +25,15 @@ public class TokenManager {
 
     /**
      * 获取指定账号的 Token，如果不存在则自动生成
-     * @param username 用户名
-     * @param password 密码
+     * @param phone 用户名
+     * @param companyId 公司id
      * @return 对应账号的 BEARER_TOKEN
      */
-    public synchronized String getToken(String username, String password) {
-        return tokenMap.computeIfAbsent(username, key -> {
-            log.info("Token 未找到，为账号 {} 生成新 Token...", username);
-            String token = login(username, password);
-            log.info("成功获取 BEARER_TOKEN for {}: {}", username, token);
+    public synchronized String getToken(String phone, String companyId) {
+        return tokenMap.computeIfAbsent(phone, key -> {
+            log.info("Token 未找到，为账号 {} 生成新 Token...", phone);
+            String token = login(phone, companyId);
+            log.info("成功获取 BEARER_TOKEN for {}: {}", phone, token);
             return token;
         });
     }
@@ -41,13 +41,47 @@ public class TokenManager {
     /**
      * 登录接口调用以获取 BEARER_TOKEN
      * @param phone 用户名
-     * @param password 密码
+     * @param companyId 公司id
      * @return 登录成功后的 Token
      */
-    public String login(String phone, String password) {
+    public String login(String phone, String companyId) {
 
         String body = restClient.get()
-                .uri(StrUtil.format("https://agentv2.wanzhuangkj.com/api/auth/adminLogin?phone={}&company_id=2&password=wz020202&operator_phone=18327519799&is_operator=1", phone))
+                .uri(StrUtil.format("https://agentv2.wanzhuangkj.com/api/auth/adminLogin?phone={}&company_id={}&password=wz020202&operator_phone=18327519799&is_operator=1", phone,companyId))
+                .retrieve()
+                .body(String.class);
+
+        String str = JSONUtil.parseObj(body).getJSONObject("data").getStr("token");
+
+        return StrUtil.format("bearer {}", str);
+
+
+    }
+
+    /**
+     * 获取指定账号的 Token，如果不存在则自动生成
+     * @param phone 用户名
+     * @param companyId 公司id
+     * @return 对应账号的 BEARER_TOKEN
+     */
+    public synchronized String getShareToken(String phone, String companyId) {
+        return tokenMap.computeIfAbsent(phone, key -> {
+            log.info("Token 未找到，为账号 {} 生成新 Token...", phone);
+            String token = shareLogin(phone, companyId);
+            log.info("成功获取 BEARER_TOKEN for {}: {}", phone, token);
+            return token;
+        });
+    }
+    /**
+     * 登录接口调用以获取 BEARER_TOKEN
+     * @param phone 用户名
+     * @param companyId 公司id
+     * @return 登录成功后的 Token
+     */
+    public String shareLogin(String phone, String companyId) {
+
+        String body = restClient.get()
+                .uri(StrUtil.format("https://agentv2.wanzhuangkj.com/api/auth/adminLogin?phone={}&company_id={}&password=wz020202&operator_phone=18327519799&is_operator=0", phone,companyId))
                 .retrieve()
                 .body(String.class);
 
