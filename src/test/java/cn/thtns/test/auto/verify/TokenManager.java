@@ -11,6 +11,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestClient;
 import org.springframework.web.client.RestTemplate;
 
+import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -91,9 +92,29 @@ public class TokenManager {
 
 
     }
+    /**
+     * 登录接口调用以获取 BEARER_TOKEN
+     * @return 后台登录成功后的 Token
+     */
+    public String backLogin() {
+
+        Map<String, String> requestBody = new HashMap<>();
+        requestBody.put("phone", "18327519799");
+        requestBody.put("password", "wz123456.");
+        requestBody.put("type", "manage");
+
+        String body = restClient.post()
+                .uri("https://manage-web.wanzhuangkj.com/public/login")
+                .contentType(MediaType.APPLICATION_JSON)
+                .body(requestBody)
+                .retrieve()
+                .body(String.class);
+        String str = JSONUtil.parseObj(body).getJSONObject("data").getStr("token");
+
+        return StrUtil.format("bearer {}", str);
 
 
-
+    }
     /**
      * 清除某个账号的 Token（用于强制重新登录）
      * @param username 用户名
