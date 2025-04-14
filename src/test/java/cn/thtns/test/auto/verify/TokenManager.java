@@ -60,7 +60,7 @@ public class TokenManager {
 
     /**
      * 获取指定账号的 Token，如果不存在则自动生成
-     * @param phone 用户名
+     * @param phone 手机号
      * @param companyId 公司id
      * @return 对应账号的 BEARER_TOKEN
      */

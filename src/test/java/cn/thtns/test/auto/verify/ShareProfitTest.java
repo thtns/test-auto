@@ -213,6 +213,9 @@ public class ShareProfitTest {
 
             String k = entry.getKey();
             String v = entry.getValue();
+            if(k==null){
+                continue;
+            }
             String bearerToken = tokenManager.getShareToken(k, v);
 
             log.info("公司ID：{} 账号：{} 正在对比设备数据",v, k);

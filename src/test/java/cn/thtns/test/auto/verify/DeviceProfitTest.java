@@ -41,7 +41,8 @@ import java.util.stream.Collectors;
 public class DeviceProfitTest {
 
     private static final String AUTHORIZATION_HEADER = "authorization";
-    private static final String OLD_PROFIT_API = "https://agentv2.wanzhuangkj.com/api/profit/get/all?profit_type=dealer";
+    //总收益
+    private static final String OLD_PROFIT_API = "https://manage-web.wanzhuangkj.com/api/admin/getAllProfit?company_id=2&u_id=16585&u_type=2&profit_type=dealer";
     private static final String NEW_PROFIT_API = "https://agentv2.wanzhuangkj.com/api/operator/income/profitReport";
     // 分组收益
     private static final String OLD_PROFIT_API_group = "https://agentv2.wanzhuangkj.com/api/profit/get/all?profit_type=group&group_id={}";
@@ -220,7 +221,7 @@ public class DeviceProfitTest {
             String v = entry.getValue();
             String bearerToken = tokenManager.getToken(k, v);
 
-            log.info("公司ID：{} 账号：{} 正在对比设备数据",v, k);
+            log.info("公司ID：{} 账号：{} 正在对比数据",v, k);
 
             OldProfitRes oldProfitRes = objectMapper.readValue(getApiResponse(OLD_PROFIT_API, bearerToken), OldProfitRes.class);
             NewProfitRes newProfitRes = objectMapper.readValue(getApiResponse(NEW_PROFIT_API, bearerToken), NewProfitRes.class);
