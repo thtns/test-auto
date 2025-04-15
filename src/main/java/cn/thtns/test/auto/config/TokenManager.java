@@ -4,9 +4,12 @@ import cn.hutool.core.util.StrUtil;
 import cn.hutool.json.JSONUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestClient;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 @Slf4j
@@ -40,9 +43,16 @@ public class TokenManager {
      * @return 登录成功后的 Token
      */
     public String login(String phone, String companyId) {
+        Map<String, String> requestBody = new HashMap<>();
+        requestBody.put("admin_password", "wz020202");
+        requestBody.put("admin_phone", "18958125894");
+        requestBody.put("phone", phone);
 
-        String body = restClient.get()
-                .uri(StrUtil.format("https://agentv2.wanzhuangkj.com/api/auth/adminLogin?phone={}&company_id={}&password=wz020202&operator_phone=18327519799&is_operator=1", phone,companyId))
+        String body = restClient.post()
+                .uri(StrUtil.format("https://agentv2.wanzhuangkj.com/api/user-center/auth/adminLogin?company_id={}&u_type=2",companyId))
+                .contentType(MediaType.APPLICATION_JSON)
+                .body(requestBody)
+                .header("Content-Type", "application/json")
                 .retrieve()
                 .body(String.class);
 

@@ -46,7 +46,7 @@ public class DeviceProfitService {
             Integer uid = operatorsOrPartnersService.getUId(basicToken, loginReq);
 
             String k = loginReq.getUsername();
-            String v = loginReq.getPassword();
+            String v = loginReq.getCompany();
             String bearerToken = tokenManager.getToken(k, v);
             log.info("公司ID：{} 账号：{} 正在对比数据", v, k);
 
