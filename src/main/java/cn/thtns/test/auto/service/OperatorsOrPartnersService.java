@@ -17,6 +17,8 @@ import org.springframework.web.client.RestClient;
 public class OperatorsOrPartnersService {
 
     private static final String GET_U_ID = "https://manage-web.wanzhuangkj.com/api/admin/getNewOperatorsOrPartnersPageList?page=1&page_size=10&company_id=2&phone={}&settle_mode=0";
+//获取分组ID
+    private static final String GET_Group_ID = "https://manage-web.wanzhuangkj.com/api/admin/findDeviceGroupList?page=1&page_size=10&company_id=2&operator_phone={}";
 
 
     private final RestClient restClient;
@@ -26,6 +28,11 @@ public class OperatorsOrPartnersService {
     @SneakyThrows
     public Integer getUId(String token, LoginReq loginReq) {
         return objectMapper.readValue(getApiResponse(StrUtil.format(GET_U_ID, loginReq.getUsername()), token), CompanyRes.class).getData().getList().get(0).getId();
+    }
+
+    @SneakyThrows
+    public Integer getGroupId(String token, LoginReq loginReq) {
+        return objectMapper.readValue(getApiResponse(StrUtil.format(GET_Group_ID, loginReq.getUsername()), token), CompanyRes.class).getData().getList().get(0).getId();
     }
 
 

@@ -50,10 +50,12 @@ public class DeviceProfitService {
             String bearerToken = tokenManager.getToken(k, v);
             log.info("公司ID：{} 账号：{} 正在对比数据", v, k);
 
-            OldProfitRes oldProfitRes = oldProfitService.oldProfitRes(bearerToken, k, uid, 2);
+            OldProfitRes oldProfitRes = oldProfitService.oldProfitRes(basicToken, k, uid, 2);
             NewProfitRes newProfitRes = newProfitService.newProfitRes(bearerToken);
 
             verify(oldProfitRes, newProfitRes, k, "groupProfit");
+
+
 
 
         });
@@ -133,8 +135,8 @@ public class DeviceProfitService {
             int lookbackPeriod,
             double threshold
     ) {
-        if (data.size() < lookbackPeriod + 1) {
-            throw new IllegalArgumentException("数据不足，需至少 " + (lookbackPeriod + 1) + " 条数据");
+        if (data.size() < lookbackPeriod) {
+            throw new IllegalArgumentException("数据不足，需至少 " + lookbackPeriod + " 条数据");
         }
 
         // 获取当前时间段和前一时间段（如最新月 vs 前一月）
@@ -171,6 +173,43 @@ public class DeviceProfitService {
     }
 
 
+        /**
+         * 检查前一天收益是否比前5天平均值低20%
+         * @param dailyProfits 按日期排序的每日收益列表，最新日期在最后
+         * @return 如果前一天收益比前5天平均值低20%返回true，否则false
+         */
+        public static boolean checkProfitDrop(List<NewProfitRes.DataDTO.ProfitListDTO.Profit.TimeAndProfit> dailyProfits) {
+            if (dailyProfits.size() < 6) {
+                throw new IllegalArgumentException("需要至少6天的数据");
+            }
+
+            // 获取前一天收益
+            BigDecimal bigDecimal = dailyProfits.get(dailyProfits.size() - 1).getProfit(); // 可能为null
+            double yesterdayProfit = (bigDecimal != null) ? bigDecimal.doubleValue() : 0.0; // 默认值0.0
+
+            String yesterdayTime = (String) dailyProfits.get(dailyProfits.size() - 1).getTime();
+
+            // 计算前5天平均值
+            BigDecimal bigDecimalProfit =null;
+            double sum = 0;
+            for (int i = dailyProfits.size() - 6; i < dailyProfits.size() - 1; i++) {
+                bigDecimalProfit=dailyProfits.get(i).getProfit();
+                sum +=  (bigDecimalProfit != null) ? bigDecimalProfit.doubleValue() : 0.0;
+            }
+            double fiveDayAvg = sum / 5;
+
+            // 计算20%阈值
+            double threshold = fiveDayAvg * 0.8;
+
+            log.info("最近{}平均收益:", fiveDayAvg);
+            log.info("前一{}收益:{},前5天平均值：{} ",yesterdayTime, yesterdayProfit,sum);
+            log.info("计算20%阈值:{} ",threshold);
+            log.info("是否低于20%阈值:{} ", yesterdayProfit < threshold);
+
+            // 检查是否低于阈值
+            return yesterdayProfit < threshold;
+}
+
     private boolean compareProfitByTime(OldProfitRes.DataDTO.CacheProfitDTO.Profit.TimeAndProfit oldRes, NewProfitRes.DataDTO.ProfitListDTO.Profit.TimeAndProfit newRes) {
         if (oldRes == null || newRes == null) {
             throw new IllegalArgumentException("对象不能为空");
@@ -191,7 +230,8 @@ public class DeviceProfitService {
             }
         }));
 
-        detectAnomaly(newData, timeFormat, newData.size(), 20);
+//        detectAnomaly(newData, timeFormat, newData.size(), 20);
+        checkProfitDrop(newData);
 
     }
 
@@ -205,6 +245,9 @@ public class DeviceProfitService {
         }
 
     }
+
+
+
 
 
     private void verify(OldProfitRes oldProfitRes, NewProfitRes newProfitRes, String k, String device) {
