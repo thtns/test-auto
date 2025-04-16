@@ -123,7 +123,17 @@ public class DeviceProfitService {
 
     /**
      * 检测指定时间粒度的收益异常
-     *
+
+     *"day": [
+     * "2025-04-14",
+     * "2025-04-13",
+     * "2025-04-12",
+     * "2025-04-11",
+     * "2025-04-10",
+     * "2025-04-09",
+     * "2025-04-08"
+     * ]
+
      * @param data           数据列表（需按时间降序排序）
      * @param timeFormat     时间粒度（DAY/MONTH/SEASON/YEAR）
      * @param lookbackPeriod 回溯周期（如7天、6个月）
@@ -135,12 +145,10 @@ public class DeviceProfitService {
             int lookbackPeriod,
             double threshold
     ) {
-        if (data.size() < lookbackPeriod) {
-            throw new IllegalArgumentException("数据不足，需至少 " + lookbackPeriod + " 条数据");
-        }
 
-        // 获取当前时间段和前一时间段（如最新月 vs 前一月）
-        NewProfitRes.DataDTO.ProfitListDTO.Profit.TimeAndProfit current = data.get(0);
+
+
+        NewProfitRes.DataDTO.ProfitListDTO.Profit.TimeAndProfit current = data.get(1);
         NewProfitRes.DataDTO.ProfitListDTO.Profit.TimeAndProfit previous = data.get(1);
 
         // 验证时间粒度一致性
@@ -173,42 +181,42 @@ public class DeviceProfitService {
     }
 
 
-        /**
-         * 检查前一天收益是否比前5天平均值低20%
-         * @param dailyProfits 按日期排序的每日收益列表，最新日期在最后
-         * @return 如果前一天收益比前5天平均值低20%返回true，否则false
-         */
-        public static boolean checkProfitDrop(List<NewProfitRes.DataDTO.ProfitListDTO.Profit.TimeAndProfit> dailyProfits) {
-            if (dailyProfits.size() < 6) {
-                throw new IllegalArgumentException("需要至少6天的数据");
-            }
-
-            // 获取前一天收益
-            BigDecimal bigDecimal = dailyProfits.get(dailyProfits.size() - 1).getProfit(); // 可能为null
-            double yesterdayProfit = (bigDecimal != null) ? bigDecimal.doubleValue() : 0.0; // 默认值0.0
-
-            String yesterdayTime = (String) dailyProfits.get(dailyProfits.size() - 1).getTime();
-
-            // 计算前5天平均值
-            BigDecimal bigDecimalProfit =null;
-            double sum = 0;
-            for (int i = dailyProfits.size() - 6; i < dailyProfits.size() - 1; i++) {
-                bigDecimalProfit=dailyProfits.get(i).getProfit();
-                sum +=  (bigDecimalProfit != null) ? bigDecimalProfit.doubleValue() : 0.0;
-            }
-            double fiveDayAvg = sum / 5;
-
-            // 计算20%阈值
-            double threshold = fiveDayAvg * 0.8;
-
-            log.info("最近{}平均收益:", fiveDayAvg);
-            log.info("前一{}收益:{},前5天平均值：{} ",yesterdayTime, yesterdayProfit,sum);
-            log.info("计算20%阈值:{} ",threshold);
-            log.info("是否低于20%阈值:{} ", yesterdayProfit < threshold);
-
-            // 检查是否低于阈值
-            return yesterdayProfit < threshold;
-}
+//        /**
+//         * 检查前一天收益是否比前5天平均值低20%
+//         * @param dailyProfits 按日期排序的每日收益列表，最新日期在最后
+//         * @return 如果前一天收益比前5天平均值低20%返回true，否则false
+//         */
+//        public static boolean checkProfitDrop(List<NewProfitRes.DataDTO.ProfitListDTO.Profit.TimeAndProfit> dailyProfits) {
+//            if (dailyProfits.size() < 6) {
+//                throw new IllegalArgumentException("需要至少6天的数据");
+//            }
+//
+//            // 获取前一天收益
+//            BigDecimal bigDecimal = dailyProfits.get(dailyProfits.size() - 1).getProfit(); // 可能为null
+//            double yesterdayProfit = (bigDecimal != null) ? bigDecimal.doubleValue() : 0.0; // 默认值0.0
+//
+//            String yesterdayTime = (String) dailyProfits.get(dailyProfits.size() - 1).getTime();
+//
+//            // 计算前5天平均值
+//            BigDecimal bigDecimalProfit =null;
+//            double sum = 0;
+//            for (int i = dailyProfits.size() - 6; i < dailyProfits.size() - 1; i++) {
+//                bigDecimalProfit=dailyProfits.get(i).getProfit();
+//                sum +=  (bigDecimalProfit != null) ? bigDecimalProfit.doubleValue() : 0.0;
+//            }
+//            double fiveDayAvg = sum / 5;
+//
+//            // 计算20%阈值
+//            double threshold = fiveDayAvg * 0.8;
+//
+//            log.info("最近{}平均收益:", fiveDayAvg);
+//            log.info("前一{}收益:{},前5天平均值：{} ",yesterdayTime, yesterdayProfit,sum);
+//            log.info("计算20%阈值:{} ",threshold);
+//            log.info("是否低于20%阈值:{} ", yesterdayProfit < threshold);
+//
+//            // 检查是否低于阈值
+//            return yesterdayProfit < threshold;
+//}
 
     private boolean compareProfitByTime(OldProfitRes.DataDTO.CacheProfitDTO.Profit.TimeAndProfit oldRes, NewProfitRes.DataDTO.ProfitListDTO.Profit.TimeAndProfit newRes) {
         if (oldRes == null || newRes == null) {
