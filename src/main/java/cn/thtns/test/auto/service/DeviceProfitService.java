@@ -15,6 +15,7 @@ import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.testng.collections.Lists;
+import org.testng.collections.Maps;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
@@ -405,8 +406,38 @@ public class DeviceProfitService {
         log.info("账号：{} 对比数据结束 ", k);
 
         log.info("数据汇总~~~~~~~~~~~~~~~");
-        log.info("数据汇总详情：{}", JSONUtil.toJsonStr(detectRes));
-        dingSendMessageService.sendMessage(JSONUtil.toJsonStr(detectRes));
+        String jsonStr = convertJsonStr(detectRes);
+        log.info("数据汇总详情：{}", jsonStr);
+
+        dingSendMessageService.sendMessage(jsonStr);
+
+
+    }
+
+    public String convertJsonStr(DetectRes detectRes) {
+
+        // 处理detectResData按timeFormat分组
+        Map<TimeFormat, List<DetectRes.DetectResData>> groupedDetect = detectRes.getDetectResData().stream()
+                .collect(Collectors.groupingBy(
+                        DetectRes.DetectResData::getTimeFormat,
+                        Collectors.mapping(d -> new DetectRes.DetectResData(d.getPayType(), d.getAverage(), d.getCurrent()),
+                                Collectors.toList())
+                ));
+
+        // 处理ProfitResData按payType分组
+        Map<String, List<DetectRes.ProfitResData>> groupedProfit = detectRes.getProfitResData().stream()
+                .collect(Collectors.groupingBy(
+                        DetectRes.ProfitResData::getPayType,
+                        Collectors.mapping(p -> new DetectRes.ProfitResData(p.getTime(), p.getOldData(), p.getNewData()),
+                                Collectors.toList())
+                ));
+
+        Map<Object, Object> objectObjectMap = Maps.newLinkedHashMap();
+        objectObjectMap.put("phone", detectRes.getPhone());
+        objectObjectMap.put("detectResData", groupedDetect);
+        objectObjectMap.put("profitResData", groupedProfit);
+
+        return JSONUtil.toJsonStr(objectObjectMap);
     }
 
 

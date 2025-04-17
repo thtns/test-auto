@@ -47,6 +47,11 @@ public class DetectRes {
 
         private BigDecimal current;
 
+        public DetectResData(String payType, BigDecimal average, BigDecimal current) {
+            this.payType = payType;
+            this.average = average;
+            this.current = current;
+        }
     }
 
     @Data
@@ -67,6 +72,12 @@ public class DetectRes {
         private BigDecimal oldData;
 
         private BigDecimal newData;
+
+        public ProfitResData(String time, BigDecimal oldData, BigDecimal newData) {
+            this.time = time;
+            this.oldData = oldData;
+            this.newData = newData;
+        }
     }
 
 
