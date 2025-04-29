@@ -44,7 +44,7 @@ public class TokenManager {
      */
     public String login(String phone, String companyId) {
         Map<String, String> requestBody = new HashMap<>();
-        requestBody.put("admin_password", "wz020202");
+        requestBody.put("admin_password", "Wz123456!@#$%^");
         requestBody.put("admin_phone", "18958125894");
         requestBody.put("phone", phone);
 

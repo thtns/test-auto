@@ -86,10 +86,26 @@ public class NewProfitRes {
 		@Data
 		@NoArgsConstructor
 		public static class SuperviseProfitDTO {
+			/**
+			 * 今日到账
+			 */
 			@JsonProperty("todayArrival")
 			private Integer todayArrival;
+			/**
+			 * 未到账
+			 */
 			@JsonProperty("todayUnArrival")
 			private Integer todayUnArrival;
+			/**
+			 *
+			 */
+			@JsonProperty("transferFee")
+			private Integer transferFee;
+			/**
+			 * 今日收益
+			 */
+			@JsonProperty("unTransferFee")
+			private Integer unTransferFee;
 
 
 		}

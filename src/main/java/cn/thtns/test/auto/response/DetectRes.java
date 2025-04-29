@@ -23,6 +23,8 @@ public class DetectRes {
 
     private List<ProfitResData> ProfitResData = Lists.newArrayList();
 
+    private String context;
+
 
     @Data
     @AllArgsConstructor
