@@ -54,6 +54,11 @@ public class DetectRes {
             this.average = average;
             this.current = current;
         }
+
+        public DetectResData( BigDecimal average, BigDecimal current) {
+            this.average = average;
+            this.current = current;
+        }
     }
 
     @Data
