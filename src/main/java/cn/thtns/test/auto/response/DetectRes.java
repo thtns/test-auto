@@ -49,13 +49,13 @@ public class DetectRes {
 
         private BigDecimal current;
 
-        public DetectResData(String payType, BigDecimal average, BigDecimal current) {
-            this.payType = payType;
+        public DetectResData(TimeFormat timeFormat, BigDecimal average, BigDecimal current) {
+            this.timeFormat = timeFormat;
             this.average = average;
             this.current = current;
         }
 
-        public DetectResData( BigDecimal average, BigDecimal current) {
+        public DetectResData(BigDecimal average, BigDecimal current) {
             this.average = average;
             this.current = current;
         }

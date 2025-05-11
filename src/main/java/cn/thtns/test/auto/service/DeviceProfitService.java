@@ -271,7 +271,7 @@ public class DeviceProfitService {
         List<String> allTimes = allPayments.stream()
                 .map(NewProfitRes.DataDTO.ProfitListDTO.Profit.TimeAndProfit::getTime)
                 .distinct()
-                .sorted()
+                .sorted(Comparator.reverseOrder())
                 .toList();
 
         // 安全获取时间索引
@@ -314,7 +314,7 @@ public class DeviceProfitService {
         // 判断异常并记录结果（假设detectRes需要记录）
         boolean isAnomaly = deviationPercentage.compareTo(BigDecimal.valueOf(20)) > 0;
         if (isAnomaly) {
-            return new DetectRes.DetectResData(average, currentAverage);
+            return new DetectRes.DetectResData(timeFormat,average, currentAverage);
         }
         return new DetectRes.DetectResData();
     }
@@ -553,10 +553,10 @@ public class DeviceProfitService {
     public String convertJsonStr(DetectRes detectRes) {
 
         // 处理detectResData按timeFormat分组
-        Map<TimeFormat, List<DetectRes.DetectResData>> groupedDetect = detectRes.getDetectResData().stream()
+        Map<TimeFormat, List<DetectRes.DetectResData>> groupedDetect = detectRes.getDetectResData().stream().filter(d->Objects.nonNull(d.getTimeFormat()))
                 .collect(Collectors.groupingBy(
                         DetectRes.DetectResData::getTimeFormat,
-                        Collectors.mapping(d -> new DetectRes.DetectResData(d.getPayType(), d.getAverage(), d.getCurrent()),
+                        Collectors.mapping(d -> new DetectRes.DetectResData(d.getTimeFormat(), d.getAverage(), d.getCurrent()),
                                 Collectors.toList())
                 ));
 
